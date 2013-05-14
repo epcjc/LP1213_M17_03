@@ -15,5 +15,36 @@ namespace LP_projecto_final_Emanuel
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int resposta;
+            //Armazenamento da resposta do utilizador na MessageBox
+            //Botão Yes - Valor 6
+            //Botão No - Valor 7
+            //Botão Cancelar - Valor 2
+            resposta = Convert.ToInt32(MessageBox.Show("Pretende continuar?",
+      "Mensagem", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question));
+            //Avaliação da resposta dada
+            if (resposta == 6)
+            {
+
+                Form2 frm = new Form2();
+                frm.ShowDialog();
+            }
+            else if (resposta == 7)
+            {
+                MessageBox.Show("Carregou em Não", "Mensagem", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            }
+            else if (resposta == 2)
+            {
+                MessageBox.Show("Carregou em Cancelar", "Mensagem",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+
+           
+        }
     }
 }
