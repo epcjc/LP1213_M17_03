@@ -15,5 +15,20 @@ namespace LP_projecto_final_Emanuel
         {
             InitializeComponent();
         }
+
+        private void reservaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.reservaBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database1DataSet.Reserva' table. You can move, or remove it, as needed.
+            this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
+
+        }
     }
 }

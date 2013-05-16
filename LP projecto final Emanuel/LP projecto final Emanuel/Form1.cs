@@ -46,5 +46,10 @@ namespace LP_projecto_final_Emanuel
 
            
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

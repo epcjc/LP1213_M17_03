@@ -1,0 +1,353 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+    <style type="text/css">
+        .style1
+        {
+            font-size: x-small;
+        }
+        .style2
+        {
+            font-size: x-small;
+            color: #0033CC;
+            text-decoration: underline;
+        }
+        .style3
+        {
+            font-size: x-small;
+            text-decoration: underline;
+        }
+        .style4
+        {
+            width: 770px;
+            height: 237px;
+        }
+        .style5
+        {
+            width: 226px;
+            height: 73px;
+        }
+        .style6
+        {
+            width: 222px;
+            height: 60px;
+        }
+        .style7
+        {
+            width: 198px;
+            height: 65px;
+        }
+        .style8
+        {
+            background-color: #FFFFFF;
+        }
+        .style9
+        {
+            width: 192px;
+            height: 30px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+
+       
+    
+        
+    <div id="body_wrapper">
+
+	<div id="rightcolumn">
+
+		<!-- Start Page Header -->
+
+		<div id="page_header">
+
+			<h1><span>Slave to the Game</span></h1>
+			<h3><span>Online Gaming Community</span><img alt="" class="style4" 
+                    src="images/hotelchique.jpg" /></h3>
+
+		</div>
+
+		<!-- End of Page Header -->
+
+
+		<!-- Start of Main Navigation Menu -->
+
+		<div id="mainnav">
+
+			<ul>
+			<li class="style1"><a href="Default.aspx">Inicio</a></li>
+			<li class="style1"><a href="Quartos%20E%20Suites.aspx">Quartos E Suites</a></li>
+			<li class="style1"><a href="Restaurante%20E%20Bar.aspx">Restaurante E Bar</a></li>
+			<li class="style1"><a href="Salas%20E%20Banquetes.aspx">Salas E Banquetes</a></li>
+			<li class="style1"><a href="Sobre%20Hotel.aspx">Sobre Hotel</a></li>
+			<li class="style1"><a href="Contactos.aspx">Contactos</a></li>
+			<li class="style1"><a href="Reserva.aspx">Reserva</a></li>
+
+
+			<div class="clearthis">&nbsp;</div>
+
+		</div>
+
+		<!-- End of Main Navigation Menu -->
+
+
+		<!-- Start of Center Column -->
+
+		<div id="centercolumn">
+		<div id="centercolumn_2">
+
+			<!-- Start of News Box 1 -->
+
+			<div class="newsbox">
+
+
+				<div class="newsbox_content">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+				<asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+				</div>
+
+			</div>
+
+			<!-- End of News Box 1 -->
+
+ 
+
+		</div>
+		</div>
+
+		<!-- End of Center Column -->
+
+
+		<!-- Start of Right Sidebar -->
+
+		<div id="rightsidebar">
+
+
+			<!-- Start of Team Roster -->
+
+			<div id="teamroster">
+
+				<div id="teamroster_header">
+				    <img alt="" class="style7" src="images/hot.jpg" /></div>
+
+				<div id="teamroster_content">
+
+					<div id="teamroster_categories">
+					    <img alt="" class="style9" src="images/noticias.png" /></div>
+
+					<ul>
+					<li id="roster_twitch"><a href="http://www.freewebsitetemplates.com/">twitch</a></li>
+					<li id="roster_rock"><a href="http://www.freewebsitetemplates.com/">rock</a></li>
+					<li id="roster_badkarma"><a href="http://www.freewebsitetemplates.com/">BadKarma</a></li>
+					<li id="roster_mostly"><a href="http://www.freewebsitetemplates.com/">mostly</a></li>
+					<li id="roster_thebowl"><a href="http://www.freewebsitetemplates.com/">TheBowl</a></li>
+					<li id="roster_doggerz"><a href="http://www.freewebsitetemplates.com/">doggerz</a></li>
+					<li id="roster_drew"><a href="http://www.freewebsitetemplates.com/">Drew</a></li>
+					<li id="roster_nogusta"><a href="http://www.freewebsitetemplates.com/">Nogusta</a></li>
+					</ul>
+
+
+					<div class="clearthis">&nbsp;</div>
+
+					<div class="more_button">
+					<a href="http://www.freewebsitetemplates.com/"><span>More</span></a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- End of Team Roster -->
+
+
+			<!-- Start of Team Sponsors -->
+
+			<div id="teamsponsors">
+
+				<h2><span>Team Sponsors</span></h2>
+
+				<div id="teamsponsors_content">
+
+					<a href="http://www.freewebsitetemplates.com/"><img src="images/teamsponsors_surrealmedia.jpg" width="186" height="63" alt="Surreal Media" /></a>
+
+
+					<div class="more_button">
+					<a href="http://www.freewebsitetemplates.com/"><span>More</span></a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- End of Team Sponsors -->
+
+
+		</div>
+
+		<!-- End of Right Sidebar -->
+
+
+		<div class="clearthis">&nbsp;</div>
+
+
+	</div>
+
+
+	<!-- Start of Left Column -->
+
+	<div id="leftcolumn">
+
+
+		<!-- Start of Recent Record -->
+
+		<div id="recentrecord">
+
+			<h2><span>Recent Record</span><img alt="" class="style5" src="images/hotel.jpg" /></h2>
+
+			<ul>
+			<li>
+                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </li>
+			<li>
+                <asp:LoginView ID="LoginView1" runat="server">
+                </asp:LoginView>
+            </li>
+			<li>
+           
+                <asp:LoginName ID="LoginName2" runat="server" />
+            </li>
+			</ul>
+
+			<div class="clearthis">&nbsp;</div>
+
+		</div>
+
+		<!-- End of Recent Record -->
+
+
+		<!-- Start of Left Sidebar -->
+
+		<div id="leftsidebar">
+
+			<!-- Start of Latest Matches -->
+
+			<div id="latestmatch">
+
+				<h2><span>Latest Match</span><img alt="" class="style6" src="images/quart.jpg" /></h2>
+
+				<ul>
+				<li class="style2"><strong>
+                    <a href="Galeria%20De%20Imagem.aspx" 
+                        class="style8">Galeria De Imagem</strong><a href="http://www.freewebsitetemplates.com/"></li>
+				<li class="style3"><strong><a href="Promoções.aspx">Promoções</strong></li>
+				<li class="style3"><strong><a href="Ofertas.aspx">Ofertas</strong></li>
+				<li class="style3"><strong><a href="Noticias.aspx">Noticias</strong></li>
+				<li class="style3"><strong><a href="Concurso.aspx">Concurso</strong></li>
+				<li class="style3"><strong><a href="http://www.freewebsitetemplates.com/">Alojamento</strong></li>
+				<li class="style3"><strong><a href="http://www.freewebsitetemplates.com/">Eventos</strong></li>
+				<li class="style3"><strong><a href="Serviços.aspx">Serviços</strong></li>
+				</ul>
+
+
+
+				<div class="more_button">
+				<a href="http://www.freewebsitetemplates.com/"><span>More</span></a>
+				</div>
+
+				<div class="clearthis">&nbsp;</div>
+
+			</div>
+
+			<!-- End of Latest Matches -->
+
+
+			<!-- Start of Gaming Services -->
+
+			<div id="gamingservices">
+
+				<h2><span>Gaming Services</span></h2>
+
+					<ul>
+				<li class="style3"><strong><a href="http://www.freewebsitetemplates.com/">Programas</strong></li>
+				<li class="style3"><strong><a href="http://www.freewebsitetemplates.com/">Lazer</strong></li>
+                <li class="style3"><strong><a href="http://www.freewebsitetemplates.com/">Lazer</strong></li>
+				</ul>
+
+				<div class="more_button">
+				<a href="http://www.freewebsitetemplates.com/"><span>More</span></a>
+				</div>
+
+				<div class="clearthis">&nbsp;</div>
+
+			</div>
+
+			<!-- End of Gaming Services -->
+
+
+			<!-- Start of Quick Links -->
+
+			<div id="quicklinks">
+
+				<h2><span>Quick Links</span></h2>
+
+				<ul>
+				<li class="style3"><strong><a href="http://www.freewebsitetemplates.com/">Facilidades</strong></li>
+				<li class="style3"><strong><a href="http://www.freewebsitetemplates.com/">Atividades</strong></li>
+				<li class="style3"><strong><a href="http://www.freewebsitetemplates.com/">Tarifas</strong></li>
+				</ul>
+
+
+				<div class="more_button">
+				<a href="http://www.freewebsitetemplates.com/"><span>More</span></a>
+				</div>
+
+				<div class="clearthis">&nbsp;</div>
+
+			</div>
+
+			<!-- End of Quick Links -->
+
+
+		</div>
+
+		<!-- End of Left Sidebar -->
+
+
+	</div>
+
+	<!-- End of Left Column -->
+
+
+	<div class="clearthis">&nbsp;</div>
+
+
+	<!-- Start of Page Footer -->
+
+	<div id="page_footer">
+	<small>Web design by <a href="http://www.freewebsitetemplates.com">Free Website Templates</a></small>
+	</div>
+
+    </div>
+    </form>
+</body>
+</html>
