@@ -54,8 +54,13 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
+            this.fKReservaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -124,6 +129,8 @@
             // 
             // listBox1
             // 
+            this.listBox1.DataSource = this.reservaBindingSource;
+            this.listBox1.DisplayMember = "Data_inicio";
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(574, 26);
@@ -131,6 +138,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(174, 289);
             this.listBox1.TabIndex = 8;
+            this.listBox1.ValueMember = "id_reserva";
             // 
             // button1
             // 
@@ -330,6 +338,20 @@
             this.comboBox3.Size = new System.Drawing.Size(36, 23);
             this.comboBox3.TabIndex = 21;
             // 
+            // reservaBindingSource
+            // 
+            this.reservaBindingSource.DataMember = "Reserva";
+            this.reservaBindingSource.DataSource = this.database1DataSet;
+            // 
+            // reservaTableAdapter
+            // 
+            this.reservaTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKReservaClienteBindingSource
+            // 
+            this.fKReservaClienteBindingSource.DataMember = "FK_Reserva_Cliente";
+            this.fKReservaClienteBindingSource.DataSource = this.clienteBindingSource;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -365,6 +387,8 @@
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,5 +421,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.BindingSource reservaBindingSource;
+        private Database1DataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
+        private System.Windows.Forms.BindingSource fKReservaClienteBindingSource;
     }
 }
