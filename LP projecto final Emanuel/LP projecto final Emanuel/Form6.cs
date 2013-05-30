@@ -19,9 +19,12 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
 
-            this.clienteTableAdapter.Insert(this.textBox1.Text,
-               this.textBox2.Text, Convert.ToInt32(this.textBox3.Text),this.textBox8.Text,(Convert.ToInt16(this.comboBox1.SelectedValue,this.comboBox2.SelectedValue,this.comboBox3.SelectedValue),this.textBox5.Text,
-               this.textBox6.Text,this.textBox7.Text, Convert.ToInt16(this.listBox1.SelectedValue);
+            DateTime datanascimento = new DateTime(Convert.ToInt16(this.comboBox1.SelectedValue), Convert.ToInt16(this.comboBox2.SelectedValue),
+                Convert.ToInt16(this.comboBox3.SelectedValue));
+
+           this.clienteTableAdapter.Insert(this.textBox1.Text,
+               this.textBox2.Text, Convert.ToInt32(this.textBox3.Text),this.textBox8.Text,datanascimento,
+               Convert.ToInt32(this.textBox5.Text),Convert.ToInt32(this.textBox7.Text), null);
 
             MessageBox.Show("Inserido novo Cliente");
         }
@@ -37,6 +40,11 @@ namespace LP_projecto_final_Emanuel
             // TODO: This line of code loads data into the 'database1DataSet.Reserva' table. You can move, or remove it, as needed.
             this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
             
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

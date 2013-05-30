@@ -37,9 +37,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
@@ -54,12 +55,11 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
             this.fKReservaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,7 +108,7 @@
             this.textBox1.Location = new System.Drawing.Point(231, 59);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 21);
+            this.textBox1.Size = new System.Drawing.Size(163, 21);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
@@ -116,7 +116,7 @@
             this.textBox2.Location = new System.Drawing.Point(231, 100);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 21);
+            this.textBox2.Size = new System.Drawing.Size(163, 21);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
@@ -124,7 +124,7 @@
             this.textBox3.Location = new System.Drawing.Point(231, 142);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 21);
+            this.textBox3.Size = new System.Drawing.Size(163, 21);
             this.textBox3.TabIndex = 6;
             // 
             // listBox1
@@ -136,9 +136,19 @@
             this.listBox1.Location = new System.Drawing.Point(574, 26);
             this.listBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(174, 289);
+            this.listBox1.Size = new System.Drawing.Size(174, 274);
             this.listBox1.TabIndex = 8;
             this.listBox1.ValueMember = "id_reserva";
+            // 
+            // reservaBindingSource
+            // 
+            this.reservaBindingSource.DataMember = "Reserva";
+            this.reservaBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -160,11 +170,6 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // clienteBindingSource
             // 
@@ -229,28 +234,28 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(231, 273);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(137, 21);
+            this.textBox5.Size = new System.Drawing.Size(163, 21);
             this.textBox5.TabIndex = 15;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(231, 321);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(137, 21);
+            this.textBox6.Size = new System.Drawing.Size(163, 21);
             this.textBox6.TabIndex = 16;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(231, 357);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(137, 21);
+            this.textBox7.Size = new System.Drawing.Size(163, 21);
             this.textBox7.TabIndex = 17;
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(231, 184);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(132, 21);
+            this.textBox8.Size = new System.Drawing.Size(163, 21);
             this.textBox8.TabIndex = 18;
             // 
             // comboBox1
@@ -271,7 +276,7 @@
             "Dezembro"});
             this.comboBox1.Location = new System.Drawing.Point(231, 240);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(49, 23);
+            this.comboBox1.Size = new System.Drawing.Size(70, 23);
             this.comboBox1.TabIndex = 19;
             // 
             // comboBox2
@@ -309,10 +314,11 @@
             "29",
             "30",
             "31"});
-            this.comboBox2.Location = new System.Drawing.Point(298, 240);
+            this.comboBox2.Location = new System.Drawing.Point(307, 240);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(27, 23);
+            this.comboBox2.Size = new System.Drawing.Size(39, 23);
             this.comboBox2.TabIndex = 20;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -333,15 +339,10 @@
             "1991",
             "1992",
             "1993"});
-            this.comboBox3.Location = new System.Drawing.Point(332, 241);
+            this.comboBox3.Location = new System.Drawing.Point(352, 240);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(36, 23);
+            this.comboBox3.Size = new System.Drawing.Size(42, 23);
             this.comboBox3.TabIndex = 21;
-            // 
-            // reservaBindingSource
-            // 
-            this.reservaBindingSource.DataMember = "Reserva";
-            this.reservaBindingSource.DataSource = this.database1DataSet;
             // 
             // reservaTableAdapter
             // 
@@ -385,9 +386,9 @@
             this.Name = "Form6";
             this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
