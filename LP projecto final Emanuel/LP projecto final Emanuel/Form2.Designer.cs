@@ -31,34 +31,33 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesquizarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesquizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesquizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservaDoQuartoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tiposDePagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pesquizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pesquizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquizarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiposDePagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquizarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pesquizarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +75,7 @@
             this.pagamentoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(682, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(679, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -93,26 +92,18 @@
             // 
             // newToolStripMenuItem
             // 
-            this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3});
             this.newToolStripMenuItem.Image = global::LP_projecto_final_Emanuel.Properties.Resources.cli;
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShowShortcutKeys = false;
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.newToolStripMenuItem.Text = "Inserir";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "toolStripMenuItem3";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.toolStripMenuItem2.Text = "Listar";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -120,7 +111,7 @@
             // 
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.saveToolStripMenuItem.Text = "Pesquizar";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -137,9 +128,21 @@
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.undoToolStripMenuItem.Text = "listar";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
+            // 
+            // inserirToolStripMenuItem3
+            // 
+            this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
+            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(124, 22);
+            this.inserirToolStripMenuItem3.Text = "Inserir";
+            // 
+            // pesquizarToolStripMenuItem4
+            // 
+            this.pesquizarToolStripMenuItem4.Name = "pesquizarToolStripMenuItem4";
+            this.pesquizarToolStripMenuItem4.Size = new System.Drawing.Size(124, 22);
+            this.pesquizarToolStripMenuItem4.Text = "Pesquizar";
             // 
             // toolsToolStripMenuItem
             // 
@@ -155,15 +158,21 @@
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.customizeToolStripMenuItem.Text = "Listar";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.optionsToolStripMenuItem.Text = "inserir";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
+            // 
+            // pesquizarToolStripMenuItem
+            // 
+            this.pesquizarToolStripMenuItem.Name = "pesquizarToolStripMenuItem";
+            this.pesquizarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.pesquizarToolStripMenuItem.Text = "Pesquizar";
             // 
             // toolStripMenuItem1
             // 
@@ -174,6 +183,25 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(56, 20);
             this.toolStripMenuItem1.Text = "Quarto";
+            // 
+            // listarToolStripMenuItem
+            // 
+            this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.listarToolStripMenuItem.Text = "Listar";
+            this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
+            // 
+            // inserirToolStripMenuItem
+            // 
+            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.inserirToolStripMenuItem.Text = "Inserir";
+            // 
+            // pesquizarToolStripMenuItem1
+            // 
+            this.pesquizarToolStripMenuItem1.Name = "pesquizarToolStripMenuItem1";
+            this.pesquizarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.pesquizarToolStripMenuItem1.Text = "Pesquizar";
             // 
             // helpToolStripMenuItem
             // 
@@ -204,6 +232,7 @@
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
             this.searchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.searchToolStripMenuItem.Text = "Inserir";
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // reservaDoQuartoToolStripMenuItem
             // 
@@ -214,6 +243,26 @@
             this.reservaDoQuartoToolStripMenuItem.Name = "reservaDoQuartoToolStripMenuItem";
             this.reservaDoQuartoToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
             this.reservaDoQuartoToolStripMenuItem.Text = "Reserva do Quarto";
+            this.reservaDoQuartoToolStripMenuItem.Click += new System.EventHandler(this.reservaDoQuartoToolStripMenuItem_Click);
+            // 
+            // listarToolStripMenuItem1
+            // 
+            this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
+            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.listarToolStripMenuItem1.Text = "Listar";
+            this.listarToolStripMenuItem1.Click += new System.EventHandler(this.listarToolStripMenuItem1_Click);
+            // 
+            // inserirToolStripMenuItem1
+            // 
+            this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.inserirToolStripMenuItem1.Text = "Inserir";
+            // 
+            // pesquizarToolStripMenuItem2
+            // 
+            this.pesquizarToolStripMenuItem2.Name = "pesquizarToolStripMenuItem2";
+            this.pesquizarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
+            this.pesquizarToolStripMenuItem2.Text = "Pesquizar";
             // 
             // tiposDePagamentoToolStripMenuItem
             // 
@@ -225,91 +274,38 @@
             this.tiposDePagamentoToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
             this.tiposDePagamentoToolStripMenuItem.Text = "Tipos de Pagamento";
             // 
+            // listarToolStripMenuItem2
+            // 
+            this.listarToolStripMenuItem2.Name = "listarToolStripMenuItem2";
+            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
+            this.listarToolStripMenuItem2.Text = "Listar";
+            this.listarToolStripMenuItem2.Click += new System.EventHandler(this.listarToolStripMenuItem2_Click);
+            // 
+            // inserirToolStripMenuItem2
+            // 
+            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
+            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
+            this.inserirToolStripMenuItem2.Text = "Inserir";
+            // 
+            // pesquizarToolStripMenuItem3
+            // 
+            this.pesquizarToolStripMenuItem3.Name = "pesquizarToolStripMenuItem3";
+            this.pesquizarToolStripMenuItem3.Size = new System.Drawing.Size(124, 22);
+            this.pesquizarToolStripMenuItem3.Text = "Pesquizar";
+            // 
             // pagamentoToolStripMenuItem
             // 
             this.pagamentoToolStripMenuItem.Name = "pagamentoToolStripMenuItem";
             this.pagamentoToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.pagamentoToolStripMenuItem.Text = "Pagamento";
             // 
-            // pesquizarToolStripMenuItem
-            // 
-            this.pesquizarToolStripMenuItem.Name = "pesquizarToolStripMenuItem";
-            this.pesquizarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pesquizarToolStripMenuItem.Text = "Pesquizar";
-            // 
-            // listarToolStripMenuItem
-            // 
-            this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.listarToolStripMenuItem.Text = "Listar";
-            // 
-            // inserirToolStripMenuItem
-            // 
-            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.inserirToolStripMenuItem.Text = "Inserir";
-            // 
-            // pesquizarToolStripMenuItem1
-            // 
-            this.pesquizarToolStripMenuItem1.Name = "pesquizarToolStripMenuItem1";
-            this.pesquizarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.pesquizarToolStripMenuItem1.Text = "Pesquizar";
-            // 
-            // listarToolStripMenuItem1
-            // 
-            this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.listarToolStripMenuItem1.Text = "Listar";
-            // 
-            // inserirToolStripMenuItem1
-            // 
-            this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
-            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.inserirToolStripMenuItem1.Text = "Inserir";
-            // 
-            // pesquizarToolStripMenuItem2
-            // 
-            this.pesquizarToolStripMenuItem2.Name = "pesquizarToolStripMenuItem2";
-            this.pesquizarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.pesquizarToolStripMenuItem2.Text = "Pesquizar";
-            // 
-            // listarToolStripMenuItem2
-            // 
-            this.listarToolStripMenuItem2.Name = "listarToolStripMenuItem2";
-            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.listarToolStripMenuItem2.Text = "Listar";
-            // 
-            // inserirToolStripMenuItem2
-            // 
-            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
-            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.inserirToolStripMenuItem2.Text = "Inserir";
-            // 
-            // pesquizarToolStripMenuItem3
-            // 
-            this.pesquizarToolStripMenuItem3.Name = "pesquizarToolStripMenuItem3";
-            this.pesquizarToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
-            this.pesquizarToolStripMenuItem3.Text = "Pesquizar";
-            // 
-            // inserirToolStripMenuItem3
-            // 
-            this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
-            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
-            this.inserirToolStripMenuItem3.Text = "Inserir";
-            // 
-            // pesquizarToolStripMenuItem4
-            // 
-            this.pesquizarToolStripMenuItem4.Name = "pesquizarToolStripMenuItem4";
-            this.pesquizarToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
-            this.pesquizarToolStripMenuItem4.Text = "Pesquizar";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.iman;
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(682, 316);
+            this.ClientSize = new System.Drawing.Size(679, 329);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.MainMenuStrip = this.menuStrip1;
@@ -339,7 +335,6 @@
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem reservaDoQuartoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiposDePagamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pagamentoToolStripMenuItem;

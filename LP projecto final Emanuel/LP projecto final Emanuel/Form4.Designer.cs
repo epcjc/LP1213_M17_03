@@ -66,6 +66,11 @@
             this.comentariosTextBox = new System.Windows.Forms.TextBox();
             this.estadoTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
             id_reservaLabel = new System.Windows.Forms.Label();
             id_clienteLabel = new System.Windows.Forms.Label();
             data_reservaLabel = new System.Windows.Forms.Label();
@@ -79,12 +84,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingNavigator)).BeginInit();
             this.reservaBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // id_reservaLabel
             // 
             id_reservaLabel.AutoSize = true;
-            id_reservaLabel.Location = new System.Drawing.Point(173, 40);
+            id_reservaLabel.Location = new System.Drawing.Point(17, 44);
             id_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_reservaLabel.Name = "id_reservaLabel";
             id_reservaLabel.Size = new System.Drawing.Size(74, 15);
@@ -94,7 +100,7 @@
             // id_clienteLabel
             // 
             id_clienteLabel.AutoSize = true;
-            id_clienteLabel.Location = new System.Drawing.Point(173, 70);
+            id_clienteLabel.Location = new System.Drawing.Point(17, 74);
             id_clienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_clienteLabel.Name = "id_clienteLabel";
             id_clienteLabel.Size = new System.Drawing.Size(70, 15);
@@ -104,7 +110,7 @@
             // data_reservaLabel
             // 
             data_reservaLabel.AutoSize = true;
-            data_reservaLabel.Location = new System.Drawing.Point(173, 102);
+            data_reservaLabel.Location = new System.Drawing.Point(17, 106);
             data_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_reservaLabel.Name = "data_reservaLabel";
             data_reservaLabel.Size = new System.Drawing.Size(90, 15);
@@ -114,7 +120,7 @@
             // hora_reservaLabel
             // 
             hora_reservaLabel.AutoSize = true;
-            hora_reservaLabel.Location = new System.Drawing.Point(173, 132);
+            hora_reservaLabel.Location = new System.Drawing.Point(17, 136);
             hora_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             hora_reservaLabel.Name = "hora_reservaLabel";
             hora_reservaLabel.Size = new System.Drawing.Size(91, 15);
@@ -124,7 +130,7 @@
             // data_inicioLabel
             // 
             data_inicioLabel.AutoSize = true;
-            data_inicioLabel.Location = new System.Drawing.Point(173, 162);
+            data_inicioLabel.Location = new System.Drawing.Point(17, 166);
             data_inicioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_inicioLabel.Name = "data_inicioLabel";
             data_inicioLabel.Size = new System.Drawing.Size(80, 15);
@@ -134,7 +140,7 @@
             // data_fimLabel
             // 
             data_fimLabel.AutoSize = true;
-            data_fimLabel.Location = new System.Drawing.Point(173, 192);
+            data_fimLabel.Location = new System.Drawing.Point(17, 196);
             data_fimLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_fimLabel.Name = "data_fimLabel";
             data_fimLabel.Size = new System.Drawing.Size(65, 15);
@@ -144,7 +150,7 @@
             // totalLabel
             // 
             totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(173, 220);
+            totalLabel.Location = new System.Drawing.Point(17, 224);
             totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             totalLabel.Name = "totalLabel";
             totalLabel.Size = new System.Drawing.Size(43, 15);
@@ -154,7 +160,7 @@
             // comentariosLabel
             // 
             comentariosLabel.AutoSize = true;
-            comentariosLabel.Location = new System.Drawing.Point(173, 250);
+            comentariosLabel.Location = new System.Drawing.Point(17, 254);
             comentariosLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             comentariosLabel.Name = "comentariosLabel";
             comentariosLabel.Size = new System.Drawing.Size(90, 15);
@@ -164,7 +170,7 @@
             // estadoLabel
             // 
             estadoLabel.AutoSize = true;
-            estadoLabel.Location = new System.Drawing.Point(173, 280);
+            estadoLabel.Location = new System.Drawing.Point(17, 284);
             estadoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             estadoLabel.Name = "estadoLabel";
             estadoLabel.Size = new System.Drawing.Size(54, 15);
@@ -192,6 +198,7 @@
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
+            this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = this.reservaTableAdapter;
@@ -326,7 +333,7 @@
             // id_reservaTextBox
             // 
             this.id_reservaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "id_reserva", true));
-            this.id_reservaTextBox.Location = new System.Drawing.Point(273, 37);
+            this.id_reservaTextBox.Location = new System.Drawing.Point(117, 41);
             this.id_reservaTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.id_reservaTextBox.Name = "id_reservaTextBox";
             this.id_reservaTextBox.Size = new System.Drawing.Size(265, 21);
@@ -335,7 +342,7 @@
             // id_clienteTextBox
             // 
             this.id_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "id_cliente", true));
-            this.id_clienteTextBox.Location = new System.Drawing.Point(273, 67);
+            this.id_clienteTextBox.Location = new System.Drawing.Point(117, 71);
             this.id_clienteTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.id_clienteTextBox.Name = "id_clienteTextBox";
             this.id_clienteTextBox.Size = new System.Drawing.Size(265, 21);
@@ -344,7 +351,7 @@
             // data_reservaDateTimePicker
             // 
             this.data_reservaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "data_reserva", true));
-            this.data_reservaDateTimePicker.Location = new System.Drawing.Point(273, 97);
+            this.data_reservaDateTimePicker.Location = new System.Drawing.Point(117, 101);
             this.data_reservaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_reservaDateTimePicker.Name = "data_reservaDateTimePicker";
             this.data_reservaDateTimePicker.Size = new System.Drawing.Size(265, 21);
@@ -353,7 +360,7 @@
             // hora_reservaDateTimePicker
             // 
             this.hora_reservaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "hora_reserva", true));
-            this.hora_reservaDateTimePicker.Location = new System.Drawing.Point(273, 127);
+            this.hora_reservaDateTimePicker.Location = new System.Drawing.Point(117, 131);
             this.hora_reservaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.hora_reservaDateTimePicker.Name = "hora_reservaDateTimePicker";
             this.hora_reservaDateTimePicker.Size = new System.Drawing.Size(265, 21);
@@ -362,7 +369,7 @@
             // data_inicioDateTimePicker
             // 
             this.data_inicioDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "Data_inicio", true));
-            this.data_inicioDateTimePicker.Location = new System.Drawing.Point(273, 157);
+            this.data_inicioDateTimePicker.Location = new System.Drawing.Point(117, 161);
             this.data_inicioDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_inicioDateTimePicker.Name = "data_inicioDateTimePicker";
             this.data_inicioDateTimePicker.Size = new System.Drawing.Size(265, 21);
@@ -371,7 +378,7 @@
             // data_fimDateTimePicker
             // 
             this.data_fimDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "Data_fim", true));
-            this.data_fimDateTimePicker.Location = new System.Drawing.Point(273, 187);
+            this.data_fimDateTimePicker.Location = new System.Drawing.Point(117, 191);
             this.data_fimDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_fimDateTimePicker.Name = "data_fimDateTimePicker";
             this.data_fimDateTimePicker.Size = new System.Drawing.Size(265, 21);
@@ -380,7 +387,7 @@
             // totalTextBox
             // 
             this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Total", true));
-            this.totalTextBox.Location = new System.Drawing.Point(273, 217);
+            this.totalTextBox.Location = new System.Drawing.Point(117, 221);
             this.totalTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.totalTextBox.Name = "totalTextBox";
             this.totalTextBox.Size = new System.Drawing.Size(265, 21);
@@ -389,7 +396,7 @@
             // comentariosTextBox
             // 
             this.comentariosTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "comentarios", true));
-            this.comentariosTextBox.Location = new System.Drawing.Point(273, 247);
+            this.comentariosTextBox.Location = new System.Drawing.Point(117, 251);
             this.comentariosTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comentariosTextBox.Name = "comentariosTextBox";
             this.comentariosTextBox.Size = new System.Drawing.Size(265, 21);
@@ -398,7 +405,7 @@
             // estadoTextBox
             // 
             this.estadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "estado", true));
-            this.estadoTextBox.Location = new System.Drawing.Point(273, 277);
+            this.estadoTextBox.Location = new System.Drawing.Point(117, 281);
             this.estadoTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.estadoTextBox.Name = "estadoTextBox";
             this.estadoTextBox.Size = new System.Drawing.Size(265, 21);
@@ -406,12 +413,51 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(576, 158);
+            this.button1.Location = new System.Drawing.Point(616, 265);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 19;
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(557, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 15);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Clientes";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.clienteBindingSource;
+            this.comboBox1.DisplayMember = "nome";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(536, 83);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 22;
+            this.comboBox1.ValueMember = "id_cliente";
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.database1DataSet;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(536, 224);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Inserir";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form4
             // 
@@ -419,6 +465,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nuel;
             this.ClientSize = new System.Drawing.Size(805, 407);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(id_reservaLabel);
             this.Controls.Add(this.id_reservaTextBox);
@@ -450,6 +499,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingNavigator)).EndInit();
             this.reservaBindingNavigator.ResumeLayout(false);
             this.reservaBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,5 +534,10 @@
         private System.Windows.Forms.TextBox comentariosTextBox;
         private System.Windows.Forms.TextBox estadoTextBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
+        private Database1DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private System.Windows.Forms.Button button2;
     }
 }

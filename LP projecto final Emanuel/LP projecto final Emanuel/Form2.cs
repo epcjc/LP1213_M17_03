@@ -40,7 +40,7 @@ namespace LP_projecto_final_Emanuel
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form9 frm = new Form9();
+            Form3 frm = new Form3();
             frm.ShowDialog();
         }
 
@@ -65,6 +65,34 @@ namespace LP_projecto_final_Emanuel
         private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void listarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form13 frm = new Form13();
+            frm.ShowDialog();
+        }
+
+        private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form15 frm = new Form15();
+            frm.ShowDialog();
+        }
+
+        private void reservaDoQuartoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 frm = new Form4();
+            frm.ShowDialog();
         }
     }
 }

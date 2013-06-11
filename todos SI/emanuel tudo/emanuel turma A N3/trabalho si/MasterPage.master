@@ -1,0 +1,150 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Dave Shea" />
+	<meta name="keywords" content="design, css, cascading, style, sheets, xhtml, graphic design, w3c, web standards, visual, display" />
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design." />
+	<meta name="robots" content="all" />
+
+	
+
+	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
+	<script type="text/javascript"></script>
+	
+	<style type="text/css" media="all">
+		@import "sample.css";
+	    .style1
+        {
+            height: 86px;
+        }
+        .style5
+        {
+            height: 217px;
+            width: 917px;
+            text-align: center;
+        }
+	    .style7
+        {
+            font-family: "Wide Latin";
+        }
+	    .style10
+        {
+            text-decoration: none;
+        }
+        .style11
+        {
+            background-color: #33CC33;
+        }
+        .style12
+        {
+            background-color: #FEFFFF;
+        }
+	    #form1
+        {
+            color: #1E21FE;
+            font-weight: 700;
+        }
+	    .style13
+        {
+            width: 836px;
+            height: 178px;
+            margin-left: 0px;
+        }
+	</style>
+	
+</head>
+
+
+<body onload="window.defaultStatus='css Zen Garden: The Beauty in CSS Design';" id="css-zen-garden">
+
+    <form id="form1" runat="server">
+
+<div id="container">
+	<div id="intro">
+		<div id="pageHeader">
+			<h1 class="style5">
+                <span 
+                    lang="pt">
+                <img alt="" class="style13" src="Imagens/carro%20tiva.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span 
+                    class="style7">&nbsp;Stand Automoveis</span></span></h1>
+			
+			
+		</div>
+
+	</div>
+
+	
+	
+
+
+</div>
+
+        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+
+        <br />
+    <asp:LoginView ID="LoginView1" runat="server">
+    </asp:LoginView>
+    <asp:LoginName ID="LoginName1" runat="server" style="color: #0000FF" />
+    <p>
+            <a href="Default.aspx" title="Check the validity of this site&#8217;s XHTML" 
+                class="style10"><strong><span class="style12">Inicio</span></strong></a><span 
+                class="style11"><strong><span class="style12"> &nbsp; 
+			</span></strong></span>
+            <a href="SobreNos.aspx" 
+                title="Check the validity of this site&#8217;s CSS" class="style10"><strong>
+            <span class="style12">Sobre Nos</span></strong></a><span class="style11"><strong><span 
+                class="style12"> &nbsp; 
+			</span></strong></span>
+            <a href="Veiculos.aspx" 
+                title="Read about the accessibility of this site" class="style10"><strong>
+            <span class="style12">Veiculos</span></strong></a><span class="style11"><strong><span 
+                class="style12"> &nbsp;
+			</span></strong></span>
+            <a href="Contatos.aspx" 
+                title="Read about the accessibility of this site" class="style10"><strong>
+            <span class="style12">Contactos</span></strong></a> 
+        </p>
+    <div id="extraDiv2"></div>
+<div id="extraDiv4" class="style1">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <span lang="pt">
+    <br />
+    </span></div>
+
+    </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
+        <span lang="pt">&nbsp;</span></p>
+</body>
+</html>

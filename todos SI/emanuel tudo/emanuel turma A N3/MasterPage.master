@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Dave Shea" />
+	<meta name="keywords" content="design, css, cascading, style, sheets, xhtml, graphic design, w3c, web standards, visual, display" />
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design." />
+	<meta name="robots" content="all" />
+
+	
+
+	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
+	<script type="text/javascript"></script>
+	
+	<style type="text/css" media="all">
+		@import "sample.css";
+	    .style1
+        {
+            height: 86px;
+            width: 1098px;
+        }
+        .style5
+        {
+            height: 217px;
+            width: 917px;
+            text-align: center;
+        }
+	    .style7
+        {
+            font-family: "Wide Latin";
+        }
+	    #form1
+        {
+            color: #1E21FE;
+            font-weight: 700;
+        }
+	    .style13
+        {
+            width: 1099px;
+            height: 178px;
+            margin-left: 0px;
+        }
+	    .style14
+        {
+            background-color: #999966;
+            font-family: Arial;
+        }
+        .style15
+        {
+            font-weight: normal;
+        }
+        .style16
+        {
+            color: #0033CC;
+        }
+        .style19
+        {
+            background-color: #FFFFFF;
+            font-size: large;
+        }
+	    .style21
+        {
+            background-color: #FEFFFF;
+            font-size: large;
+        }
+	</style>
+	
+</head>
+
+
+<body onload="window.defaultStatus='css Zen Garden: The Beauty in CSS Design';" 
+    id="css-zen-garden" bgcolor="#c23002">
+    
+
+    <form id="form1" runat="server">
+
+<div id="container">
+	<div id="intro">
+		<div id="pageHeader">
+			<h1 class="style5">
+                &nbsp;<span 
+                    lang="pt"><img alt="" class="style13" src="Imagens/carro%20tiva.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span 
+                    class="style7">&nbsp;<span class="style16">Stand Automoveis</span></span></span></h1>
+			
+			
+		</div>
+
+	</div>
+
+	
+	
+
+
+</div>
+
+        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+
+        <br />
+    <asp:LoginView ID="LoginView1" runat="server">
+    </asp:LoginView>
+    <asp:LoginName ID="LoginName1" runat="server" style="color: #0000FF" />
+    <dl>
+        <dd>
+            <h3>
+                <span class="style15">
+                <a href="Default.aspx" 
+                    title="Check the validity of this site’s XHTML"><span class="style14">
+                <strong><span class="style19"><em>Inicio</em></span></strong></span></a>&nbsp;
+                <a href="SobreNos.aspx" 
+                    title="Check the validity of this site’s CSS"><span class="style14"><strong>
+                <span class="style21"><em>Sobre Nos</em></span></strong></span></a>&nbsp;
+                <a href="Veiculos.aspx" 
+                    title="Read about the accessibility of this site"><span class="style14">
+                <strong><span class="style21"><em>Veiculos</em></span></strong></span></a>&nbsp;
+                <a href="Contatos.aspx" 
+                    title="Read about the accessibility of this site"><span class="style14">
+                <strong><span class="style21"><em>Contactos</em></span></strong></span></a></span>
+
+                <a href="Fotos.aspx" 
+                    title="Read about the accessibility of this site"><span class="style14">
+                <strong><span class="style21"><em>Fotos</em></span></strong></span></a></span>
+            </h3>
+        </dd>
+    </dl>
+    <div id="extraDiv2"></div>
+<div id="extraDiv4" class="style1">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </div>
+
+    </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    </body>
+</html>

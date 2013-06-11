@@ -20,7 +20,7 @@ namespace LP_projecto_final_Emanuel
         {
             this.Validate();
             this.clienteBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+          
 
         }
 

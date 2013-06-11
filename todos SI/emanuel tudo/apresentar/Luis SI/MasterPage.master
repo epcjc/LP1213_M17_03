@@ -1,0 +1,145 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>HOTEL</title>
+    <style type="text/css">
+        .style1
+        {
+            width: 34px;
+            height: 31px;
+        }
+        .style2
+        {
+            width: 29px;
+            height: 29px;
+        }
+        .style3
+        {
+            width: 32px;
+            height: 29px;
+        }
+        .style4
+        {
+            width: 159px;
+            height: 91px;
+        }
+        .style5
+        {
+            width: 157px;
+            height: 110px;
+        }
+        .style6
+        {
+            width: 156px;
+            height: 117px;
+        }
+        .style7
+        {
+            width: 157px;
+            height: 136px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div id="container">
+
+<div id="header"></div>
+
+<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="Default.aspx" id="current">Home</a></li>
+<li><a href="Quartos%20e%20Suites.aspx"> Quartos E Suites</a></li>
+<li><a href="Sobre%20Hotel.aspx">Sobre Hotel</a></li>
+<li><a href="Noticias.aspx">Noticias</a></li>
+<li><a href="Serviços.aspx">Serviços</a></li>
+<li><a href="Contactos.aspx">contactos</a></li>
+<li><a href="Reserva.aspx">Reservas</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+    <li>
+        <asp:LoginName ID="LoginName1" runat="server" />
+    </li>
+    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+    <asp:LoginView ID="LoginView1" runat="server">
+    </asp:LoginView>
+</ul>
+</div>
+
+<div id="wrapper">
+
+<div id="left">
+  <ul class="list">
+  <li><a href="Imagem.aspx">Upload Imagens</a></li>
+  <li><a href="Ver%20Imagensaspx.aspx">Ver Imagens</a></li>
+  <li><a href="Lazer.aspx">Lazer</a></li> 
+   <li><a href="Prompções.aspx">Promoçoes</a></li>
+  <li><a href="Programa.aspx">Programas</a></li>
+  <li><a href="Oferta.aspx">Oferta</a></li>
+  <li><a href="Alojamento.aspx">Alojamento</a></li> 
+  <li><a href="Atividades.aspx">Atividades</a></li>
+</ul>
+    <p>
+        <img alt="" class="style4" src="images/tornera.jpg" /></p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <img alt="" class="style5" src="images/imagem10.jpg" /></p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <img alt="" class="style6" src="images/imagem11.jpg" /></p>
+</div>
+  
+  
+<div id="right">
+  <p>
+      <img alt="" class="style1" src="images/face.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img alt="" class="style2" src="images/rss.gif" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" class="style3" src="images/youtube.png" />&nbsp; </p>
+    <p>
+        <asp:HyperLink ID="HyperLink1" runat="server" 
+            NavigateUrl="https://www.facebook.com/">Facebok</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" 
+            NavigateUrl="http://www.dn.pt/rss/">RSS</asp:HyperLink>
+&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" 
+            NavigateUrl="http://www.youtube.com/">youtube</asp:HyperLink>
+    </p>
+    <p>&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam aliquet. Nunc quis tellus. Praesent eros turpis, laoreet nec, iaculis vitae, tincidunt ac, tellus. Nam metus nisl, sollicitudin eget, malesuada at, rutrum at, libero. Cras hendrerit magna non nunc. Cras elit nibh, rutrum elementum, lacinia in, molestie sed, enim. Fusce ut elit. Cras nec arcu at purus commodo feugiat. Maecenas interdum nunc in sapien. Nulla facilisi. Phasellus ut neque. </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+        <img alt="" class="style7" src="images/imagem12.jpg" /></p>
+</div>
+  
+<div id="content">
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <p>
+            <br />
+        </p>
+    </asp:ContentPlaceHolder>
+  
+</div>
+
+
+</div>
+
+
+<div id="footer">
+  <p>Design by Dieter Schneider 2006</p>
+  <p> Visit <a href="http://www.webart.no/webshop">www.webart.no</a> for more</p>
+</div>
+    </div>
+    </form>
+</body>
+</html>

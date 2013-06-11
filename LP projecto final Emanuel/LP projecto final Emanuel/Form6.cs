@@ -37,8 +37,7 @@ namespace LP_projecto_final_Emanuel
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Reserva' table. You can move, or remove it, as needed.
-            this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
+            
             
 
         }

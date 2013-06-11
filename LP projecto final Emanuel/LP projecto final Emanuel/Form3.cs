@@ -40,5 +40,36 @@ namespace LP_projecto_final_Emanuel
         {
             this.Close(); 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.clienteTableAdapter.FillByNome(this.database1DataSet.Cliente, textBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillBySexoToolStripButton_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+            try
+            {
+                this.clienteTableAdapter.FillByNome(this.database1DataSet.Cliente, textBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
