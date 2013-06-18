@@ -46,7 +46,7 @@ namespace LP_projecto_final_Emanuel
 
         private void contentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form4 frm = new Form4();
+            Form9 frm = new Form9();
             frm.ShowDialog();
         }
 
@@ -64,7 +64,8 @@ namespace LP_projecto_final_Emanuel
 
         private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form12 frm = new Form12();
+            frm.ShowDialog();
         }
 
         private void listarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -94,5 +95,103 @@ namespace LP_projecto_final_Emanuel
             Form4 frm = new Form4();
             frm.ShowDialog();
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inserirToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form16 frm = new Form16();
+            frm.ShowDialog();
+        }
+
+        private void pesquizarToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form17 frm = new Form17();
+            frm.ShowDialog();
+        }
+
+        private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form18 frm = new Form18();
+            frm.ShowDialog();
+        }
+
+        private void listarToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Form19 frm = new Form19();
+            frm.ShowDialog();
+        }
+
+        private void pesquizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pesquizarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tiposDeQuartoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatorioTipoQuarto frm = new  RelatorioTipoQuarto();
+            frm.ShowDialog();
+            
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          RelatorioClientes frm = new RelatorioClientes();
+            frm.ShowDialog();
+            
+        }
+
+        private void pagamentoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RelatorioPagamento frm = new RelatorioPagamento();
+            frm.ShowDialog();
+           
+        }
+
+        private void preçoDoQuartoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatorioPrecoQuarto frm = new RelatorioPrecoQuarto();
+            frm.ShowDialog();
+            
+        }
+
+        private void quartoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatorioQuarto frm = new RelatorioQuarto();
+            frm.ShowDialog();
+            
+        }
+
+        private void reservaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            RelatorioReserva frm = new RelatorioReserva();
+            frm.ShowDialog();
+        }
+
+        private void tiposDePagamentoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RelatorioTipoPagamento frm = new RelatorioTipoPagamento();
+            frm.ShowDialog();
+        }
+       
     }
 }

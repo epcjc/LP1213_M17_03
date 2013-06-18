@@ -57,6 +57,7 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).BeginInit();
@@ -85,6 +86,7 @@
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
+            this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
@@ -231,7 +233,7 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewImageColumn1});
             this.clienteDataGridView.DataSource = this.clienteBindingSource;
-            this.clienteDataGridView.Location = new System.Drawing.Point(0, 28);
+            this.clienteDataGridView.Location = new System.Drawing.Point(0, 80);
             this.clienteDataGridView.Name = "clienteDataGridView";
             this.clienteDataGridView.Size = new System.Drawing.Size(901, 220);
             this.clienteDataGridView.TabIndex = 1;
@@ -291,11 +293,21 @@
             this.dataGridViewImageColumn1.HeaderText = "Foto";
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(351, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Listar Clientes";
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(901, 328);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.clienteDataGridView);
             this.Controls.Add(this.clienteBindingNavigator);
             this.Name = "Form8";
@@ -341,5 +353,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.Label label1;
     }
 }

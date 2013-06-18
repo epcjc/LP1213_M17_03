@@ -32,11 +32,8 @@
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.database1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
-            this.fKReservaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idreservaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datainicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,11 +41,15 @@
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKReservaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
+            this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,11 +68,16 @@
             this.listBox1.DataSource = this.clienteBindingSource;
             this.listBox1.DisplayMember = "nome";
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(83, 34);
+            this.listBox1.Location = new System.Drawing.Point(89, 122);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.Size = new System.Drawing.Size(120, 82);
             this.listBox1.TabIndex = 0;
             this.listBox1.ValueMember = "id_cliente";
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.database1DataSetBindingSource;
             // 
             // dataGridView1
             // 
@@ -86,28 +92,10 @@
             this.comentariosDataGridViewTextBoxColumn,
             this.estadoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.fKReservaClienteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 151);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 232);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(746, 171);
+            this.dataGridView1.Size = new System.Drawing.Size(746, 165);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.database1DataSetBindingSource;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKReservaClienteBindingSource
-            // 
-            this.fKReservaClienteBindingSource.DataMember = "FK_Reserva_Cliente";
-            this.fKReservaClienteBindingSource.DataSource = this.clienteBindingSource;
-            // 
-            // reservaTableAdapter
-            // 
-            this.reservaTableAdapter.ClearBeforeFill = true;
             // 
             // idreservaDataGridViewTextBoxColumn
             // 
@@ -152,20 +140,43 @@
             this.estadoDataGridViewTextBoxColumn.HeaderText = "estado";
             this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
             // 
+            // fKReservaClienteBindingSource
+            // 
+            this.fKReservaClienteBindingSource.DataMember = "FK_Reserva_Cliente";
+            this.fKReservaClienteBindingSource.DataSource = this.clienteBindingSource;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // reservaTableAdapter
+            // 
+            this.reservaTableAdapter.ClearBeforeFill = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 15);
+            this.label1.Location = new System.Drawing.Point(89, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Escolher Clientes";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(339, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Lista de Reservas";
             // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(882, 352);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listBox1);
@@ -174,8 +185,8 @@
             this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -200,6 +211,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
 
     }
 }

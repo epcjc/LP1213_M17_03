@@ -40,6 +40,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.clienteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -63,10 +65,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
+            this.label2 = new System.Windows.Forms.Label();
             id_clienteLabel = new System.Windows.Forms.Label();
             nomeLabel = new System.Windows.Forms.Label();
             moradaLabel = new System.Windows.Forms.Label();
@@ -84,7 +85,7 @@
             // id_clienteLabel
             // 
             id_clienteLabel.AutoSize = true;
-            id_clienteLabel.Location = new System.Drawing.Point(206, 34);
+            id_clienteLabel.Location = new System.Drawing.Point(199, 104);
             id_clienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_clienteLabel.Name = "id_clienteLabel";
             id_clienteLabel.Size = new System.Drawing.Size(70, 15);
@@ -94,7 +95,7 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(206, 64);
+            nomeLabel.Location = new System.Drawing.Point(199, 134);
             nomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(47, 15);
@@ -104,7 +105,7 @@
             // moradaLabel
             // 
             moradaLabel.AutoSize = true;
-            moradaLabel.Location = new System.Drawing.Point(206, 94);
+            moradaLabel.Location = new System.Drawing.Point(199, 164);
             moradaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             moradaLabel.Name = "moradaLabel";
             moradaLabel.Size = new System.Drawing.Size(60, 15);
@@ -114,7 +115,7 @@
             // contactoLabel
             // 
             contactoLabel.AutoSize = true;
-            contactoLabel.Location = new System.Drawing.Point(206, 124);
+            contactoLabel.Location = new System.Drawing.Point(199, 194);
             contactoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             contactoLabel.Name = "contactoLabel";
             contactoLabel.Size = new System.Drawing.Size(65, 15);
@@ -124,7 +125,7 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(206, 154);
+            emailLabel.Location = new System.Drawing.Point(199, 224);
             emailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(48, 15);
@@ -134,7 +135,7 @@
             // data_nascLabel
             // 
             data_nascLabel.AutoSize = true;
-            data_nascLabel.Location = new System.Drawing.Point(206, 185);
+            data_nascLabel.Location = new System.Drawing.Point(199, 255);
             data_nascLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_nascLabel.Name = "data_nascLabel";
             data_nascLabel.Size = new System.Drawing.Size(73, 15);
@@ -144,7 +145,7 @@
             // bILabel
             // 
             bILabel.AutoSize = true;
-            bILabel.Location = new System.Drawing.Point(206, 214);
+            bILabel.Location = new System.Drawing.Point(199, 284);
             bILabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             bILabel.Name = "bILabel";
             bILabel.Size = new System.Drawing.Size(24, 15);
@@ -154,7 +155,7 @@
             // codigo_postalLabel
             // 
             codigo_postalLabel.AutoSize = true;
-            codigo_postalLabel.Location = new System.Drawing.Point(206, 244);
+            codigo_postalLabel.Location = new System.Drawing.Point(199, 314);
             codigo_postalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             codigo_postalLabel.Name = "codigo_postalLabel";
             codigo_postalLabel.Size = new System.Drawing.Size(99, 15);
@@ -188,7 +189,7 @@
             this.clienteBindingNavigator.Name = "clienteBindingNavigator";
             this.clienteBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.clienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clienteBindingNavigator.Size = new System.Drawing.Size(791, 25);
+            this.clienteBindingNavigator.Size = new System.Drawing.Size(842, 25);
             this.clienteBindingNavigator.TabIndex = 0;
             this.clienteBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -200,6 +201,16 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -290,7 +301,7 @@
             // id_clienteTextBox
             // 
             this.id_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "id_cliente", true));
-            this.id_clienteTextBox.Location = new System.Drawing.Point(313, 31);
+            this.id_clienteTextBox.Location = new System.Drawing.Point(306, 101);
             this.id_clienteTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.id_clienteTextBox.Name = "id_clienteTextBox";
             this.id_clienteTextBox.Size = new System.Drawing.Size(265, 21);
@@ -299,7 +310,7 @@
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(313, 61);
+            this.nomeTextBox.Location = new System.Drawing.Point(306, 131);
             this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(265, 21);
@@ -308,7 +319,7 @@
             // moradaTextBox
             // 
             this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "morada", true));
-            this.moradaTextBox.Location = new System.Drawing.Point(313, 91);
+            this.moradaTextBox.Location = new System.Drawing.Point(306, 161);
             this.moradaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.moradaTextBox.Name = "moradaTextBox";
             this.moradaTextBox.Size = new System.Drawing.Size(265, 21);
@@ -317,7 +328,7 @@
             // contactoTextBox
             // 
             this.contactoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "contacto", true));
-            this.contactoTextBox.Location = new System.Drawing.Point(313, 121);
+            this.contactoTextBox.Location = new System.Drawing.Point(306, 191);
             this.contactoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.contactoTextBox.Name = "contactoTextBox";
             this.contactoTextBox.Size = new System.Drawing.Size(265, 21);
@@ -326,7 +337,7 @@
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(313, 151);
+            this.emailTextBox.Location = new System.Drawing.Point(306, 221);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(265, 21);
@@ -335,7 +346,7 @@
             // data_nascDateTimePicker
             // 
             this.data_nascDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.clienteBindingSource, "data_nasc", true));
-            this.data_nascDateTimePicker.Location = new System.Drawing.Point(313, 181);
+            this.data_nascDateTimePicker.Location = new System.Drawing.Point(306, 251);
             this.data_nascDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.data_nascDateTimePicker.Name = "data_nascDateTimePicker";
             this.data_nascDateTimePicker.Size = new System.Drawing.Size(265, 21);
@@ -344,7 +355,7 @@
             // bITextBox
             // 
             this.bITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "BI", true));
-            this.bITextBox.Location = new System.Drawing.Point(313, 211);
+            this.bITextBox.Location = new System.Drawing.Point(306, 281);
             this.bITextBox.Margin = new System.Windows.Forms.Padding(4);
             this.bITextBox.Name = "bITextBox";
             this.bITextBox.Size = new System.Drawing.Size(265, 21);
@@ -353,7 +364,7 @@
             // codigo_postalTextBox
             // 
             this.codigo_postalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Codigo_postal", true));
-            this.codigo_postalTextBox.Location = new System.Drawing.Point(313, 241);
+            this.codigo_postalTextBox.Location = new System.Drawing.Point(306, 311);
             this.codigo_postalTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.codigo_postalTextBox.Name = "codigo_postalTextBox";
             this.codigo_postalTextBox.Size = new System.Drawing.Size(265, 21);
@@ -361,7 +372,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(626, 239);
+            this.button1.Location = new System.Drawing.Point(619, 309);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 17;
@@ -372,7 +383,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 316);
+            this.label1.Location = new System.Drawing.Point(168, 386);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 15);
             this.label1.TabIndex = 18;
@@ -380,7 +391,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(313, 315);
+            this.textBox1.Location = new System.Drawing.Point(306, 385);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 21);
             this.textBox1.TabIndex = 19;
@@ -388,23 +399,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(464, 311);
+            this.button2.Location = new System.Drawing.Point(457, 381);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 20;
             this.button2.Text = "Pesquisar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.database1DataSet;
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // clienteTableAdapter
             // 
@@ -417,6 +418,7 @@
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
+            this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
@@ -424,12 +426,22 @@
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(365, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 15);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Pesquizar clientes";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nuel;
-            this.ClientSize = new System.Drawing.Size(791, 356);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.ClientSize = new System.Drawing.Size(842, 427);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -499,5 +511,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
     }
 }

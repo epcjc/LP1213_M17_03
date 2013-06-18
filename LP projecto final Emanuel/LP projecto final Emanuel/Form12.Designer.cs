@@ -56,6 +56,7 @@
             this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
             this.quarto1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quarto1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Quarto1TableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
             id_preco_quartoLabel = new System.Windows.Forms.Label();
             preco_quartoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -258,9 +259,9 @@
             this.listBox1.DataSource = this.quartoBindingSource;
             this.listBox1.DisplayMember = "tipo_quarto";
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(299, 71);
+            this.listBox1.Location = new System.Drawing.Point(299, 101);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 173);
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 5;
             this.listBox1.ValueMember = "andar_quarto";
             // 
@@ -282,11 +283,21 @@
             // 
             this.quarto1TableAdapter.ClearBeforeFill = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(159, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Inserir Preço do Quarto";
+            // 
             // Form12
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 460);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(id_preco_quartoLabel);
             this.Controls.Add(this.id_preco_quartoTextBox);
@@ -334,5 +345,6 @@
         private Database1DataSetTableAdapters.QuartoTableAdapter quartoTableAdapter;
         private System.Windows.Forms.BindingSource quarto1BindingSource;
         private Database1DataSetTableAdapters.Quarto1TableAdapter quarto1TableAdapter;
+        private System.Windows.Forms.Label label1;
     }
 }

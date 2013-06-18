@@ -15,5 +15,20 @@ namespace LP_projecto_final_Emanuel
         {
             InitializeComponent();
         }
+
+        private void pagamentoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.pagamentoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+
+        }
+
+        private void Form16_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database1DataSet.Pagamento' table. You can move, or remove it, as needed.
+            this.pagamentoTableAdapter.Fill(this.database1DataSet.Pagamento);
+
+        }
     }
 }

@@ -63,6 +63,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
@@ -182,6 +183,7 @@
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
+            this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
@@ -405,12 +407,22 @@
             this.label10.TabIndex = 28;
             this.label10.Text = "Checkout";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(251, 24);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 15);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Inserir cliente";
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nuel;
             this.ClientSize = new System.Drawing.Size(783, 395);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox2);
@@ -491,5 +503,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

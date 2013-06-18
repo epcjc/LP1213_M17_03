@@ -16,7 +16,7 @@ namespace LP_projecto_final_Emanuel
            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form5());
+            Application.Run(new Form1());
             
         }
     }

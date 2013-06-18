@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.idclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,17 +39,21 @@
             this.bIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigopostalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
+            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.fKPagamentoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.fKReservaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.fKPagamentoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.PagamentoTableAdapter();
-            this.fKReservaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoClienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -72,24 +73,10 @@
             this.codigopostalDataGridViewTextBoxColumn,
             this.fotoDataGridViewImageColumn});
             this.dataGridView1.DataSource = this.clienteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 140);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 210);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(759, 239);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.database1DataSet;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
             // 
             // idclienteDataGridViewTextBoxColumn
             // 
@@ -146,32 +133,56 @@
             this.fotoDataGridViewImageColumn.HeaderText = "Foto";
             this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
             // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
             // comboBox1
             // 
             this.comboBox1.DataSource = this.fKPagamentoClienteBindingSource;
             this.comboBox1.DisplayMember = "valor_pagamento";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(112, 59);
+            this.comboBox1.Location = new System.Drawing.Point(107, 129);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.ValueMember = "id_pagamento";
+            // 
+            // fKPagamentoClienteBindingSource
+            // 
+            this.fKPagamentoClienteBindingSource.DataMember = "FK_Pagamento_Cliente";
+            this.fKPagamentoClienteBindingSource.DataSource = this.clienteBindingSource;
             // 
             // comboBox2
             // 
             this.comboBox2.DataSource = this.fKReservaClienteBindingSource;
             this.comboBox2.DisplayMember = "Data_inicio";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(112, 12);
+            this.comboBox2.Location = new System.Drawing.Point(107, 82);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 2;
             this.comboBox2.ValueMember = "id_reserva";
             // 
+            // fKReservaClienteBindingSource
+            // 
+            this.fKReservaClienteBindingSource.DataMember = "FK_Reserva_Cliente";
+            this.fKReservaClienteBindingSource.DataSource = this.clienteBindingSource;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 62);
+            this.label1.Location = new System.Drawing.Point(4, 132);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 3;
@@ -180,29 +191,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 20);
+            this.label2.Location = new System.Drawing.Point(7, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Reserva";
             // 
-            // fKPagamentoClienteBindingSource
-            // 
-            this.fKPagamentoClienteBindingSource.DataMember = "FK_Pagamento_Cliente";
-            this.fKPagamentoClienteBindingSource.DataSource = this.clienteBindingSource;
-            // 
             // pagamentoTableAdapter
             // 
             this.pagamentoTableAdapter.ClearBeforeFill = true;
             // 
-            // fKReservaClienteBindingSource
-            // 
-            this.fKReservaClienteBindingSource.DataMember = "FK_Reserva_Cliente";
-            this.fKReservaClienteBindingSource.DataSource = this.clienteBindingSource;
-            // 
             // reservaTableAdapter
             // 
             this.reservaTableAdapter.ClearBeforeFill = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(328, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Pesquizar reserva";
             // 
             // Form5
             // 
@@ -210,6 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nuel;
             this.ClientSize = new System.Drawing.Size(784, 391);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox2);
@@ -219,8 +230,8 @@
             this.Text = "Pesquisar";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoClienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -251,5 +262,6 @@
         private Database1DataSetTableAdapters.PagamentoTableAdapter pagamentoTableAdapter;
         private System.Windows.Forms.BindingSource fKReservaClienteBindingSource;
         private Database1DataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
+        private System.Windows.Forms.Label label3;
     }
 }
