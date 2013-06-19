@@ -29,7 +29,7 @@ namespace LP_projecto_final_Emanuel
             if (resposta == 6)
             {
 
-                Form2 frm = new Form2();
+                Form11 frm = new Form11();
                 frm.ShowDialog();
             }
             else if (resposta == 7)

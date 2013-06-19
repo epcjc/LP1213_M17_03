@@ -48,16 +48,22 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.quartoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.quartoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idquartoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoquartoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precoquartoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.andarquartoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quartoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.fKReservaQuartosQuartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reserva_quartosTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Reserva_quartosTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingNavigator)).BeginInit();
             this.quartoBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quartoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuartoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -77,17 +83,21 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = this.quartoTableAdapter;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
             // quartoBindingNavigator
             // 
@@ -115,7 +125,7 @@
             this.quartoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.quartoBindingNavigator.Name = "quartoBindingNavigator";
             this.quartoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.quartoBindingNavigator.Size = new System.Drawing.Size(520, 25);
+            this.quartoBindingNavigator.Size = new System.Drawing.Size(607, 25);
             this.quartoBindingNavigator.TabIndex = 0;
             this.quartoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -172,7 +182,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(58, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -218,58 +228,86 @@
             this.quartoDataGridView.AutoGenerateColumns = false;
             this.quartoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.quartoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.quartoDataGridView.DataSource = this.quartoBindingSource;
-            this.quartoDataGridView.Location = new System.Drawing.Point(12, 84);
+            this.idquartoDataGridViewTextBoxColumn,
+            this.tipoquartoDataGridViewTextBoxColumn,
+            this.precoquartoDataGridViewTextBoxColumn,
+            this.andarquartoDataGridViewTextBoxColumn});
+            this.quartoDataGridView.DataSource = this.quartoBindingSource1;
+            this.quartoDataGridView.Location = new System.Drawing.Point(49, 92);
             this.quartoDataGridView.Name = "quartoDataGridView";
-            this.quartoDataGridView.Size = new System.Drawing.Size(446, 220);
+            this.quartoDataGridView.Size = new System.Drawing.Size(442, 220);
             this.quartoDataGridView.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
+            // idquartoDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_quarto";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_quarto";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idquartoDataGridViewTextBoxColumn.DataPropertyName = "id_quarto";
+            this.idquartoDataGridViewTextBoxColumn.HeaderText = "id_quarto";
+            this.idquartoDataGridViewTextBoxColumn.Name = "idquartoDataGridViewTextBoxColumn";
+            this.idquartoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn2
+            // tipoquartoDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "tipo_quarto";
-            this.dataGridViewTextBoxColumn2.HeaderText = "tipo_quarto";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.tipoquartoDataGridViewTextBoxColumn.DataPropertyName = "tipo_quarto";
+            this.tipoquartoDataGridViewTextBoxColumn.HeaderText = "tipo_quarto";
+            this.tipoquartoDataGridViewTextBoxColumn.Name = "tipoquartoDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn3
+            // precoquartoDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "preco_quarto";
-            this.dataGridViewTextBoxColumn3.HeaderText = "preco_quarto";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.precoquartoDataGridViewTextBoxColumn.DataPropertyName = "preco_quarto";
+            this.precoquartoDataGridViewTextBoxColumn.HeaderText = "preco_quarto";
+            this.precoquartoDataGridViewTextBoxColumn.Name = "precoquartoDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn4
+            // andarquartoDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "andar_quarto";
-            this.dataGridViewTextBoxColumn4.HeaderText = "andar_quarto";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.andarquartoDataGridViewTextBoxColumn.DataPropertyName = "andar_quarto";
+            this.andarquartoDataGridViewTextBoxColumn.HeaderText = "andar_quarto";
+            this.andarquartoDataGridViewTextBoxColumn.Name = "andarquartoDataGridViewTextBoxColumn";
+            // 
+            // quartoBindingSource1
+            // 
+            this.quartoBindingSource1.DataMember = "Quarto";
+            this.quartoBindingSource1.DataSource = this.database1DataSet;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(201, 65);
+            this.label1.Location = new System.Drawing.Point(234, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Listar Quartos";
+            this.label1.Text = "Lista dos Quartos";
+            // 
+            // fKReservaQuartosQuartoBindingSource
+            // 
+            this.fKReservaQuartosQuartoBindingSource.DataMember = "FK_Reserva quartos_Quarto";
+            this.fKReservaQuartosQuartoBindingSource.DataSource = this.quartoBindingSource;
+            // 
+            // reserva_quartosTableAdapter
+            // 
+            this.reserva_quartosTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(497, 289);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Ir para Menu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form13
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 341);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.ClientSize = new System.Drawing.Size(607, 341);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.quartoDataGridView);
             this.Controls.Add(this.quartoBindingNavigator);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form13";
             this.Text = "Form13";
             this.Load += new System.EventHandler(this.Form13_Load);
@@ -279,6 +317,8 @@
             this.quartoBindingNavigator.ResumeLayout(false);
             this.quartoBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quartoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuartoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,10 +344,14 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton quartoBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView quartoDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource fKReservaQuartosQuartoBindingSource;
+        private Database1DataSetTableAdapters.Reserva_quartosTableAdapter reserva_quartosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idquartoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoquartoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precoquartoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn andarquartoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource quartoBindingSource1;
+        private System.Windows.Forms.Button button1;
     }
 }

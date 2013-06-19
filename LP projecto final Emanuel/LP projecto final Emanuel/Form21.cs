@@ -38,5 +38,43 @@ namespace LP_projecto_final_Emanuel
             this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+               
+            {
+                this.quartoTableAdapter.FillbyAndarDoQuarto(this.database1DataSet.Quarto, textBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillBySexoToolStripButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+            try
+            {
+                this.quartoTableAdapter.FillbyAndarDoQuarto(this.database1DataSet.Quarto, textBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+             
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

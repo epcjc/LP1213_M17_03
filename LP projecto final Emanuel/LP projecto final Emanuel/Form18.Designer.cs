@@ -29,79 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label id_quartoLabel;
-            System.Windows.Forms.Label tipo_quartoLabel;
-            System.Windows.Forms.Label preco_quartoLabel;
-            System.Windows.Forms.Label andar_quartoLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form18));
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
-            this.quartoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.quartoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.id_quartoTextBox = new System.Windows.Forms.TextBox();
-            this.tipo_quartoTextBox = new System.Windows.Forms.TextBox();
-            this.preco_quartoTextBox = new System.Windows.Forms.TextBox();
-            this.andar_quartoTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            id_quartoLabel = new System.Windows.Forms.Label();
-            tipo_quartoLabel = new System.Windows.Forms.Label();
-            preco_quartoLabel = new System.Windows.Forms.Label();
-            andar_quartoLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.quartoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingNavigator)).BeginInit();
-            this.quartoBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // id_quartoLabel
-            // 
-            id_quartoLabel.AutoSize = true;
-            id_quartoLabel.Location = new System.Drawing.Point(40, 61);
-            id_quartoLabel.Name = "id_quartoLabel";
-            id_quartoLabel.Size = new System.Drawing.Size(51, 13);
-            id_quartoLabel.TabIndex = 1;
-            id_quartoLabel.Text = "id quarto:";
-            // 
-            // tipo_quartoLabel
-            // 
-            tipo_quartoLabel.AutoSize = true;
-            tipo_quartoLabel.Location = new System.Drawing.Point(40, 87);
-            tipo_quartoLabel.Name = "tipo_quartoLabel";
-            tipo_quartoLabel.Size = new System.Drawing.Size(60, 13);
-            tipo_quartoLabel.TabIndex = 3;
-            tipo_quartoLabel.Text = "tipo quarto:";
-            // 
-            // preco_quartoLabel
-            // 
-            preco_quartoLabel.AutoSize = true;
-            preco_quartoLabel.Location = new System.Drawing.Point(40, 113);
-            preco_quartoLabel.Name = "preco_quartoLabel";
-            preco_quartoLabel.Size = new System.Drawing.Size(70, 13);
-            preco_quartoLabel.TabIndex = 5;
-            preco_quartoLabel.Text = "preco quarto:";
-            // 
-            // andar_quartoLabel
-            // 
-            andar_quartoLabel.AutoSize = true;
-            andar_quartoLabel.Location = new System.Drawing.Point(40, 139);
-            andar_quartoLabel.Name = "andar_quartoLabel";
-            andar_quartoLabel.Size = new System.Drawing.Size(70, 13);
-            andar_quartoLabel.TabIndex = 7;
-            andar_quartoLabel.Text = "andar quarto:";
             // 
             // database1DataSet
             // 
@@ -120,216 +68,151 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = this.quartoTableAdapter;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // quartoBindingNavigator
-            // 
-            this.quartoBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.quartoBindingNavigator.BindingSource = this.quartoBindingSource;
-            this.quartoBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.quartoBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.quartoBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.quartoBindingNavigatorSaveItem});
-            this.quartoBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.quartoBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.quartoBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.quartoBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.quartoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.quartoBindingNavigator.Name = "quartoBindingNavigator";
-            this.quartoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.quartoBindingNavigator.Size = new System.Drawing.Size(600, 25);
-            this.quartoBindingNavigator.TabIndex = 0;
-            this.quartoBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // quartoBindingNavigatorSaveItem
-            // 
-            this.quartoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.quartoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("quartoBindingNavigatorSaveItem.Image")));
-            this.quartoBindingNavigatorSaveItem.Name = "quartoBindingNavigatorSaveItem";
-            this.quartoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.quartoBindingNavigatorSaveItem.Text = "Save Data";
-            this.quartoBindingNavigatorSaveItem.Click += new System.EventHandler(this.quartoBindingNavigatorSaveItem_Click_1);
-            // 
-            // id_quartoTextBox
-            // 
-            this.id_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quartoBindingSource, "id_quarto", true));
-            this.id_quartoTextBox.Location = new System.Drawing.Point(116, 58);
-            this.id_quartoTextBox.Name = "id_quartoTextBox";
-            this.id_quartoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_quartoTextBox.TabIndex = 2;
-            // 
-            // tipo_quartoTextBox
-            // 
-            this.tipo_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quartoBindingSource, "tipo_quarto", true));
-            this.tipo_quartoTextBox.Location = new System.Drawing.Point(116, 84);
-            this.tipo_quartoTextBox.Name = "tipo_quartoTextBox";
-            this.tipo_quartoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.tipo_quartoTextBox.TabIndex = 4;
-            // 
-            // preco_quartoTextBox
-            // 
-            this.preco_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quartoBindingSource, "preco_quarto", true));
-            this.preco_quartoTextBox.Location = new System.Drawing.Point(116, 110);
-            this.preco_quartoTextBox.Name = "preco_quartoTextBox";
-            this.preco_quartoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.preco_quartoTextBox.TabIndex = 6;
-            // 
-            // andar_quartoTextBox
-            // 
-            this.andar_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quartoBindingSource, "andar_quarto", true));
-            this.andar_quartoTextBox.Location = new System.Drawing.Point(116, 136);
-            this.andar_quartoTextBox.Name = "andar_quartoTextBox";
-            this.andar_quartoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.andar_quartoTextBox.TabIndex = 8;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(282, 139);
+            this.button1.Location = new System.Drawing.Point(132, 237);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 9;
             this.button1.Text = "Inserir";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(230, 29);
+            this.label1.Location = new System.Drawing.Point(268, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 10;
             this.label1.Text = "Inserir Quartos";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(47, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Tipo Quarto";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(47, 137);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Preço Quarto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(47, 170);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Andar Quarto";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(136, 99);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 20);
+            this.textBox1.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(136, 137);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(116, 20);
+            this.textBox2.TabIndex = 15;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(251, 237);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Ir para Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(402, 82);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(163, 89);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(402, 177);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(163, 23);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Importar Imagem";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.quartoBindingSource1;
+            this.comboBox1.DisplayMember = "andar_quarto";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(136, 170);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(116, 21);
+            this.comboBox1.TabIndex = 20;
+            this.comboBox1.ValueMember = "id_quarto";
+            // 
+            // quartoBindingSource1
+            // 
+            this.quartoBindingSource1.DataMember = "Quarto";
+            this.quartoBindingSource1.DataSource = this.database1DataSet;
+            // 
             // Form18
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 261);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.ClientSize = new System.Drawing.Size(700, 311);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(id_quartoLabel);
-            this.Controls.Add(this.id_quartoTextBox);
-            this.Controls.Add(tipo_quartoLabel);
-            this.Controls.Add(this.tipo_quartoTextBox);
-            this.Controls.Add(preco_quartoLabel);
-            this.Controls.Add(this.preco_quartoTextBox);
-            this.Controls.Add(andar_quartoLabel);
-            this.Controls.Add(this.andar_quartoTextBox);
-            this.Controls.Add(this.quartoBindingNavigator);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form18";
             this.Text = "Form18";
             this.Load += new System.EventHandler(this.Form18_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingNavigator)).EndInit();
-            this.quartoBindingNavigator.ResumeLayout(false);
-            this.quartoBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,25 +224,18 @@
         private System.Windows.Forms.BindingSource quartoBindingSource;
         private Database1DataSetTableAdapters.QuartoTableAdapter quartoTableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator quartoBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton quartoBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox id_quartoTextBox;
-        private System.Windows.Forms.TextBox tipo_quartoTextBox;
-        private System.Windows.Forms.TextBox preco_quartoTextBox;
-        private System.Windows.Forms.TextBox andar_quartoTextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource quartoBindingSource1;
 
     }
 }

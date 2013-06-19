@@ -30,5 +30,10 @@ namespace LP_projecto_final_Emanuel
             this.pagamentoTableAdapter.Fill(this.database1DataSet.Pagamento);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

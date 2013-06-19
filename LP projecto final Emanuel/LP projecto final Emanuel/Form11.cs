@@ -26,9 +26,41 @@ namespace LP_projecto_final_Emanuel
 
         private void Form11_Load(object sender, EventArgs e)
         {
+// TODO: This line of code loads data into the 'database1DataSet.Utilizadores' table. You can move, or remove it, as needed.
+this.utilizadoresTableAdapter.Fill(this.database1DataSet.Utilizadores);
             // TODO: This line of code loads data into the 'database1DataSet.Preço_do_quarto' table. You can move, or remove it, as needed.
             this.preço_do_quartoTableAdapter.Fill(this.database1DataSet.Preço_do_quarto);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int res;
+            res = (int)this.utilizadoresTableAdapter.CheckLogin(this.textBox1.Text, this.textBox2.Text);
+
+            if (res != 1)
+            {
+                textBox2.Text = "";
+                MessageBox.Show("Acesso negado", "Erro a fazer login", MessageBoxButtons.OK);
+            }
+            else
+            {
+               
+               Form2 frm = new Form2();
+                frm.ShowDialog();
+        }
     }
+
+        private void utilizadoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+this.Validate();
+this.utilizadoresBindingSource.EndEdit();
+this.tableAdapterManager.UpdateAll(this.database1DataSet);
+        
+        }
 }

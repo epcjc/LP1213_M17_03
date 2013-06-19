@@ -114,5 +114,26 @@ namespace LP_projecto_final_Emanuel
         {
 
         }
-    }
-}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             try
+            {
+
+                
+               this.preço_do_quartoTableAdapter.Insert(this.textBox1.Text);
+                MessageBox.Show("Inserido com Sucesso");
+                 
+                
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+

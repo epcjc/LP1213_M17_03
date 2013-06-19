@@ -46,6 +46,7 @@
             this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
@@ -68,9 +69,9 @@
             this.listBox1.DataSource = this.clienteBindingSource;
             this.listBox1.DisplayMember = "nome";
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(89, 122);
+            this.listBox1.Location = new System.Drawing.Point(104, 122);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 82);
+            this.listBox1.Size = new System.Drawing.Size(139, 82);
             this.listBox1.TabIndex = 0;
             this.listBox1.ValueMember = "id_cliente";
             // 
@@ -92,9 +93,9 @@
             this.comentariosDataGridViewTextBoxColumn,
             this.estadoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.fKReservaClienteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 232);
+            this.dataGridView1.Location = new System.Drawing.Point(21, 232);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(746, 165);
+            this.dataGridView1.Size = new System.Drawing.Size(870, 165);
             this.dataGridView1.TabIndex = 1;
             // 
             // idreservaDataGridViewTextBoxColumn
@@ -156,30 +157,44 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 90);
+            this.label1.Location = new System.Drawing.Point(104, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 13);
+            this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Escolher Clientes";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(339, 35);
+            this.label2.Location = new System.Drawing.Point(395, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.Size = new System.Drawing.Size(115, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Lista de Reservas";
+            this.label2.Text = "Lista das Reservas";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(398, 122);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Ir para Menu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form9
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 352);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.ClientSize = new System.Drawing.Size(1029, 352);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listBox1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form9";
             this.Text = "Form9";
             this.Load += new System.EventHandler(this.Form9_Load);
@@ -212,6 +227,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
 
     }
 }

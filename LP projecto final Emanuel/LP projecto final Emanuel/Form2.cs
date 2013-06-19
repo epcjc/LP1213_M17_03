@@ -52,8 +52,7 @@ namespace LP_projecto_final_Emanuel
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form7 frm = new Form7();
-            frm.ShowDialog();
+           
         }
 
         private void indexToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,8 +102,7 @@ namespace LP_projecto_final_Emanuel
 
         private void inserirToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Form16 frm = new Form16();
-            frm.ShowDialog();
+           
         }
 
         private void pesquizarToolStripMenuItem4_Click(object sender, EventArgs e)
@@ -126,13 +124,49 @@ namespace LP_projecto_final_Emanuel
 
         private void listarToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
-            Form19 frm = new Form19();
+            Form16 frm = new Form16();
             frm.ShowDialog();
         }
 
         private void pesquizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+             Form21 frm = new Form21();
+            frm.ShowDialog();
+        }
 
+        private void listarClientePorReservaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void pesquizarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void inserirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+             Form16 frm = new Form16();
+            frm.ShowDialog();
+        }
+
+        private void pesquizarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void listaDeClientesPorValorDePagamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             Form10 frm = new Form10();
+            frm.ShowDialog();
+        }
+        }
+        }
         }
 
         private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -190,6 +224,40 @@ namespace LP_projecto_final_Emanuel
         private void tiposDePagamentoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             RelatorioTipoPagamento frm = new RelatorioTipoPagamento();
+            frm.ShowDialog();
+        }
+
+        private void pesquizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inserirToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Form14 frm = new Form14();
+            frm.ShowDialog();
+        }
+
+        private void listarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form20 frm = new Form20();
+            frm.ShowDialog();
+        }
+
+        private void listarClientePorReservaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 frm = new Form5();
+            frm.ShowDialog();
+        }
+
+        private void listaDeClientesPorValorDePagamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listaDeClientesPorValorDePagamentoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form10 frm = new Form10();
             frm.ShowDialog();
         }
        

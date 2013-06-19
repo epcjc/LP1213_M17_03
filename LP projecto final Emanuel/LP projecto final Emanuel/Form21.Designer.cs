@@ -58,6 +58,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             id_quartoLabel = new System.Windows.Forms.Label();
             tipo_quartoLabel = new System.Windows.Forms.Label();
             preco_quartoLabel = new System.Windows.Forms.Label();
@@ -71,36 +73,36 @@
             // id_quartoLabel
             // 
             id_quartoLabel.AutoSize = true;
-            id_quartoLabel.Location = new System.Drawing.Point(95, 89);
+            id_quartoLabel.Location = new System.Drawing.Point(111, 89);
             id_quartoLabel.Name = "id_quartoLabel";
-            id_quartoLabel.Size = new System.Drawing.Size(51, 13);
+            id_quartoLabel.Size = new System.Drawing.Size(61, 13);
             id_quartoLabel.TabIndex = 1;
             id_quartoLabel.Text = "id quarto:";
             // 
             // tipo_quartoLabel
             // 
             tipo_quartoLabel.AutoSize = true;
-            tipo_quartoLabel.Location = new System.Drawing.Point(95, 115);
+            tipo_quartoLabel.Location = new System.Drawing.Point(111, 115);
             tipo_quartoLabel.Name = "tipo_quartoLabel";
-            tipo_quartoLabel.Size = new System.Drawing.Size(60, 13);
+            tipo_quartoLabel.Size = new System.Drawing.Size(72, 13);
             tipo_quartoLabel.TabIndex = 3;
             tipo_quartoLabel.Text = "tipo quarto:";
             // 
             // preco_quartoLabel
             // 
             preco_quartoLabel.AutoSize = true;
-            preco_quartoLabel.Location = new System.Drawing.Point(95, 141);
+            preco_quartoLabel.Location = new System.Drawing.Point(111, 141);
             preco_quartoLabel.Name = "preco_quartoLabel";
-            preco_quartoLabel.Size = new System.Drawing.Size(70, 13);
+            preco_quartoLabel.Size = new System.Drawing.Size(83, 13);
             preco_quartoLabel.TabIndex = 5;
             preco_quartoLabel.Text = "preco quarto:";
             // 
             // andar_quartoLabel
             // 
             andar_quartoLabel.AutoSize = true;
-            andar_quartoLabel.Location = new System.Drawing.Point(95, 167);
+            andar_quartoLabel.Location = new System.Drawing.Point(111, 167);
             andar_quartoLabel.Name = "andar_quartoLabel";
-            andar_quartoLabel.Size = new System.Drawing.Size(70, 13);
+            andar_quartoLabel.Size = new System.Drawing.Size(83, 13);
             andar_quartoLabel.TabIndex = 7;
             andar_quartoLabel.Text = "andar quarto:";
             // 
@@ -121,17 +123,21 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = this.quartoTableAdapter;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
             // quartoBindingNavigator
             // 
@@ -159,7 +165,7 @@
             this.quartoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.quartoBindingNavigator.Name = "quartoBindingNavigator";
             this.quartoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.quartoBindingNavigator.Size = new System.Drawing.Size(529, 25);
+            this.quartoBindingNavigator.Size = new System.Drawing.Size(619, 25);
             this.quartoBindingNavigator.TabIndex = 0;
             this.quartoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -216,7 +222,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(58, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -260,65 +266,88 @@
             // id_quartoTextBox
             // 
             this.id_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quartoBindingSource, "id_quarto", true));
-            this.id_quartoTextBox.Location = new System.Drawing.Point(171, 86);
+            this.id_quartoTextBox.Location = new System.Drawing.Point(199, 86);
             this.id_quartoTextBox.Name = "id_quartoTextBox";
-            this.id_quartoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.id_quartoTextBox.Size = new System.Drawing.Size(116, 20);
             this.id_quartoTextBox.TabIndex = 2;
             // 
             // tipo_quartoTextBox
             // 
             this.tipo_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quartoBindingSource, "tipo_quarto", true));
-            this.tipo_quartoTextBox.Location = new System.Drawing.Point(171, 112);
+            this.tipo_quartoTextBox.Location = new System.Drawing.Point(199, 112);
             this.tipo_quartoTextBox.Name = "tipo_quartoTextBox";
-            this.tipo_quartoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.tipo_quartoTextBox.Size = new System.Drawing.Size(116, 20);
             this.tipo_quartoTextBox.TabIndex = 4;
             // 
             // preco_quartoTextBox
             // 
             this.preco_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quartoBindingSource, "preco_quarto", true));
-            this.preco_quartoTextBox.Location = new System.Drawing.Point(171, 138);
+            this.preco_quartoTextBox.Location = new System.Drawing.Point(199, 138);
             this.preco_quartoTextBox.Name = "preco_quartoTextBox";
-            this.preco_quartoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.preco_quartoTextBox.Size = new System.Drawing.Size(116, 20);
             this.preco_quartoTextBox.TabIndex = 6;
             // 
             // andar_quartoTextBox
             // 
             this.andar_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quartoBindingSource, "andar_quarto", true));
-            this.andar_quartoTextBox.Location = new System.Drawing.Point(171, 164);
+            this.andar_quartoTextBox.Location = new System.Drawing.Point(199, 164);
             this.andar_quartoTextBox.Name = "andar_quartoTextBox";
-            this.andar_quartoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.andar_quartoTextBox.Size = new System.Drawing.Size(116, 20);
             this.andar_quartoTextBox.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(171, 43);
+            this.label1.Location = new System.Drawing.Point(199, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(114, 13);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Pesquizar Quartos";
+            this.label1.Text = "Pesquizar  Quartos";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(298, 216);
+            this.button1.Location = new System.Drawing.Point(348, 216);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 10;
             this.button1.Text = "Pesquizar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(164, 219);
+            this.textBox1.Location = new System.Drawing.Point(191, 219);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(116, 20);
             this.textBox1.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(89, 226);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Andar do quarto";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(348, 246);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Ir para Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form21
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 307);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.ClientSize = new System.Drawing.Size(619, 327);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -331,6 +360,8 @@
             this.Controls.Add(andar_quartoLabel);
             this.Controls.Add(this.andar_quartoTextBox);
             this.Controls.Add(this.quartoBindingNavigator);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form21";
             this.Text = "Form21";
             this.Load += new System.EventHandler(this.Form21_Load);
@@ -370,6 +401,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
 
     }
 }

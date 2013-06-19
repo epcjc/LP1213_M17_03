@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label id_preco_quartoLabel;
-            System.Windows.Forms.Label preco_quartoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form12));
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.preço_do_quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -49,16 +47,15 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.preço_do_quartoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.id_preco_quartoTextBox = new System.Windows.Forms.TextBox();
-            this.preco_quartoTextBox = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
             this.quarto1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quarto1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Quarto1TableAdapter();
             this.label1 = new System.Windows.Forms.Label();
-            id_preco_quartoLabel = new System.Windows.Forms.Label();
-            preco_quartoLabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preço_do_quartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preço_do_quartoBindingNavigator)).BeginInit();
@@ -66,24 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // id_preco_quartoLabel
-            // 
-            id_preco_quartoLabel.AutoSize = true;
-            id_preco_quartoLabel.Location = new System.Drawing.Point(27, 101);
-            id_preco_quartoLabel.Name = "id_preco_quartoLabel";
-            id_preco_quartoLabel.Size = new System.Drawing.Size(81, 13);
-            id_preco_quartoLabel.TabIndex = 1;
-            id_preco_quartoLabel.Text = "id preco quarto:";
-            // 
-            // preco_quartoLabel
-            // 
-            preco_quartoLabel.AutoSize = true;
-            preco_quartoLabel.Location = new System.Drawing.Point(27, 127);
-            preco_quartoLabel.Name = "preco_quartoLabel";
-            preco_quartoLabel.Size = new System.Drawing.Size(70, 13);
-            preco_quartoLabel.TabIndex = 3;
-            preco_quartoLabel.Text = "preco quarto:";
             // 
             // database1DataSet
             // 
@@ -102,17 +81,21 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = this.preço_do_quartoTableAdapter;
             this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
             // preço_do_quartoBindingNavigator
             // 
@@ -140,7 +123,7 @@
             this.preço_do_quartoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.preço_do_quartoBindingNavigator.Name = "preço_do_quartoBindingNavigator";
             this.preço_do_quartoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.preço_do_quartoBindingNavigator.Size = new System.Drawing.Size(471, 25);
+            this.preço_do_quartoBindingNavigator.Size = new System.Drawing.Size(549, 25);
             this.preço_do_quartoBindingNavigator.TabIndex = 0;
             this.preço_do_quartoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -197,7 +180,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(58, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -238,33 +221,6 @@
             this.preço_do_quartoBindingNavigatorSaveItem.Text = "Save Data";
             this.preço_do_quartoBindingNavigatorSaveItem.Click += new System.EventHandler(this.preço_do_quartoBindingNavigatorSaveItem_Click);
             // 
-            // id_preco_quartoTextBox
-            // 
-            this.id_preco_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.preço_do_quartoBindingSource, "id_preco_quarto", true));
-            this.id_preco_quartoTextBox.Location = new System.Drawing.Point(114, 98);
-            this.id_preco_quartoTextBox.Name = "id_preco_quartoTextBox";
-            this.id_preco_quartoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_preco_quartoTextBox.TabIndex = 2;
-            // 
-            // preco_quartoTextBox
-            // 
-            this.preco_quartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.preço_do_quartoBindingSource, "preco_quarto", true));
-            this.preco_quartoTextBox.Location = new System.Drawing.Point(114, 124);
-            this.preco_quartoTextBox.Name = "preco_quartoTextBox";
-            this.preco_quartoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.preco_quartoTextBox.TabIndex = 4;
-            // 
-            // listBox1
-            // 
-            this.listBox1.DataSource = this.quartoBindingSource;
-            this.listBox1.DisplayMember = "tipo_quarto";
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(299, 101);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 5;
-            this.listBox1.ValueMember = "andar_quarto";
-            // 
             // quartoBindingSource
             // 
             this.quartoBindingSource.DataMember = "Quarto";
@@ -286,24 +242,64 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(159, 42);
+            this.label1.Location = new System.Drawing.Point(185, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.Size = new System.Drawing.Size(139, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Inserir Preço do Quarto";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(189, 103);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(181, 20);
+            this.textBox1.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(91, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Preço Quarto";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MediumBlue;
+            this.button1.Location = new System.Drawing.Point(94, 185);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Inserir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(243, 185);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Ir para Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form12
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 460);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.ClientSize = new System.Drawing.Size(549, 460);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(id_preco_quartoLabel);
-            this.Controls.Add(this.id_preco_quartoTextBox);
-            this.Controls.Add(preco_quartoLabel);
-            this.Controls.Add(this.preco_quartoTextBox);
             this.Controls.Add(this.preço_do_quartoBindingNavigator);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form12";
             this.Text = "Form12";
             this.Load += new System.EventHandler(this.Form12_Load);
@@ -338,13 +334,14 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton preço_do_quartoBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox id_preco_quartoTextBox;
-        private System.Windows.Forms.TextBox preco_quartoTextBox;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.BindingSource quartoBindingSource;
         private Database1DataSetTableAdapters.QuartoTableAdapter quartoTableAdapter;
         private System.Windows.Forms.BindingSource quarto1BindingSource;
         private Database1DataSetTableAdapters.Quarto1TableAdapter quarto1TableAdapter;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

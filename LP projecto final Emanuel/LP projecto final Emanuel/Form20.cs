@@ -9,25 +9,25 @@ using System.Windows.Forms;
 
 namespace LP_projecto_final_Emanuel
 {
-    public partial class Form17 : Form
+    public partial class Form20 : Form
     {
-        public Form17()
+        public Form20()
         {
             InitializeComponent();
         }
 
-        private void pagamentoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void utilizadoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.pagamentoBindingSource.EndEdit();
+            this.utilizadoresBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database1DataSet);
 
         }
 
-        private void Form17_Load(object sender, EventArgs e)
+        private void Form20_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Preço_do_quarto' table. You can move, or remove it, as needed.
-            this.preço_do_quartoTableAdapter.Fill(this.database1DataSet.Preço_do_quarto);
+            // TODO: This line of code loads data into the 'database1DataSet.Utilizadores' table. You can move, or remove it, as needed.
+            this.utilizadoresTableAdapter.Fill(this.database1DataSet.Utilizadores);
 
         }
 

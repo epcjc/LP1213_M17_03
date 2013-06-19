@@ -26,9 +26,16 @@ namespace LP_projecto_final_Emanuel
 
         private void Form13_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'database1DataSet.Reserva_quartos' table. You can move, or remove it, as needed.
+            this.reserva_quartosTableAdapter.Fill(this.database1DataSet.Reserva_quartos);
             // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
             this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

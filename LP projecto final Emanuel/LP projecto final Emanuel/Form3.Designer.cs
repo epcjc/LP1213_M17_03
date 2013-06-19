@@ -85,80 +85,80 @@
             // id_clienteLabel
             // 
             id_clienteLabel.AutoSize = true;
-            id_clienteLabel.Location = new System.Drawing.Point(199, 104);
+            id_clienteLabel.Location = new System.Drawing.Point(136, 73);
             id_clienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_clienteLabel.Name = "id_clienteLabel";
-            id_clienteLabel.Size = new System.Drawing.Size(70, 15);
+            id_clienteLabel.Size = new System.Drawing.Size(63, 13);
             id_clienteLabel.TabIndex = 1;
             id_clienteLabel.Text = "id cliente:";
             // 
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(199, 134);
+            nomeLabel.Location = new System.Drawing.Point(136, 99);
             nomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(47, 15);
+            nomeLabel.Size = new System.Drawing.Size(41, 13);
             nomeLabel.TabIndex = 3;
             nomeLabel.Text = "nome:";
             // 
             // moradaLabel
             // 
             moradaLabel.AutoSize = true;
-            moradaLabel.Location = new System.Drawing.Point(199, 164);
+            moradaLabel.Location = new System.Drawing.Point(136, 125);
             moradaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             moradaLabel.Name = "moradaLabel";
-            moradaLabel.Size = new System.Drawing.Size(60, 15);
+            moradaLabel.Size = new System.Drawing.Size(52, 13);
             moradaLabel.TabIndex = 5;
             moradaLabel.Text = "morada:";
             // 
             // contactoLabel
             // 
             contactoLabel.AutoSize = true;
-            contactoLabel.Location = new System.Drawing.Point(199, 194);
+            contactoLabel.Location = new System.Drawing.Point(136, 151);
             contactoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             contactoLabel.Name = "contactoLabel";
-            contactoLabel.Size = new System.Drawing.Size(65, 15);
+            contactoLabel.Size = new System.Drawing.Size(61, 13);
             contactoLabel.TabIndex = 7;
             contactoLabel.Text = "contacto:";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(199, 224);
+            emailLabel.Location = new System.Drawing.Point(136, 177);
             emailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(48, 15);
+            emailLabel.Size = new System.Drawing.Size(41, 13);
             emailLabel.TabIndex = 9;
             emailLabel.Text = "Email:";
             // 
             // data_nascLabel
             // 
             data_nascLabel.AutoSize = true;
-            data_nascLabel.Location = new System.Drawing.Point(199, 255);
+            data_nascLabel.Location = new System.Drawing.Point(136, 204);
             data_nascLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_nascLabel.Name = "data_nascLabel";
-            data_nascLabel.Size = new System.Drawing.Size(73, 15);
+            data_nascLabel.Size = new System.Drawing.Size(67, 13);
             data_nascLabel.TabIndex = 11;
             data_nascLabel.Text = "data nasc:";
             // 
             // bILabel
             // 
             bILabel.AutoSize = true;
-            bILabel.Location = new System.Drawing.Point(199, 284);
+            bILabel.Location = new System.Drawing.Point(136, 229);
             bILabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             bILabel.Name = "bILabel";
-            bILabel.Size = new System.Drawing.Size(24, 15);
+            bILabel.Size = new System.Drawing.Size(23, 13);
             bILabel.TabIndex = 13;
             bILabel.Text = "BI:";
             // 
             // codigo_postalLabel
             // 
             codigo_postalLabel.AutoSize = true;
-            codigo_postalLabel.Location = new System.Drawing.Point(199, 314);
+            codigo_postalLabel.Location = new System.Drawing.Point(136, 255);
             codigo_postalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             codigo_postalLabel.Name = "codigo_postalLabel";
-            codigo_postalLabel.Size = new System.Drawing.Size(99, 15);
+            codigo_postalLabel.Size = new System.Drawing.Size(88, 13);
             codigo_postalLabel.TabIndex = 15;
             codigo_postalLabel.Text = "Codigo postal:";
             // 
@@ -189,7 +189,7 @@
             this.clienteBindingNavigator.Name = "clienteBindingNavigator";
             this.clienteBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.clienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clienteBindingNavigator.Size = new System.Drawing.Size(842, 25);
+            this.clienteBindingNavigator.Size = new System.Drawing.Size(737, 25);
             this.clienteBindingNavigator.TabIndex = 0;
             this.clienteBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -256,7 +256,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(44, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -301,107 +301,107 @@
             // id_clienteTextBox
             // 
             this.id_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "id_cliente", true));
-            this.id_clienteTextBox.Location = new System.Drawing.Point(306, 101);
-            this.id_clienteTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.id_clienteTextBox.Location = new System.Drawing.Point(230, 70);
+            this.id_clienteTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.id_clienteTextBox.Name = "id_clienteTextBox";
-            this.id_clienteTextBox.Size = new System.Drawing.Size(265, 21);
+            this.id_clienteTextBox.Size = new System.Drawing.Size(232, 20);
             this.id_clienteTextBox.TabIndex = 2;
             // 
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(306, 131);
-            this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.nomeTextBox.Location = new System.Drawing.Point(230, 96);
+            this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(265, 21);
+            this.nomeTextBox.Size = new System.Drawing.Size(232, 20);
             this.nomeTextBox.TabIndex = 4;
             // 
             // moradaTextBox
             // 
             this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "morada", true));
-            this.moradaTextBox.Location = new System.Drawing.Point(306, 161);
-            this.moradaTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.moradaTextBox.Location = new System.Drawing.Point(230, 122);
+            this.moradaTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.moradaTextBox.Name = "moradaTextBox";
-            this.moradaTextBox.Size = new System.Drawing.Size(265, 21);
+            this.moradaTextBox.Size = new System.Drawing.Size(232, 20);
             this.moradaTextBox.TabIndex = 6;
             // 
             // contactoTextBox
             // 
             this.contactoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "contacto", true));
-            this.contactoTextBox.Location = new System.Drawing.Point(306, 191);
-            this.contactoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.contactoTextBox.Location = new System.Drawing.Point(230, 148);
+            this.contactoTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.contactoTextBox.Name = "contactoTextBox";
-            this.contactoTextBox.Size = new System.Drawing.Size(265, 21);
+            this.contactoTextBox.Size = new System.Drawing.Size(232, 20);
             this.contactoTextBox.TabIndex = 8;
             // 
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(306, 221);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.emailTextBox.Location = new System.Drawing.Point(230, 174);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(265, 21);
+            this.emailTextBox.Size = new System.Drawing.Size(232, 20);
             this.emailTextBox.TabIndex = 10;
             // 
             // data_nascDateTimePicker
             // 
             this.data_nascDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.clienteBindingSource, "data_nasc", true));
-            this.data_nascDateTimePicker.Location = new System.Drawing.Point(306, 251);
-            this.data_nascDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.data_nascDateTimePicker.Location = new System.Drawing.Point(230, 200);
+            this.data_nascDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_nascDateTimePicker.Name = "data_nascDateTimePicker";
-            this.data_nascDateTimePicker.Size = new System.Drawing.Size(265, 21);
+            this.data_nascDateTimePicker.Size = new System.Drawing.Size(232, 20);
             this.data_nascDateTimePicker.TabIndex = 12;
             // 
             // bITextBox
             // 
             this.bITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "BI", true));
-            this.bITextBox.Location = new System.Drawing.Point(306, 281);
-            this.bITextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.bITextBox.Location = new System.Drawing.Point(230, 226);
+            this.bITextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bITextBox.Name = "bITextBox";
-            this.bITextBox.Size = new System.Drawing.Size(265, 21);
+            this.bITextBox.Size = new System.Drawing.Size(232, 20);
             this.bITextBox.TabIndex = 14;
             // 
             // codigo_postalTextBox
             // 
             this.codigo_postalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Codigo_postal", true));
-            this.codigo_postalTextBox.Location = new System.Drawing.Point(306, 311);
-            this.codigo_postalTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.codigo_postalTextBox.Location = new System.Drawing.Point(230, 252);
+            this.codigo_postalTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.codigo_postalTextBox.Name = "codigo_postalTextBox";
-            this.codigo_postalTextBox.Size = new System.Drawing.Size(265, 21);
+            this.codigo_postalTextBox.Size = new System.Drawing.Size(232, 20);
             this.codigo_postalTextBox.TabIndex = 16;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(619, 309);
+            this.button1.Location = new System.Drawing.Point(541, 313);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(101, 20);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Sair";
+            this.button1.Text = "Ir para Menu";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 386);
+            this.label1.Location = new System.Drawing.Point(109, 317);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 15);
+            this.label1.Size = new System.Drawing.Size(92, 13);
             this.label1.TabIndex = 18;
             this.label1.Text = "Nome do clinte";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(306, 385);
+            this.textBox1.Location = new System.Drawing.Point(230, 316);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.Size = new System.Drawing.Size(127, 20);
             this.textBox1.TabIndex = 19;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(457, 381);
+            this.button2.Location = new System.Drawing.Point(362, 313);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(66, 20);
             this.button2.TabIndex = 20;
             this.button2.Text = "Pesquisar";
             this.button2.UseVisualStyleBackColor = true;
@@ -414,33 +414,36 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = this.clienteTableAdapter;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(365, 41);
+            this.label2.Location = new System.Drawing.Point(319, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 15);
+            this.label2.Size = new System.Drawing.Size(114, 13);
             this.label2.TabIndex = 21;
-            this.label2.Text = "Pesquizar clientes";
+            this.label2.Text = "Pesquizar  clientes";
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(842, 427);
+            this.ClientSize = new System.Drawing.Size(737, 370);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
@@ -463,9 +466,9 @@
             this.Controls.Add(codigo_postalLabel);
             this.Controls.Add(this.codigo_postalTextBox);
             this.Controls.Add(this.clienteBindingNavigator);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form3";
             this.Text = "Lista dos clientes";
             this.TransparencyKey = System.Drawing.Color.Blue;

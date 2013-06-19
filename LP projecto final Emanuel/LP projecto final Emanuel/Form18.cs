@@ -38,5 +38,37 @@ namespace LP_projecto_final_Emanuel
             this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             try
+            {
+                string message = "Confirmar !!";
+
+                var result = MessageBox.Show(message, "Inserção",
+                                      MessageBoxButtons.YesNo,
+                                      MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    this.quartoTableAdapter.Insert(textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue), Convert.ToInt16(textBox2.Text));
+                    MessageBox.Show("Dados inseridos com sucesso !!");
+                }
+                else
+                {
+                    MessageBox.Show("Operação Cancelada !!");
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro !!");
+                
+        }
     }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 }

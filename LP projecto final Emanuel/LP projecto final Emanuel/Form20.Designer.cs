@@ -1,6 +1,6 @@
 ﻿namespace LP_projecto_final_Emanuel
 {
-    partial class Form15
+    partial class Form20
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form15));
-            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
-            this.tipos_de_pagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tipos_de_pagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Tipos_de_pagamentoTableAdapter();
-            this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
-            this.tipos_de_pagamentoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form20));
+            this.utilizadoresBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.utilizadoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -46,60 +44,29 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.tipos_de_pagamentoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.tipos_de_pagamentoDataGridView = new System.Windows.Forms.DataGridView();
+            this.utilizadoresBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.utilizadoresDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.utilizadoresTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.UtilizadoresTableAdapter();
+            this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
             this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingNavigator)).BeginInit();
+            this.utilizadoresBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoBindingNavigator)).BeginInit();
-            this.tipos_de_pagamentoBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // database1DataSet
+            // utilizadoresBindingNavigator
             // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tipos_de_pagamentoBindingSource
-            // 
-            this.tipos_de_pagamentoBindingSource.DataMember = "Tipos de pagamento";
-            this.tipos_de_pagamentoBindingSource.DataSource = this.database1DataSet;
-            // 
-            // tipos_de_pagamentoTableAdapter
-            // 
-            this.tipos_de_pagamentoTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Cliente1TableAdapter = null;
-            this.tableAdapterManager.ClienteTableAdapter = null;
-            this.tableAdapterManager.codigo_postalTableAdapter = null;
-            this.tableAdapterManager.PagamentoTableAdapter = null;
-            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
-            this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
-            this.tableAdapterManager.Quarto1TableAdapter = null;
-            this.tableAdapterManager.Quarto2TableAdapter = null;
-            this.tableAdapterManager.QuartoTableAdapter = null;
-            this.tableAdapterManager.Reserva_quartosTableAdapter = null;
-            this.tableAdapterManager.ReservaTableAdapter = null;
-            this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = this.tipos_de_pagamentoTableAdapter;
-            this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UtilizadoresTableAdapter = null;
-            // 
-            // tipos_de_pagamentoBindingNavigator
-            // 
-            this.tipos_de_pagamentoBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.tipos_de_pagamentoBindingNavigator.BindingSource = this.tipos_de_pagamentoBindingSource;
-            this.tipos_de_pagamentoBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.tipos_de_pagamentoBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.tipos_de_pagamentoBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.utilizadoresBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.utilizadoresBindingNavigator.BindingSource = this.utilizadoresBindingSource;
+            this.utilizadoresBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.utilizadoresBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.utilizadoresBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -111,17 +78,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.tipos_de_pagamentoBindingNavigatorSaveItem});
-            this.tipos_de_pagamentoBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.tipos_de_pagamentoBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.tipos_de_pagamentoBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.tipos_de_pagamentoBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.tipos_de_pagamentoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.tipos_de_pagamentoBindingNavigator.Name = "tipos_de_pagamentoBindingNavigator";
-            this.tipos_de_pagamentoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tipos_de_pagamentoBindingNavigator.Size = new System.Drawing.Size(728, 25);
-            this.tipos_de_pagamentoBindingNavigator.TabIndex = 0;
-            this.tipos_de_pagamentoBindingNavigator.Text = "bindingNavigator1";
+            this.utilizadoresBindingNavigatorSaveItem});
+            this.utilizadoresBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.utilizadoresBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.utilizadoresBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.utilizadoresBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.utilizadoresBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.utilizadoresBindingNavigator.Name = "utilizadoresBindingNavigator";
+            this.utilizadoresBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.utilizadoresBindingNavigator.Size = new System.Drawing.Size(551, 25);
+            this.utilizadoresBindingNavigator.TabIndex = 0;
+            this.utilizadoresBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -131,6 +98,16 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // utilizadoresBindingSource
+            // 
+            this.utilizadoresBindingSource.DataMember = "Utilizadores";
+            this.utilizadoresBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -208,88 +185,111 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // tipos_de_pagamentoBindingNavigatorSaveItem
+            // utilizadoresBindingNavigatorSaveItem
             // 
-            this.tipos_de_pagamentoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tipos_de_pagamentoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tipos_de_pagamentoBindingNavigatorSaveItem.Image")));
-            this.tipos_de_pagamentoBindingNavigatorSaveItem.Name = "tipos_de_pagamentoBindingNavigatorSaveItem";
-            this.tipos_de_pagamentoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.tipos_de_pagamentoBindingNavigatorSaveItem.Text = "Save Data";
-            this.tipos_de_pagamentoBindingNavigatorSaveItem.Click += new System.EventHandler(this.tipos_de_pagamentoBindingNavigatorSaveItem_Click);
+            this.utilizadoresBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.utilizadoresBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("utilizadoresBindingNavigatorSaveItem.Image")));
+            this.utilizadoresBindingNavigatorSaveItem.Name = "utilizadoresBindingNavigatorSaveItem";
+            this.utilizadoresBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.utilizadoresBindingNavigatorSaveItem.Text = "Save Data";
+            this.utilizadoresBindingNavigatorSaveItem.Click += new System.EventHandler(this.utilizadoresBindingNavigatorSaveItem_Click);
             // 
-            // tipos_de_pagamentoDataGridView
+            // utilizadoresDataGridView
             // 
-            this.tipos_de_pagamentoDataGridView.AutoGenerateColumns = false;
-            this.tipos_de_pagamentoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tipos_de_pagamentoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.utilizadoresDataGridView.AutoGenerateColumns = false;
+            this.utilizadoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.utilizadoresDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.tipos_de_pagamentoDataGridView.DataSource = this.tipos_de_pagamentoBindingSource;
-            this.tipos_de_pagamentoDataGridView.Location = new System.Drawing.Point(146, 87);
-            this.tipos_de_pagamentoDataGridView.Name = "tipos_de_pagamentoDataGridView";
-            this.tipos_de_pagamentoDataGridView.Size = new System.Drawing.Size(346, 231);
-            this.tipos_de_pagamentoDataGridView.TabIndex = 1;
+            this.utilizadoresDataGridView.DataSource = this.utilizadoresBindingSource;
+            this.utilizadoresDataGridView.Location = new System.Drawing.Point(95, 82);
+            this.utilizadoresDataGridView.Name = "utilizadoresDataGridView";
+            this.utilizadoresDataGridView.Size = new System.Drawing.Size(345, 244);
+            this.utilizadoresDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_tipo_pagamento";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_tipo_pagamento";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "id_metodo_pagamento";
-            this.dataGridViewTextBoxColumn2.HeaderText = "id_metodo_pagamento";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Password";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Password";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "metodo_pagamento";
-            this.dataGridViewTextBoxColumn3.HeaderText = "metodo_pagamento";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn3.HeaderText = "id";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(253, 48);
+            this.label1.Location = new System.Drawing.Point(204, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 13);
+            this.label1.Size = new System.Drawing.Size(128, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Lista dos Pagamentos";
+            this.label1.Text = "Lista dos Utilizadores";
+            // 
+            // utilizadoresTableAdapter
+            // 
+            this.utilizadoresTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Cliente1TableAdapter = null;
+            this.tableAdapterManager.ClienteTableAdapter = null;
+            this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
+            this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
+            this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
+            this.tableAdapterManager.QuartoTableAdapter = null;
+            this.tableAdapterManager.Reserva_quartosTableAdapter = null;
+            this.tableAdapterManager.ReservaTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = this.utilizadoresTableAdapter;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(514, 294);
+            this.button1.Location = new System.Drawing.Point(457, 302);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Ir Para Menu";
+            this.button1.Text = "Ir para Menu";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form15
+            // Form20
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(728, 364);
+            this.ClientSize = new System.Drawing.Size(551, 341);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tipos_de_pagamentoDataGridView);
-            this.Controls.Add(this.tipos_de_pagamentoBindingNavigator);
+            this.Controls.Add(this.utilizadoresDataGridView);
+            this.Controls.Add(this.utilizadoresBindingNavigator);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
-            this.Name = "Form15";
-            this.Text = "Form15";
-            this.Load += new System.EventHandler(this.Form15_Load);
+            this.Name = "Form20";
+            this.Text = "Form20";
+            this.Load += new System.EventHandler(this.Form20_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingNavigator)).EndInit();
+            this.utilizadoresBindingNavigator.ResumeLayout(false);
+            this.utilizadoresBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoBindingNavigator)).EndInit();
-            this.tipos_de_pagamentoBindingNavigator.ResumeLayout(false);
-            this.tipos_de_pagamentoBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,10 +298,10 @@
         #endregion
 
         private Database1DataSet database1DataSet;
-        private System.Windows.Forms.BindingSource tipos_de_pagamentoBindingSource;
-        private Database1DataSetTableAdapters.Tipos_de_pagamentoTableAdapter tipos_de_pagamentoTableAdapter;
+        private System.Windows.Forms.BindingSource utilizadoresBindingSource;
+        private Database1DataSetTableAdapters.UtilizadoresTableAdapter utilizadoresTableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator tipos_de_pagamentoBindingNavigator;
+        private System.Windows.Forms.BindingNavigator utilizadoresBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -313,8 +313,8 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton tipos_de_pagamentoBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView tipos_de_pagamentoDataGridView;
+        private System.Windows.Forms.ToolStripButton utilizadoresBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView utilizadoresDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

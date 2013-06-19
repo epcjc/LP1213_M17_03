@@ -30,5 +30,27 @@ namespace LP_projecto_final_Emanuel
             this.pagamentoTableAdapter.Fill(this.database1DataSet.Pagamento);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                DateTime datanascimento = new DateTime(Convert.ToInt16(this.comboBox1.SelectedValue), Convert.ToInt16(this.comboBox2.SelectedValue),
+                    Convert.ToInt16(this.comboBox3.SelectedValue));
+                this.pagamentoTableAdapter.Insert(this.textBox1.Text, this.textBox2.Text);
+                MessageBox.Show("Inserido com Sucesso");
+                
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+        }
 }

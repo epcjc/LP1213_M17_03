@@ -91,90 +91,90 @@
             // id_reservaLabel
             // 
             id_reservaLabel.AutoSize = true;
-            id_reservaLabel.Location = new System.Drawing.Point(22, 113);
+            id_reservaLabel.Location = new System.Drawing.Point(19, 98);
             id_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_reservaLabel.Name = "id_reservaLabel";
-            id_reservaLabel.Size = new System.Drawing.Size(74, 15);
+            id_reservaLabel.Size = new System.Drawing.Size(67, 13);
             id_reservaLabel.TabIndex = 1;
             id_reservaLabel.Text = "id reserva:";
             // 
             // id_clienteLabel
             // 
             id_clienteLabel.AutoSize = true;
-            id_clienteLabel.Location = new System.Drawing.Point(22, 143);
+            id_clienteLabel.Location = new System.Drawing.Point(19, 124);
             id_clienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_clienteLabel.Name = "id_clienteLabel";
-            id_clienteLabel.Size = new System.Drawing.Size(70, 15);
+            id_clienteLabel.Size = new System.Drawing.Size(63, 13);
             id_clienteLabel.TabIndex = 3;
             id_clienteLabel.Text = "id cliente:";
             // 
             // data_reservaLabel
             // 
             data_reservaLabel.AutoSize = true;
-            data_reservaLabel.Location = new System.Drawing.Point(22, 175);
+            data_reservaLabel.Location = new System.Drawing.Point(19, 152);
             data_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_reservaLabel.Name = "data_reservaLabel";
-            data_reservaLabel.Size = new System.Drawing.Size(90, 15);
+            data_reservaLabel.Size = new System.Drawing.Size(82, 13);
             data_reservaLabel.TabIndex = 5;
             data_reservaLabel.Text = "data reserva:";
             // 
             // hora_reservaLabel
             // 
             hora_reservaLabel.AutoSize = true;
-            hora_reservaLabel.Location = new System.Drawing.Point(22, 205);
+            hora_reservaLabel.Location = new System.Drawing.Point(19, 178);
             hora_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             hora_reservaLabel.Name = "hora_reservaLabel";
-            hora_reservaLabel.Size = new System.Drawing.Size(91, 15);
+            hora_reservaLabel.Size = new System.Drawing.Size(82, 13);
             hora_reservaLabel.TabIndex = 7;
             hora_reservaLabel.Text = "hora reserva:";
             // 
             // data_inicioLabel
             // 
             data_inicioLabel.AutoSize = true;
-            data_inicioLabel.Location = new System.Drawing.Point(22, 235);
+            data_inicioLabel.Location = new System.Drawing.Point(19, 204);
             data_inicioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_inicioLabel.Name = "data_inicioLabel";
-            data_inicioLabel.Size = new System.Drawing.Size(80, 15);
+            data_inicioLabel.Size = new System.Drawing.Size(72, 13);
             data_inicioLabel.TabIndex = 9;
             data_inicioLabel.Text = "Data inicio:";
             // 
             // data_fimLabel
             // 
             data_fimLabel.AutoSize = true;
-            data_fimLabel.Location = new System.Drawing.Point(22, 265);
+            data_fimLabel.Location = new System.Drawing.Point(19, 230);
             data_fimLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_fimLabel.Name = "data_fimLabel";
-            data_fimLabel.Size = new System.Drawing.Size(65, 15);
+            data_fimLabel.Size = new System.Drawing.Size(58, 13);
             data_fimLabel.TabIndex = 11;
             data_fimLabel.Text = "Data fim:";
             // 
             // totalLabel
             // 
             totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(22, 293);
+            totalLabel.Location = new System.Drawing.Point(19, 254);
             totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             totalLabel.Name = "totalLabel";
-            totalLabel.Size = new System.Drawing.Size(43, 15);
+            totalLabel.Size = new System.Drawing.Size(40, 13);
             totalLabel.TabIndex = 13;
             totalLabel.Text = "Total:";
             // 
             // comentariosLabel
             // 
             comentariosLabel.AutoSize = true;
-            comentariosLabel.Location = new System.Drawing.Point(22, 323);
+            comentariosLabel.Location = new System.Drawing.Point(19, 280);
             comentariosLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             comentariosLabel.Name = "comentariosLabel";
-            comentariosLabel.Size = new System.Drawing.Size(90, 15);
+            comentariosLabel.Size = new System.Drawing.Size(79, 13);
             comentariosLabel.TabIndex = 15;
             comentariosLabel.Text = "comentarios:";
             // 
             // estadoLabel
             // 
             estadoLabel.AutoSize = true;
-            estadoLabel.Location = new System.Drawing.Point(22, 353);
+            estadoLabel.Location = new System.Drawing.Point(19, 306);
             estadoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             estadoLabel.Name = "estadoLabel";
-            estadoLabel.Size = new System.Drawing.Size(54, 15);
+            estadoLabel.Size = new System.Drawing.Size(49, 13);
             estadoLabel.TabIndex = 17;
             estadoLabel.Text = "estado:";
             // 
@@ -195,17 +195,21 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = this.reservaTableAdapter;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
             // reservaBindingNavigator
             // 
@@ -233,7 +237,7 @@
             this.reservaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.reservaBindingNavigator.Name = "reservaBindingNavigator";
             this.reservaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.reservaBindingNavigator.Size = new System.Drawing.Size(805, 25);
+            this.reservaBindingNavigator.Size = new System.Drawing.Size(704, 25);
             this.reservaBindingNavigator.TabIndex = 0;
             this.reservaBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -290,7 +294,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(44, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -334,99 +338,100 @@
             // id_reservaTextBox
             // 
             this.id_reservaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "id_reserva", true));
-            this.id_reservaTextBox.Location = new System.Drawing.Point(122, 110);
+            this.id_reservaTextBox.Location = new System.Drawing.Point(107, 95);
             this.id_reservaTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.id_reservaTextBox.Name = "id_reservaTextBox";
-            this.id_reservaTextBox.Size = new System.Drawing.Size(265, 21);
+            this.id_reservaTextBox.Size = new System.Drawing.Size(232, 20);
             this.id_reservaTextBox.TabIndex = 2;
             // 
             // id_clienteTextBox
             // 
             this.id_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "id_cliente", true));
-            this.id_clienteTextBox.Location = new System.Drawing.Point(122, 140);
+            this.id_clienteTextBox.Location = new System.Drawing.Point(107, 121);
             this.id_clienteTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.id_clienteTextBox.Name = "id_clienteTextBox";
-            this.id_clienteTextBox.Size = new System.Drawing.Size(265, 21);
+            this.id_clienteTextBox.Size = new System.Drawing.Size(232, 20);
             this.id_clienteTextBox.TabIndex = 4;
             // 
             // data_reservaDateTimePicker
             // 
             this.data_reservaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "data_reserva", true));
-            this.data_reservaDateTimePicker.Location = new System.Drawing.Point(122, 170);
+            this.data_reservaDateTimePicker.Location = new System.Drawing.Point(107, 147);
             this.data_reservaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_reservaDateTimePicker.Name = "data_reservaDateTimePicker";
-            this.data_reservaDateTimePicker.Size = new System.Drawing.Size(265, 21);
+            this.data_reservaDateTimePicker.Size = new System.Drawing.Size(232, 20);
             this.data_reservaDateTimePicker.TabIndex = 6;
             // 
             // hora_reservaDateTimePicker
             // 
             this.hora_reservaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "hora_reserva", true));
-            this.hora_reservaDateTimePicker.Location = new System.Drawing.Point(122, 205);
+            this.hora_reservaDateTimePicker.Location = new System.Drawing.Point(107, 178);
             this.hora_reservaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.hora_reservaDateTimePicker.Name = "hora_reservaDateTimePicker";
-            this.hora_reservaDateTimePicker.Size = new System.Drawing.Size(265, 21);
+            this.hora_reservaDateTimePicker.Size = new System.Drawing.Size(232, 20);
             this.hora_reservaDateTimePicker.TabIndex = 8;
             // 
             // data_inicioDateTimePicker
             // 
             this.data_inicioDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "Data_inicio", true));
-            this.data_inicioDateTimePicker.Location = new System.Drawing.Point(122, 230);
+            this.data_inicioDateTimePicker.Location = new System.Drawing.Point(107, 199);
             this.data_inicioDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_inicioDateTimePicker.Name = "data_inicioDateTimePicker";
-            this.data_inicioDateTimePicker.Size = new System.Drawing.Size(265, 21);
+            this.data_inicioDateTimePicker.Size = new System.Drawing.Size(232, 20);
             this.data_inicioDateTimePicker.TabIndex = 10;
             // 
             // data_fimDateTimePicker
             // 
             this.data_fimDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "Data_fim", true));
-            this.data_fimDateTimePicker.Location = new System.Drawing.Point(122, 260);
+            this.data_fimDateTimePicker.Location = new System.Drawing.Point(107, 225);
             this.data_fimDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_fimDateTimePicker.Name = "data_fimDateTimePicker";
-            this.data_fimDateTimePicker.Size = new System.Drawing.Size(265, 21);
+            this.data_fimDateTimePicker.Size = new System.Drawing.Size(232, 20);
             this.data_fimDateTimePicker.TabIndex = 12;
             // 
             // totalTextBox
             // 
             this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Total", true));
-            this.totalTextBox.Location = new System.Drawing.Point(122, 290);
+            this.totalTextBox.Location = new System.Drawing.Point(107, 251);
             this.totalTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.totalTextBox.Name = "totalTextBox";
-            this.totalTextBox.Size = new System.Drawing.Size(265, 21);
+            this.totalTextBox.Size = new System.Drawing.Size(232, 20);
             this.totalTextBox.TabIndex = 14;
             // 
             // comentariosTextBox
             // 
             this.comentariosTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "comentarios", true));
-            this.comentariosTextBox.Location = new System.Drawing.Point(122, 320);
+            this.comentariosTextBox.Location = new System.Drawing.Point(107, 277);
             this.comentariosTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comentariosTextBox.Name = "comentariosTextBox";
-            this.comentariosTextBox.Size = new System.Drawing.Size(265, 21);
+            this.comentariosTextBox.Size = new System.Drawing.Size(232, 20);
             this.comentariosTextBox.TabIndex = 16;
             // 
             // estadoTextBox
             // 
             this.estadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "estado", true));
-            this.estadoTextBox.Location = new System.Drawing.Point(122, 350);
+            this.estadoTextBox.Location = new System.Drawing.Point(107, 303);
             this.estadoTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.estadoTextBox.Name = "estadoTextBox";
-            this.estadoTextBox.Size = new System.Drawing.Size(265, 21);
+            this.estadoTextBox.Size = new System.Drawing.Size(232, 20);
             this.estadoTextBox.TabIndex = 18;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(621, 334);
+            this.button1.Location = new System.Drawing.Point(473, 299);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(114, 20);
             this.button1.TabIndex = 19;
-            this.button1.Text = "Sair";
+            this.button1.Text = "Ir para Menu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(562, 121);
+            this.label1.Location = new System.Drawing.Point(492, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 15);
+            this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 21;
             this.label1.Text = "Clientes";
             // 
@@ -435,9 +440,9 @@
             this.comboBox1.DataSource = this.clienteBindingSource;
             this.comboBox1.DisplayMember = "nome";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(541, 152);
+            this.comboBox1.Location = new System.Drawing.Point(473, 132);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.Size = new System.Drawing.Size(106, 21);
             this.comboBox1.TabIndex = 22;
             this.comboBox1.ValueMember = "id_cliente";
             // 
@@ -452,9 +457,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(540, 334);
+            this.button2.Location = new System.Drawing.Point(473, 273);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(114, 20);
             this.button2.TabIndex = 23;
             this.button2.Text = "Inserir";
             this.button2.UseVisualStyleBackColor = true;
@@ -463,18 +468,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(362, 52);
+            this.label2.Location = new System.Drawing.Point(317, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 15);
+            this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Inserir Reservas";
+            this.label2.Text = "Inserir  Reservas";
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nuel;
-            this.ClientSize = new System.Drawing.Size(805, 407);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.ClientSize = new System.Drawing.Size(704, 353);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
@@ -499,7 +504,7 @@
             this.Controls.Add(estadoLabel);
             this.Controls.Add(this.estadoTextBox);
             this.Controls.Add(this.reservaBindingNavigator);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form4";
