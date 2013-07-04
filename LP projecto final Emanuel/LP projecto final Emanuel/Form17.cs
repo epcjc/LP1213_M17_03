@@ -18,9 +18,9 @@ namespace LP_projecto_final_Emanuel
 
         private void pagamentoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
+            /*this.Validate();
             this.pagamentoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+            this.tableAdapterManager.UpdateAll(this.database1DataSet);*/
 
         }
 
@@ -34,6 +34,17 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form12 frm = new Form12();
+            frm.ShowDialog();
         }
     }
 }

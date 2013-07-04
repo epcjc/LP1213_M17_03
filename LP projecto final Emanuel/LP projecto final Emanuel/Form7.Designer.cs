@@ -57,6 +57,8 @@
             this.pagamentoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.pagamentoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoDataGridView)).BeginInit();
@@ -84,6 +86,7 @@
             this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = this.pagamentoTableAdapter;
             this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
@@ -110,9 +113,9 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.pagamentoDataGridView.DataSource = this.pagamentoBindingSource;
-            this.pagamentoDataGridView.Location = new System.Drawing.Point(30, 67);
+            this.pagamentoDataGridView.Location = new System.Drawing.Point(31, 66);
             this.pagamentoDataGridView.Name = "pagamentoDataGridView";
-            this.pagamentoDataGridView.Size = new System.Drawing.Size(744, 220);
+            this.pagamentoDataGridView.Size = new System.Drawing.Size(744, 156);
             this.pagamentoDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -161,7 +164,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(426, 40);
+            this.label1.BackColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(341, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 13);
             this.label1.TabIndex = 2;
@@ -293,13 +297,35 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(781, 263);
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(651, 242);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 23);
+            this.button1.Size = new System.Drawing.Size(124, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "Ir para Menu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(331, 242);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(132, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Ajuda";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(31, 242);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(142, 23);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form7
             // 
@@ -307,6 +333,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
             this.ClientSize = new System.Drawing.Size(955, 328);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pagamentoDataGridView);
@@ -356,5 +384,7 @@
         private System.Windows.Forms.ToolStripButton pagamentoBindingNavigatorSaveItem;
         private System.Windows.Forms.BindingNavigator pagamentoBindingNavigator;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
     }
 }

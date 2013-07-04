@@ -19,17 +19,17 @@ namespace LP_projecto_final_Emanuel
         private void preço_do_quartoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.preço_do_quartoBindingSource.EndEdit();
+            //this.preço_do_quartoBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database1DataSet);
 
         }
 
         private void Form11_Load(object sender, EventArgs e)
         {
-// TODO: This line of code loads data into the 'database1DataSet.Utilizadores' table. You can move, or remove it, as needed.
-this.utilizadoresTableAdapter.Fill(this.database1DataSet.Utilizadores);
+            // TODO: This line of code loads data into the 'database1DataSet.Utilizadores' table. You can move, or remove it, as needed.
+            this.utilizadoresTableAdapter.Fill(this.database1DataSet.Utilizadores);
             // TODO: This line of code loads data into the 'database1DataSet.Preço_do_quarto' table. You can move, or remove it, as needed.
-            this.preço_do_quartoTableAdapter.Fill(this.database1DataSet.Preço_do_quarto);
+           // this.preço_do_quartoTableAdapter.Fill(this.database1DataSet.Preço_do_quarto);
 
         }
 
@@ -50,17 +50,35 @@ this.utilizadoresTableAdapter.Fill(this.database1DataSet.Utilizadores);
             }
             else
             {
-               
-               Form2 frm = new Form2();
+
+                Form2 frm = new Form2();
                 frm.ShowDialog();
+            }
         }
-    }
 
         private void utilizadoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-this.Validate();
-this.utilizadoresBindingSource.EndEdit();
-this.tableAdapterManager.UpdateAll(this.database1DataSet);
-        
+            this.Validate();
+            this.utilizadoresBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+
         }
+
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.textBox1.Text == "")
+                errorProvider1.SetError(this.textBox1, "nao pode ser vazio");
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.textBox2.Text == "")
+                errorProvider1.SetError(this.textBox2, "nao pode ser vazio");
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

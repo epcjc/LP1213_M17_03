@@ -19,7 +19,7 @@ namespace LP_projecto_final_Emanuel
         private void RelatorioReservacs_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'Database1DataSet.Reserva' table. You can move, or remove it, as needed.
-            this.ReservaTableAdapter.Fill(this.Database1DataSet.Reserva);
+           // this.ReservaTableAdapter.Fill(this.Database1DataSet.Reserva);
 
             this.reportViewer1.RefreshReport();
         }

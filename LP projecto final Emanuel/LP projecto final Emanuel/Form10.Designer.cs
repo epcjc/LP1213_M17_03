@@ -71,6 +71,10 @@
             this.tipos_de_pagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Tipos_de_pagamentoTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.fKPagamentoTiposDePagamento1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pagamento1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Pagamento1TableAdapter();
+            this.fKPagamentoTiposDePagamento1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
@@ -80,6 +84,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).BeginInit();
             this.clienteBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -111,15 +117,12 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.DataSource = this.tiposDePagamentoBindingSource;
-            this.comboBox2.DisplayMember = "metodo_pagamento";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(160, 121);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(140, 21);
             this.comboBox2.TabIndex = 1;
-            this.comboBox2.ValueMember = "id_tipo_pagamento";
             // 
             // tiposDePagamentoBindingSource
             // 
@@ -146,14 +149,19 @@
             this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = this.clienteTableAdapter;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto2TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
+            this.tableAdapterManager.Reserva_quartos1TableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
+            this.tableAdapterManager.Reserva1TableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_pagamento1TableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -162,6 +170,7 @@
             // clienteBindingNavigator
             // 
             this.clienteBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.clienteBindingNavigator.BackColor = System.Drawing.Color.Red;
             this.clienteBindingNavigator.BindingSource = this.clienteBindingSource;
             this.clienteBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.clienteBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
@@ -301,7 +310,7 @@
             this.clienteDataGridView.Location = new System.Drawing.Point(0, 164);
             this.clienteDataGridView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.clienteDataGridView.Name = "clienteDataGridView";
-            this.clienteDataGridView.Size = new System.Drawing.Size(898, 224);
+            this.clienteDataGridView.Size = new System.Drawing.Size(898, 162);
             this.clienteDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -398,6 +407,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(251, 38);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -407,13 +417,39 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Location = new System.Drawing.Point(361, 79);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 23);
             this.button1.TabIndex = 7;
             this.button1.Text = "Ir para Menu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(361, 119);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Ajuda";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // fKPagamentoTiposDePagamento1BindingSource
+            // 
+            this.fKPagamentoTiposDePagamento1BindingSource.DataMember = "FK_Pagamento_Tipos de pagamento1";
+            this.fKPagamentoTiposDePagamento1BindingSource.DataSource = this.tiposDePagamentoBindingSource;
+            // 
+            // pagamento1TableAdapter
+            // 
+            this.pagamento1TableAdapter.ClearBeforeFill = true;
+            // 
+            // fKPagamentoTiposDePagamento1BindingSource1
+            // 
+            this.fKPagamentoTiposDePagamento1BindingSource1.DataMember = "FK_Pagamento_Tipos de pagamento1";
+            this.fKPagamentoTiposDePagamento1BindingSource1.DataSource = this.tiposDePagamentoBindingSource;
             // 
             // Form10
             // 
@@ -421,6 +457,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
             this.ClientSize = new System.Drawing.Size(1039, 413);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -445,6 +482,8 @@
             this.clienteBindingNavigator.ResumeLayout(false);
             this.clienteBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,5 +532,9 @@
         private Database1DataSetTableAdapters.Tipos_de_pagamentoTableAdapter tipos_de_pagamentoTableAdapter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.BindingSource fKPagamentoTiposDePagamento1BindingSource;
+        private Database1DataSetTableAdapters.Pagamento1TableAdapter pagamento1TableAdapter;
+        private System.Windows.Forms.BindingSource fKPagamentoTiposDePagamento1BindingSource1;
     }
 }

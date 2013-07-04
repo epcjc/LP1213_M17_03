@@ -49,7 +49,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -64,12 +63,18 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,24 +122,30 @@
             this.textBox1.Location = new System.Drawing.Point(202, 51);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
+            this.textBox1.Size = new System.Drawing.Size(203, 20);
             this.textBox1.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.textBox1, "Introduza o nome");
+            this.textBox1.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(202, 87);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 20);
+            this.textBox2.Size = new System.Drawing.Size(203, 20);
             this.textBox2.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox2, "Introduza a morada");
+            this.textBox2.Validating += new System.ComponentModel.CancelEventHandler(this.textBox2_Validating);
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(202, 123);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 20);
+            this.textBox3.Size = new System.Drawing.Size(203, 20);
             this.textBox3.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.textBox3, "Introduza o contacto");
+            this.textBox3.Validating += new System.ComponentModel.CancelEventHandler(this.textBox3_Validating);
             // 
             // reservaBindingSource
             // 
@@ -148,24 +159,26 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(362, 309);
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(58, 318);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 23);
             this.button1.TabIndex = 9;
             this.button1.Text = "Inserir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(457, 309);
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(563, 318);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 23);
             this.button2.TabIndex = 10;
             this.button2.Text = "Ir para Menu";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // clienteBindingSource
@@ -183,13 +196,19 @@
             this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = this.clienteTableAdapter;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto2TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
+            this.tableAdapterManager.Reserva_quartos1TableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
+            this.tableAdapterManager.Reserva1TableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_pagamento1TableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -225,7 +244,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(63, 305);
+            this.label8.Location = new System.Drawing.Point(493, 173);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(32, 13);
             this.label8.TabIndex = 14;
@@ -235,50 +254,50 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(202, 237);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(143, 20);
+            this.textBox5.Size = new System.Drawing.Size(203, 20);
             this.textBox5.TabIndex = 15;
+            this.toolTip1.SetToolTip(this.textBox5, "Introduza numero de BI");
+            this.textBox5.Validating += new System.ComponentModel.CancelEventHandler(this.textBox5_Validating);
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(202, 278);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(143, 20);
+            this.textBox6.Size = new System.Drawing.Size(203, 20);
             this.textBox6.TabIndex = 16;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(202, 309);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(143, 20);
-            this.textBox7.TabIndex = 17;
+            this.toolTip1.SetToolTip(this.textBox6, "Introduza codigo postal");
+            this.textBox6.Validating += new System.ComponentModel.CancelEventHandler(this.textBox6_Validating);
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(202, 159);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(143, 20);
+            this.textBox8.Size = new System.Drawing.Size(203, 20);
             this.textBox8.TabIndex = 18;
+            this.toolTip1.SetToolTip(this.textBox8, "Introduza o email");
+            this.textBox8.Validating += new System.ComponentModel.CancelEventHandler(this.textBox8_Validating);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Janeiro",
-            "Fevereiro",
-            "Março",
-            "Abril",
-            "Maio",
-            "Junho",
-            "Julho",
-            "Agosto",
-            "Setembro",
-            "Outubro",
-            "Novembro",
-            "Dezembro"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
             this.comboBox1.Location = new System.Drawing.Point(202, 208);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(62, 21);
+            this.comboBox1.Size = new System.Drawing.Size(58, 21);
             this.comboBox1.TabIndex = 19;
+            this.toolTip1.SetToolTip(this.comboBox1, "Introduza mes");
             // 
             // comboBox2
             // 
@@ -315,10 +334,11 @@
             "29",
             "30",
             "31"});
-            this.comboBox2.Location = new System.Drawing.Point(269, 208);
+            this.comboBox2.Location = new System.Drawing.Point(266, 208);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(35, 21);
+            this.comboBox2.Size = new System.Drawing.Size(53, 21);
             this.comboBox2.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.comboBox2, "Introduza dia ");
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox3
@@ -340,10 +360,11 @@
             "1991",
             "1992",
             "1993"});
-            this.comboBox3.Location = new System.Drawing.Point(308, 208);
+            this.comboBox3.Location = new System.Drawing.Point(325, 208);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(37, 21);
+            this.comboBox3.Size = new System.Drawing.Size(80, 21);
             this.comboBox3.TabIndex = 21;
+            this.toolTip1.SetToolTip(this.comboBox3, "Introduza ano");
             // 
             // reservaTableAdapter
             // 
@@ -392,15 +413,17 @@
             this.pictureBox2.Size = new System.Drawing.Size(112, 76);
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox2, "Nao é obrigatorio colocar foto");
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(539, 263);
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(539, 255);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(112, 20);
             this.button3.TabIndex = 27;
-            this.button3.Text = "Importar imagens";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Text = "Importar foto";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
@@ -414,18 +437,44 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Red;
             this.label11.Location = new System.Drawing.Point(220, 21);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(90, 13);
             this.label11.TabIndex = 29;
             this.label11.Text = "Inserir clientes";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(213, 318);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(91, 23);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "Listar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(372, 318);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(101, 23);
+            this.button5.TabIndex = 31;
+            this.button5.Text = "Eliminar";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(685, 342);
+            this.ClientSize = new System.Drawing.Size(685, 355);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button3);
@@ -438,7 +487,6 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label8);
@@ -456,7 +504,10 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
+            this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form6";
             this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
@@ -466,6 +517,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaClienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,7 +544,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -508,5 +559,10 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -35,7 +35,7 @@ namespace LP_projecto_final_Emanuel
         private void Form21_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
-            this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
+            this.quartoTableAdapter.FillBy(this.database1DataSet.Quarto);
 
         }
 
@@ -75,6 +75,11 @@ namespace LP_projecto_final_Emanuel
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
         }
     }
 }

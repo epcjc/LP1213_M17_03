@@ -68,6 +68,9 @@
             this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
             this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             id_clienteLabel = new System.Windows.Forms.Label();
             nomeLabel = new System.Windows.Forms.Label();
             moradaLabel = new System.Windows.Forms.Label();
@@ -372,12 +375,13 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Location = new System.Drawing.Point(541, 313);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 20);
+            this.button1.Size = new System.Drawing.Size(101, 23);
             this.button1.TabIndex = 17;
             this.button1.Text = "Ir para Menu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
@@ -399,12 +403,13 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Location = new System.Drawing.Point(362, 313);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 20);
+            this.button2.Size = new System.Drawing.Size(66, 23);
             this.button2.TabIndex = 20;
             this.button2.Text = "Pesquisar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // clienteTableAdapter
@@ -417,7 +422,9 @@
             this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = this.clienteTableAdapter;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.Quarto2TableAdapter = null;
@@ -432,11 +439,43 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(319, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 13);
             this.label2.TabIndex = 21;
             this.label2.Text = "Pesquizar  clientes";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(541, 284);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(101, 23);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Ajuda";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(541, 255);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(101, 23);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Listar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(541, 226);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(101, 23);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "Inserir";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form3
             // 
@@ -444,6 +483,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
             this.ClientSize = new System.Drawing.Size(737, 370);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
@@ -515,5 +557,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

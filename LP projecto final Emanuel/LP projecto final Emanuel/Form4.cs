@@ -29,7 +29,7 @@ namespace LP_projecto_final_Emanuel
             // TODO: This line of code loads data into the 'database1DataSet.Cliente' table. You can move, or remove it, as needed.
             this.clienteTableAdapter.Fill(this.database1DataSet.Cliente);
             // TODO: This line of code loads data into the 'database1DataSet.Reserva' table. You can move, or remove it, as needed.
-            this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
+           // this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
 
         }
 
@@ -37,7 +37,15 @@ namespace LP_projecto_final_Emanuel
         {
             try
             {
-                this.clienteTableAdapter.Insert(Convert.ToInt16(this.comboBox1.SelectedValue));
+                DateTime datareserva = new DateTime(Convert.ToInt16(this.comboBox4.SelectedValue), Convert.ToInt16(this.comboBox2.SelectedValue),
+               Convert.ToInt16(this.comboBox3.SelectedValue));
+                DateTime datainicio = new DateTime(Convert.ToInt16(this.comboBox8.SelectedValue), Convert.ToInt16(this.comboBox7.SelectedValue),
+               Convert.ToInt16(this.comboBox6.SelectedValue));
+                DateTime datafim = new DateTime(Convert.ToInt16(this.comboBox11.SelectedValue), Convert.ToInt16(this.comboBox10.SelectedValue),
+               Convert.ToInt16(this.comboBox9.SelectedValue));
+
+                this.reservaTableAdapter.Insert(Convert.ToInt32(this.textBox2.Text), datareserva, Convert.ToDateTime(this.comboBox5.SelectedValue), datainicio, datafim,
+               Convert.ToInt32(this.textBox7.Text), this.textBox8.Text, this.textBox9.Text);
 
                 MessageBox.Show("Inserido com Sucesso");
             }
@@ -51,6 +59,22 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form24 frm = new Form24();
+            frm.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
         }
     }
 }

@@ -71,5 +71,22 @@ namespace LP_projecto_final_Emanuel
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form6 frm = new Form6();
+            frm.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form8 frm = new Form8();
+            frm.ShowDialog();
+        }
     }
 }

@@ -56,12 +56,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preço_do_quartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preço_do_quartoBindingNavigator)).BeginInit();
             this.preço_do_quartoBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -84,6 +90,7 @@
             this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = this.preço_do_quartoTableAdapter;
@@ -242,6 +249,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(185, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 13);
@@ -250,10 +258,14 @@
             // 
             // textBox1
             // 
+            this.helpProvider1.SetHelpString(this.textBox1, "Nao sabes o preço");
             this.textBox1.Location = new System.Drawing.Point(189, 103);
             this.textBox1.Name = "textBox1";
+            this.helpProvider1.SetShowHelp(this.textBox1, true);
             this.textBox1.Size = new System.Drawing.Size(181, 20);
             this.textBox1.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox1, "Introduza o preço do quarto");
+            this.textBox1.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
             // 
             // label2
             // 
@@ -266,25 +278,50 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.MediumBlue;
-            this.button1.Location = new System.Drawing.Point(94, 185);
+            this.button1.Location = new System.Drawing.Point(27, 185);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 23);
+            this.button1.Size = new System.Drawing.Size(99, 23);
             this.button1.TabIndex = 9;
             this.button1.Text = "Inserir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(243, 185);
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(388, 185);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 23);
+            this.button2.Size = new System.Drawing.Size(89, 23);
             this.button2.TabIndex = 10;
             this.button2.Text = "Ir para Menu";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(172, 184);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Listar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(277, 184);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // Form12
             // 
@@ -292,6 +329,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
             this.ClientSize = new System.Drawing.Size(549, 460);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -300,6 +339,9 @@
             this.Controls.Add(this.preço_do_quartoBindingNavigator);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form12";
             this.Text = "Form12";
             this.Load += new System.EventHandler(this.Form12_Load);
@@ -310,6 +352,7 @@
             this.preço_do_quartoBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,5 +386,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }

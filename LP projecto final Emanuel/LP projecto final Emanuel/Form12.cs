@@ -27,9 +27,8 @@ namespace LP_projecto_final_Emanuel
         private void Form12_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Quarto1' table. You can move, or remove it, as needed.
-            this.quarto1TableAdapter.Fill(this.database1DataSet.Quarto1);
-            // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
-            this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
+            //this.quarto1TableAdapter.Fill(this.database1DataSet.Quarto1);
+           
             // TODO: This line of code loads data into the 'database1DataSet.Preço_do_quarto' table. You can move, or remove it, as needed.
             this.preço_do_quartoTableAdapter.Fill(this.database1DataSet.Preço_do_quarto);
 
@@ -117,23 +116,39 @@ namespace LP_projecto_final_Emanuel
 
         private void button1_Click(object sender, EventArgs e)
         {
-             try
+            try
             {
 
-                
-               this.preço_do_quartoTableAdapter.Insert(this.textBox1.Text);
+
+                this.preço_do_quartoTableAdapter.Insert(Convert.ToDecimal(this.textBox1.Text));
                 MessageBox.Show("Inserido com Sucesso");
-                 
-                
+            }
+
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
         }
-        }
+
+        
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.textBox1.Text == "")
+                errorProvider1.SetError(this.textBox1, "nao pode ser vazio");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form17 frm = new Form17();
+            frm.ShowDialog();
+        }
+    }
+}

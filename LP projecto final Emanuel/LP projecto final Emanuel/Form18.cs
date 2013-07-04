@@ -35,40 +35,49 @@ namespace LP_projecto_final_Emanuel
         private void Form18_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
-            this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
+            this.quartoTableAdapter.FillBy(this.database1DataSet.Quarto);
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-             try
+
+           /* try
             {
-                string message = "Confirmar !!";
 
-                var result = MessageBox.Show(message, "Inserção",
-                                      MessageBoxButtons.YesNo,
-                                      MessageBoxIcon.Question);
+                this.quartoTableAdapter.Insert(this.textBox1.Text, Convert.ToInt32(this.textBox2.Text), Convert.ToInt32(this.comboBox1.Text));
+                MessageBox.Show("Inserido novo Quarto !!");
 
-                if (result == DialogResult.Yes)
-                {
-                    this.quartoTableAdapter.Insert(textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue), Convert.ToInt16(textBox2.Text));
-                    MessageBox.Show("Dados inseridos com sucesso !!");
-                }
-                else
-                {
-                    MessageBox.Show("Operação Cancelada !!");
-                }
             }
+
 
             catch (Exception ex)
             {
-                MessageBox.Show("Erro !!");
-                
+                MessageBox.Show(ex.ToString());
+            }*/
         }
-    }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.textBox1.Text == "")
+                errorProvider1.SetError(this.textBox1, "nao pode ser vazio");
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.textBox2.Text == "")
+                errorProvider1.SetError(this.textBox2, "nao pode ser vazio");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form24 frm = new Form24();
+            frm.ShowDialog();
+        }
+    }
 }

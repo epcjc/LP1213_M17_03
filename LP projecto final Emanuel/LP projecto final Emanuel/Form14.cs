@@ -19,7 +19,7 @@ namespace LP_projecto_final_Emanuel
         private void quartoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.quartoBindingSource.EndEdit();
+           // this.quartoBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database1DataSet);
 
         }
@@ -33,7 +33,7 @@ namespace LP_projecto_final_Emanuel
             // TODO: This line of code loads data into the 'database1DataSet.Utilizadores' table. You can move, or remove it, as needed.
             this.utilizadoresTableAdapter.Fill(this.database1DataSet.Utilizadores);
             // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
-            this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
+            //this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
 
         }
 
@@ -56,6 +56,16 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void nomeTextBox_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
         }
     }
 }

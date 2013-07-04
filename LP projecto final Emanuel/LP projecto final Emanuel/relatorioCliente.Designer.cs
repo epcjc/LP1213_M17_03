@@ -67,22 +67,26 @@
             this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = this.preço_do_quartoTableAdapter;
             this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
             // reportViewer1
             // 
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.ClienteBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LP_projecto_final_Emanuel.clientes.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LP_projecto_final_Emanuel.reports.clientes.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(46, 35);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(469, 278);

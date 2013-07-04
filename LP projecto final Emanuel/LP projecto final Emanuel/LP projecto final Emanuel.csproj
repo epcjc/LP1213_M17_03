@@ -93,23 +93,11 @@
     <Compile Include="Form12.Designer.cs">
       <DependentUpon>Form12.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form13.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form13.Designer.cs">
-      <DependentUpon>Form13.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form14.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form14.Designer.cs">
       <DependentUpon>Form14.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form15.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form15.Designer.cs">
-      <DependentUpon>Form15.cs</DependentUpon>
     </Compile>
     <Compile Include="Form16.cs">
       <SubType>Form</SubType>
@@ -129,6 +117,12 @@
     <Compile Include="Form18.Designer.cs">
       <DependentUpon>Form18.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form19.Designer.cs">
+      <DependentUpon>Form19.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +134,24 @@
     </Compile>
     <Compile Include="Form20.Designer.cs">
       <DependentUpon>Form20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form22.Designer.cs">
+      <DependentUpon>Form22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form23.Designer.cs">
+      <DependentUpon>Form23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form24.Designer.cs">
+      <DependentUpon>Form24.cs</DependentUpon>
     </Compile>
     <Compile Include="RelatorioPrecoQuarto.cs">
       <SubType>Form</SubType>
@@ -201,12 +213,6 @@
     <Compile Include="Form8.Designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form9.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelatorioPagamento.cs">
@@ -239,7 +245,16 @@
     <Compile Include="RelatorioUtilizadorescs.Designer.cs">
       <DependentUpon>RelatorioUtilizadorescs.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="clientes.rdlc" />
+    <EmbeddedResource Include="Form19.resx">
+      <DependentUpon>Form19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form23.resx">
+      <DependentUpon>Form23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form24.resx">
+      <DependentUpon>Form24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\clientes.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,14 +267,8 @@
     <EmbeddedResource Include="Form12.resx">
       <DependentUpon>Form12.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form13.resx">
-      <DependentUpon>Form13.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form14.resx">
       <DependentUpon>Form14.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form15.resx">
-      <DependentUpon>Form15.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form16.resx">
       <DependentUpon>Form16.cs</DependentUpon>
@@ -276,12 +285,15 @@
     <EmbeddedResource Include="Form20.resx">
       <DependentUpon>Form20.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pagamentos.rdlc" />
+    <EmbeddedResource Include="Form22.resx">
+      <DependentUpon>Form22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Pagamentos.rdlc" />
     <EmbeddedResource Include="RelatorioPrecoQuarto.resx">
       <DependentUpon>RelatorioPrecoQuarto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PreçoQuarto.rdlc" />
-    <EmbeddedResource Include="Quarto.rdlc" />
+    <EmbeddedResource Include="reports\PreçoQuarto.rdlc" />
+    <EmbeddedResource Include="reports\Quarto.rdlc" />
     <EmbeddedResource Include="RelatorioQuarto.resx">
       <DependentUpon>RelatorioQuarto.cs</DependentUpon>
     </EmbeddedResource>
@@ -309,9 +321,6 @@
     <EmbeddedResource Include="Form8.resx">
       <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -337,10 +346,10 @@
     <EmbeddedResource Include="RelatorioUtilizadorescs.resx">
       <DependentUpon>RelatorioUtilizadorescs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reserva.rdlc" />
-    <EmbeddedResource Include="TipoPagamento.rdlc" />
-    <EmbeddedResource Include="TipoQuarto.rdlc" />
-    <EmbeddedResource Include="Utilizadores.rdlc" />
+    <EmbeddedResource Include="reports\Reserva.rdlc" />
+    <EmbeddedResource Include="reports\TipoPagamento.rdlc" />
+    <EmbeddedResource Include="reports\TipoQuarto.rdlc" />
+    <EmbeddedResource Include="reports\Utilizadores.rdlc" />
     <None Include="app.config" />
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
@@ -371,6 +380,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\catussaba_resort_vista.jpg" />
+    <None Include="Resources\tyyyy.jpg" />
+    <None Include="Resources\hotelbunito.jpg" />
+    <None Include="Resources\software 1.png" />
+    <None Include="RelatorioHotel.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\software.png" />
+    <None Include="Resources\form-login.png" />
+    <None Include="Resources\grafic.png" />
     <None Include="Resources\hotel1.jpg" />
     <None Include="Resources\cli.jpg" />
     <None Include="Resources\cliente.jpg" />

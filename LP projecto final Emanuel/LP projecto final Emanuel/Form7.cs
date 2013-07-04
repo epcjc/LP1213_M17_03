@@ -35,5 +35,15 @@ namespace LP_projecto_final_Emanuel
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

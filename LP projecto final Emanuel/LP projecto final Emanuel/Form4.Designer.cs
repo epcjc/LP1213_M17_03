@@ -29,42 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label id_reservaLabel;
-            System.Windows.Forms.Label id_clienteLabel;
-            System.Windows.Forms.Label data_reservaLabel;
-            System.Windows.Forms.Label hora_reservaLabel;
-            System.Windows.Forms.Label data_inicioLabel;
-            System.Windows.Forms.Label data_fimLabel;
-            System.Windows.Forms.Label totalLabel;
-            System.Windows.Forms.Label comentariosLabel;
-            System.Windows.Forms.Label estadoLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
-            this.reservaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.reservaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.id_reservaTextBox = new System.Windows.Forms.TextBox();
-            this.id_clienteTextBox = new System.Windows.Forms.TextBox();
-            this.data_reservaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.hora_reservaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.data_inicioDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.data_fimDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.totalTextBox = new System.Windows.Forms.TextBox();
-            this.comentariosTextBox = new System.Windows.Forms.TextBox();
-            this.estadoTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -72,111 +40,40 @@
             this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            id_reservaLabel = new System.Windows.Forms.Label();
-            id_clienteLabel = new System.Windows.Forms.Label();
-            data_reservaLabel = new System.Windows.Forms.Label();
-            hora_reservaLabel = new System.Windows.Forms.Label();
-            data_inicioLabel = new System.Windows.Forms.Label();
-            data_fimLabel = new System.Windows.Forms.Label();
-            totalLabel = new System.Windows.Forms.Label();
-            comentariosLabel = new System.Windows.Forms.Label();
-            estadoLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingNavigator)).BeginInit();
-            this.reservaBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // id_reservaLabel
-            // 
-            id_reservaLabel.AutoSize = true;
-            id_reservaLabel.Location = new System.Drawing.Point(19, 98);
-            id_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            id_reservaLabel.Name = "id_reservaLabel";
-            id_reservaLabel.Size = new System.Drawing.Size(67, 13);
-            id_reservaLabel.TabIndex = 1;
-            id_reservaLabel.Text = "id reserva:";
-            // 
-            // id_clienteLabel
-            // 
-            id_clienteLabel.AutoSize = true;
-            id_clienteLabel.Location = new System.Drawing.Point(19, 124);
-            id_clienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            id_clienteLabel.Name = "id_clienteLabel";
-            id_clienteLabel.Size = new System.Drawing.Size(63, 13);
-            id_clienteLabel.TabIndex = 3;
-            id_clienteLabel.Text = "id cliente:";
-            // 
-            // data_reservaLabel
-            // 
-            data_reservaLabel.AutoSize = true;
-            data_reservaLabel.Location = new System.Drawing.Point(19, 152);
-            data_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            data_reservaLabel.Name = "data_reservaLabel";
-            data_reservaLabel.Size = new System.Drawing.Size(82, 13);
-            data_reservaLabel.TabIndex = 5;
-            data_reservaLabel.Text = "data reserva:";
-            // 
-            // hora_reservaLabel
-            // 
-            hora_reservaLabel.AutoSize = true;
-            hora_reservaLabel.Location = new System.Drawing.Point(19, 178);
-            hora_reservaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            hora_reservaLabel.Name = "hora_reservaLabel";
-            hora_reservaLabel.Size = new System.Drawing.Size(82, 13);
-            hora_reservaLabel.TabIndex = 7;
-            hora_reservaLabel.Text = "hora reserva:";
-            // 
-            // data_inicioLabel
-            // 
-            data_inicioLabel.AutoSize = true;
-            data_inicioLabel.Location = new System.Drawing.Point(19, 204);
-            data_inicioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            data_inicioLabel.Name = "data_inicioLabel";
-            data_inicioLabel.Size = new System.Drawing.Size(72, 13);
-            data_inicioLabel.TabIndex = 9;
-            data_inicioLabel.Text = "Data inicio:";
-            // 
-            // data_fimLabel
-            // 
-            data_fimLabel.AutoSize = true;
-            data_fimLabel.Location = new System.Drawing.Point(19, 230);
-            data_fimLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            data_fimLabel.Name = "data_fimLabel";
-            data_fimLabel.Size = new System.Drawing.Size(58, 13);
-            data_fimLabel.TabIndex = 11;
-            data_fimLabel.Text = "Data fim:";
-            // 
-            // totalLabel
-            // 
-            totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(19, 254);
-            totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            totalLabel.Name = "totalLabel";
-            totalLabel.Size = new System.Drawing.Size(40, 13);
-            totalLabel.TabIndex = 13;
-            totalLabel.Text = "Total:";
-            // 
-            // comentariosLabel
-            // 
-            comentariosLabel.AutoSize = true;
-            comentariosLabel.Location = new System.Drawing.Point(19, 280);
-            comentariosLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            comentariosLabel.Name = "comentariosLabel";
-            comentariosLabel.Size = new System.Drawing.Size(79, 13);
-            comentariosLabel.TabIndex = 15;
-            comentariosLabel.Text = "comentarios:";
-            // 
-            // estadoLabel
-            // 
-            estadoLabel.AutoSize = true;
-            estadoLabel.Location = new System.Drawing.Point(19, 306);
-            estadoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            estadoLabel.Name = "estadoLabel";
-            estadoLabel.Size = new System.Drawing.Size(49, 13);
-            estadoLabel.TabIndex = 17;
-            estadoLabel.Text = "estado:";
             // 
             // database1DataSet
             // 
@@ -198,6 +95,7 @@
             this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
@@ -211,225 +109,21 @@
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
-            // reservaBindingNavigator
-            // 
-            this.reservaBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.reservaBindingNavigator.BindingSource = this.reservaBindingSource;
-            this.reservaBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.reservaBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.reservaBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.reservaBindingNavigatorSaveItem});
-            this.reservaBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.reservaBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.reservaBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.reservaBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.reservaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.reservaBindingNavigator.Name = "reservaBindingNavigator";
-            this.reservaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.reservaBindingNavigator.Size = new System.Drawing.Size(704, 25);
-            this.reservaBindingNavigator.TabIndex = 0;
-            this.reservaBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(44, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // reservaBindingNavigatorSaveItem
-            // 
-            this.reservaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.reservaBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("reservaBindingNavigatorSaveItem.Image")));
-            this.reservaBindingNavigatorSaveItem.Name = "reservaBindingNavigatorSaveItem";
-            this.reservaBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.reservaBindingNavigatorSaveItem.Text = "Save Data";
-            this.reservaBindingNavigatorSaveItem.Click += new System.EventHandler(this.reservaBindingNavigatorSaveItem_Click);
-            // 
-            // id_reservaTextBox
-            // 
-            this.id_reservaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "id_reserva", true));
-            this.id_reservaTextBox.Location = new System.Drawing.Point(107, 95);
-            this.id_reservaTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.id_reservaTextBox.Name = "id_reservaTextBox";
-            this.id_reservaTextBox.Size = new System.Drawing.Size(232, 20);
-            this.id_reservaTextBox.TabIndex = 2;
-            // 
-            // id_clienteTextBox
-            // 
-            this.id_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "id_cliente", true));
-            this.id_clienteTextBox.Location = new System.Drawing.Point(107, 121);
-            this.id_clienteTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.id_clienteTextBox.Name = "id_clienteTextBox";
-            this.id_clienteTextBox.Size = new System.Drawing.Size(232, 20);
-            this.id_clienteTextBox.TabIndex = 4;
-            // 
-            // data_reservaDateTimePicker
-            // 
-            this.data_reservaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "data_reserva", true));
-            this.data_reservaDateTimePicker.Location = new System.Drawing.Point(107, 147);
-            this.data_reservaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.data_reservaDateTimePicker.Name = "data_reservaDateTimePicker";
-            this.data_reservaDateTimePicker.Size = new System.Drawing.Size(232, 20);
-            this.data_reservaDateTimePicker.TabIndex = 6;
-            // 
-            // hora_reservaDateTimePicker
-            // 
-            this.hora_reservaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "hora_reserva", true));
-            this.hora_reservaDateTimePicker.Location = new System.Drawing.Point(107, 178);
-            this.hora_reservaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.hora_reservaDateTimePicker.Name = "hora_reservaDateTimePicker";
-            this.hora_reservaDateTimePicker.Size = new System.Drawing.Size(232, 20);
-            this.hora_reservaDateTimePicker.TabIndex = 8;
-            // 
-            // data_inicioDateTimePicker
-            // 
-            this.data_inicioDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "Data_inicio", true));
-            this.data_inicioDateTimePicker.Location = new System.Drawing.Point(107, 199);
-            this.data_inicioDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.data_inicioDateTimePicker.Name = "data_inicioDateTimePicker";
-            this.data_inicioDateTimePicker.Size = new System.Drawing.Size(232, 20);
-            this.data_inicioDateTimePicker.TabIndex = 10;
-            // 
-            // data_fimDateTimePicker
-            // 
-            this.data_fimDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservaBindingSource, "Data_fim", true));
-            this.data_fimDateTimePicker.Location = new System.Drawing.Point(107, 225);
-            this.data_fimDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.data_fimDateTimePicker.Name = "data_fimDateTimePicker";
-            this.data_fimDateTimePicker.Size = new System.Drawing.Size(232, 20);
-            this.data_fimDateTimePicker.TabIndex = 12;
-            // 
-            // totalTextBox
-            // 
-            this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Total", true));
-            this.totalTextBox.Location = new System.Drawing.Point(107, 251);
-            this.totalTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.totalTextBox.Name = "totalTextBox";
-            this.totalTextBox.Size = new System.Drawing.Size(232, 20);
-            this.totalTextBox.TabIndex = 14;
-            // 
-            // comentariosTextBox
-            // 
-            this.comentariosTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "comentarios", true));
-            this.comentariosTextBox.Location = new System.Drawing.Point(107, 277);
-            this.comentariosTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.comentariosTextBox.Name = "comentariosTextBox";
-            this.comentariosTextBox.Size = new System.Drawing.Size(232, 20);
-            this.comentariosTextBox.TabIndex = 16;
-            // 
-            // estadoTextBox
-            // 
-            this.estadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "estado", true));
-            this.estadoTextBox.Location = new System.Drawing.Point(107, 303);
-            this.estadoTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.estadoTextBox.Name = "estadoTextBox";
-            this.estadoTextBox.Size = new System.Drawing.Size(232, 20);
-            this.estadoTextBox.TabIndex = 18;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(473, 299);
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(513, 329);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 20);
+            this.button1.Size = new System.Drawing.Size(94, 24);
             this.button1.TabIndex = 19;
             this.button1.Text = "Ir para Menu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(492, 105);
+            this.label1.Location = new System.Drawing.Point(484, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 21;
@@ -440,7 +134,7 @@
             this.comboBox1.DataSource = this.clienteBindingSource;
             this.comboBox1.DisplayMember = "nome";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(473, 132);
+            this.comboBox1.Location = new System.Drawing.Point(465, 103);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(106, 21);
             this.comboBox1.TabIndex = 22;
@@ -457,53 +151,524 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(473, 273);
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(41, 329);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 20);
+            this.button2.Size = new System.Drawing.Size(94, 24);
             this.button2.TabIndex = 23;
             this.button2.Text = "Inserir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(317, 45);
+            this.label2.BackColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(323, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 24;
             this.label2.Text = "Inserir  Reservas";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(465, 130);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 72);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(465, 204);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(122, 23);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "Importar Imagem";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "id reserva";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "id cliente";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 13);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "data reserva";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(32, 169);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 13);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "hora reserva";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(35, 196);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 13);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "data inicio";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(38, 220);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "data fim";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(35, 250);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(32, 13);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "total";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(35, 273);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 13);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "comentarios";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(38, 303);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(45, 13);
+            this.label11.TabIndex = 35;
+            this.label11.Text = "estado";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(135, 85);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(143, 20);
+            this.textBox1.TabIndex = 36;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(135, 112);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(143, 20);
+            this.textBox2.TabIndex = 37;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(135, 247);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(143, 20);
+            this.textBox7.TabIndex = 42;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(135, 274);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(143, 20);
+            this.textBox8.TabIndex = 43;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(135, 303);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(143, 20);
+            this.textBox9.TabIndex = 44;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1980",
+            "1980",
+            "1981",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1992",
+            "1993"});
+            this.comboBox3.Location = new System.Drawing.Point(241, 139);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(37, 21);
+            this.comboBox3.TabIndex = 47;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comboBox2.Location = new System.Drawing.Point(202, 139);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(35, 21);
+            this.comboBox2.TabIndex = 46;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"});
+            this.comboBox4.Location = new System.Drawing.Point(135, 139);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(62, 21);
+            this.comboBox4.TabIndex = 45;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comboBox5.Location = new System.Drawing.Point(135, 169);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(143, 21);
+            this.comboBox5.TabIndex = 48;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "1980",
+            "1980",
+            "1981",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1992",
+            "1993"});
+            this.comboBox6.Location = new System.Drawing.Point(241, 193);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(37, 21);
+            this.comboBox6.TabIndex = 51;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comboBox7.Location = new System.Drawing.Point(202, 193);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(35, 21);
+            this.comboBox7.TabIndex = 50;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"});
+            this.comboBox8.Location = new System.Drawing.Point(135, 193);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(62, 21);
+            this.comboBox8.TabIndex = 49;
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
+            "1980",
+            "1980",
+            "1981",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1992",
+            "1993"});
+            this.comboBox9.Location = new System.Drawing.Point(241, 220);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(37, 21);
+            this.comboBox9.TabIndex = 54;
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comboBox10.Location = new System.Drawing.Point(202, 220);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(35, 21);
+            this.comboBox10.TabIndex = 53;
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"});
+            this.comboBox11.Location = new System.Drawing.Point(135, 220);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(62, 21);
+            this.comboBox11.TabIndex = 52;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(162, 330);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(84, 23);
+            this.button4.TabIndex = 55;
+            this.button4.Text = "Listar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(272, 329);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(85, 23);
+            this.button5.TabIndex = 56;
+            this.button5.Text = "Eliminar";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(382, 330);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(90, 23);
+            this.button6.TabIndex = 57;
+            this.button6.Text = "Ajuda";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(704, 353);
+            this.ClientSize = new System.Drawing.Size(704, 372);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.comboBox10);
+            this.Controls.Add(this.comboBox11);
+            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.comboBox8);
+            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(id_reservaLabel);
-            this.Controls.Add(this.id_reservaTextBox);
-            this.Controls.Add(id_clienteLabel);
-            this.Controls.Add(this.id_clienteTextBox);
-            this.Controls.Add(data_reservaLabel);
-            this.Controls.Add(this.data_reservaDateTimePicker);
-            this.Controls.Add(hora_reservaLabel);
-            this.Controls.Add(this.hora_reservaDateTimePicker);
-            this.Controls.Add(data_inicioLabel);
-            this.Controls.Add(this.data_inicioDateTimePicker);
-            this.Controls.Add(data_fimLabel);
-            this.Controls.Add(this.data_fimDateTimePicker);
-            this.Controls.Add(totalLabel);
-            this.Controls.Add(this.totalTextBox);
-            this.Controls.Add(comentariosLabel);
-            this.Controls.Add(this.comentariosTextBox);
-            this.Controls.Add(estadoLabel);
-            this.Controls.Add(this.estadoTextBox);
-            this.Controls.Add(this.reservaBindingNavigator);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -512,10 +677,8 @@
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingNavigator)).EndInit();
-            this.reservaBindingNavigator.ResumeLayout(false);
-            this.reservaBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -527,28 +690,6 @@
         private System.Windows.Forms.BindingSource reservaBindingSource;
         private Database1DataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator reservaBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton reservaBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox id_reservaTextBox;
-        private System.Windows.Forms.TextBox id_clienteTextBox;
-        private System.Windows.Forms.DateTimePicker data_reservaDateTimePicker;
-        private System.Windows.Forms.DateTimePicker hora_reservaDateTimePicker;
-        private System.Windows.Forms.DateTimePicker data_inicioDateTimePicker;
-        private System.Windows.Forms.DateTimePicker data_fimDateTimePicker;
-        private System.Windows.Forms.TextBox totalTextBox;
-        private System.Windows.Forms.TextBox comentariosTextBox;
-        private System.Windows.Forms.TextBox estadoTextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -556,5 +697,34 @@
         private Database1DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

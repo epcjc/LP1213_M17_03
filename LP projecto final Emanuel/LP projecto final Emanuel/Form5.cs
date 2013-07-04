@@ -19,7 +19,7 @@ namespace LP_projecto_final_Emanuel
         private void Form5_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Reserva' table. You can move, or remove it, as needed.
-            this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
+            //this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
             // TODO: This line of code loads data into the 'database1DataSet.Pagamento' table. You can move, or remove it, as needed.
             this.pagamentoTableAdapter.Fill(this.database1DataSet.Pagamento);
             // TODO: This line of code loads data into the 'database1DataSet.Cliente' table. You can move, or remove it, as needed.
@@ -30,6 +30,16 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
