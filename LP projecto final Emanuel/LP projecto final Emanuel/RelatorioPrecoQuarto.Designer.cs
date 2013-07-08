@@ -56,7 +56,7 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LP_projecto_final_Emanuel.PreçoQuarto.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(29, 28);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.Size = new System.Drawing.Size(663, 727);
             this.reportViewer1.TabIndex = 0;
             // 
             // Preço_do_quartoTableAdapter
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 331);
+            this.ClientSize = new System.Drawing.Size(768, 749);
             this.Controls.Add(this.reportViewer1);
             this.Name = "RelatorioPrecoQuarto";
             this.Text = "RelatorioPrecoQuarto";

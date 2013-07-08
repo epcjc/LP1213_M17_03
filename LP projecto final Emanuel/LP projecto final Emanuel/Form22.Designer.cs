@@ -63,11 +63,12 @@
             this.tipos_de_pagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tipos_de_pagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Tipos_de_pagamentoTableAdapter();
             this.tipos_de_pagamentoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.fKPagamentoTiposDePagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingNavigator)).BeginInit();
@@ -75,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamentoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -109,6 +111,7 @@
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
             this.tableAdapterManager.Reserva1TableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_pagamento1TableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -346,9 +349,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(302, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 13);
+            this.label1.Size = new System.Drawing.Size(129, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Listar Pagamento";
             // 
@@ -366,33 +371,20 @@
             this.tipos_de_pagamentoDataGridView.AutoGenerateColumns = false;
             this.tipos_de_pagamentoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tipos_de_pagamentoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn10});
             this.tipos_de_pagamentoDataGridView.DataSource = this.tipos_de_pagamentoBindingSource;
             this.tipos_de_pagamentoDataGridView.Location = new System.Drawing.Point(15, 241);
             this.tipos_de_pagamentoDataGridView.Name = "tipos_de_pagamentoDataGridView";
-            this.tipos_de_pagamentoDataGridView.Size = new System.Drawing.Size(344, 132);
+            this.tipos_de_pagamentoDataGridView.Size = new System.Drawing.Size(354, 132);
             this.tipos_de_pagamentoDataGridView.TabIndex = 7;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "id_tipo_pagamento";
-            this.dataGridViewTextBoxColumn8.HeaderText = "id_tipo_pagamento";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "id_metodo_pagamento";
             this.dataGridViewTextBoxColumn9.HeaderText = "id_metodo_pagamento";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "metodo_pagamento";
-            this.dataGridViewTextBoxColumn10.HeaderText = "metodo_pagamento";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
             // label2
             // 
@@ -411,6 +403,24 @@
             this.label3.Size = new System.Drawing.Size(146, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Tipo de Pagamento feita";
+            // 
+            // fKPagamentoTiposDePagamentoBindingSource
+            // 
+            this.fKPagamentoTiposDePagamentoBindingSource.DataMember = "FK_Pagamento_Tipos de pagamento";
+            this.fKPagamentoTiposDePagamentoBindingSource.DataSource = this.tipos_de_pagamentoBindingSource;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "metodo_pagamento";
+            this.dataGridViewTextBoxColumn10.HeaderText = "metodo_pagamento";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "id_tipo_pagamento";
+            this.dataGridViewTextBoxColumn8.HeaderText = "id_tipo_pagamento";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // Form22
             // 
@@ -441,6 +451,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipos_de_pagamentoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamentoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,10 +492,11 @@
         private System.Windows.Forms.BindingSource tipos_de_pagamentoBindingSource;
         private Database1DataSetTableAdapters.Tipos_de_pagamentoTableAdapter tipos_de_pagamentoTableAdapter;
         private System.Windows.Forms.DataGridView tipos_de_pagamentoDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.BindingSource fKPagamentoTiposDePagamentoBindingSource;
     }
 }

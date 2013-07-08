@@ -56,7 +56,7 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LP_projecto_final_Emanuel.TipoPagamento.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(27, 26);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.Size = new System.Drawing.Size(681, 698);
             this.reportViewer1.TabIndex = 0;
             // 
             // Tipos_de_pagamentoTableAdapter
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 314);
+            this.ClientSize = new System.Drawing.Size(735, 746);
             this.Controls.Add(this.reportViewer1);
             this.Name = "RelatorioTipoPagamento";
             this.Text = "RelatorioTipoPagamento";

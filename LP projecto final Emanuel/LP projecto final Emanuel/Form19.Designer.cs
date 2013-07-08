@@ -52,6 +52,7 @@
             this.reserva_quartosDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKReservaQuartosQuarto5BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -70,20 +71,19 @@
             this.fKReservaQuartosQuarto5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reserva_quartos1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Reserva_quartos1TableAdapter();
             this.fKReservaQuartosQuarto2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKReservaQuartosQuarto5BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingNavigator)).BeginInit();
             this.quarto2BindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reserva_quartosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reserva_quartosDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuarto5BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuarto5BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuarto2BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuarto5BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -118,6 +118,7 @@
             this.tableAdapterManager.Reserva_quartosTableAdapter = this.reserva_quartosTableAdapter;
             this.tableAdapterManager.Reserva1TableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_pagamento1TableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -282,6 +283,11 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "id_quartos";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
+            // fKReservaQuartosQuarto5BindingSource1
+            // 
+            this.fKReservaQuartosQuarto5BindingSource1.DataMember = "FK_Reserva quartos_Quarto5";
+            this.fKReservaQuartosQuarto5BindingSource1.DataSource = this.quarto2BindingSource;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
@@ -326,10 +332,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Red;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(261, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.Size = new System.Drawing.Size(129, 16);
             this.label1.TabIndex = 7;
             this.label1.Text = "Lista dos Quartos";
             // 
@@ -344,7 +352,7 @@
             this.andarquartoDataGridViewTextBoxColumn,
             this.imagemDataGridViewImageColumn});
             this.dataGridView1.DataSource = this.quarto2BindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(72, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(72, 71);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(545, 150);
             this.dataGridView1.TabIndex = 8;
@@ -413,11 +421,6 @@
             this.fKReservaQuartosQuarto2BindingSource.DataMember = "FK_Reserva quartos_Quarto2";
             this.fKReservaQuartosQuarto2BindingSource.DataSource = this.quarto2BindingSource;
             // 
-            // fKReservaQuartosQuarto5BindingSource1
-            // 
-            this.fKReservaQuartosQuarto5BindingSource1.DataMember = "FK_Reserva quartos_Quarto5";
-            this.fKReservaQuartosQuarto5BindingSource1.DataSource = this.quarto2BindingSource;
-            // 
             // Form19
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -445,13 +448,13 @@
             this.quarto2BindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reserva_quartosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reserva_quartosDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuarto5BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuartoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuarto5BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuarto2BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKReservaQuartosQuarto5BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

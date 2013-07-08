@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.PagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.PagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.PagamentoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PagamentoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // PagamentoBindingSource
+            // 
+            this.PagamentoBindingSource.DataMember = "Pagamento";
+            this.PagamentoBindingSource.DataSource = this.Database1DataSet;
+            // 
+            // Database1DataSet
+            // 
+            this.Database1DataSet.DataSetName = "Database1DataSet";
+            this.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -46,18 +56,8 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LP_projecto_final_Emanuel.Pagamentos.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(42, 30);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.Size = new System.Drawing.Size(769, 693);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // Database1DataSet
-            // 
-            this.Database1DataSet.DataSetName = "Database1DataSet";
-            this.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // PagamentoBindingSource
-            // 
-            this.PagamentoBindingSource.DataMember = "Pagamento";
-            this.PagamentoBindingSource.DataSource = this.Database1DataSet;
             // 
             // PagamentoTableAdapter
             // 
@@ -67,13 +67,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 330);
+            this.ClientSize = new System.Drawing.Size(874, 749);
             this.Controls.Add(this.reportViewer1);
             this.Name = "RelatorioPagamento";
             this.Text = "RelatorioPagamento";
             this.Load += new System.EventHandler(this.RelatorioPagamento_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PagamentoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

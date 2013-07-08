@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.QuartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.QuartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuartoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // QuartoBindingSource
+            // 
+            this.QuartoBindingSource.DataMember = "Quarto";
+            this.QuartoBindingSource.DataSource = this.Database1DataSet;
+            // 
+            // Database1DataSet
+            // 
+            this.Database1DataSet.DataSetName = "Database1DataSet";
+            this.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -44,20 +54,10 @@
             reportDataSource1.Value = this.QuartoBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LP_projecto_final_Emanuel.Quarto.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(38, 46);
+            this.reportViewer1.Location = new System.Drawing.Point(50, 12);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.Size = new System.Drawing.Size(659, 701);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // Database1DataSet
-            // 
-            this.Database1DataSet.DataSetName = "Database1DataSet";
-            this.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // QuartoBindingSource
-            // 
-            this.QuartoBindingSource.DataMember = "Quarto";
-            this.QuartoBindingSource.DataSource = this.Database1DataSet;
             // 
             // QuartoTableAdapter
             // 
@@ -68,13 +68,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(484, 332);
+            this.ClientSize = new System.Drawing.Size(760, 749);
             this.Controls.Add(this.reportViewer1);
             this.Name = "RelatorioQuarto";
             this.Text = "RelatorioQuarto";
             this.Load += new System.EventHandler(this.RelatorioQuarto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuartoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

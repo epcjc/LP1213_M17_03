@@ -54,9 +54,9 @@
             reportDataSource1.Value = this.ReservaBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LP_projecto_final_Emanuel.Reserva.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(80, 38);
+            this.reportViewer1.Location = new System.Drawing.Point(36, 12);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.Size = new System.Drawing.Size(742, 725);
             this.reportViewer1.TabIndex = 0;
             // 
             // ReservaTableAdapter
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 327);
+            this.ClientSize = new System.Drawing.Size(806, 749);
             this.Controls.Add(this.reportViewer1);
             this.Name = "RelatorioReserva";
             this.Text = "RelatorioReserva";

@@ -41,11 +41,11 @@ namespace LP_projecto_final_Emanuel
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-           /* try
+            /*
+           try
             {
 
-                this.quartoTableAdapter.Insert(this.textBox1.Text, Convert.ToInt32(this.textBox2.Text), Convert.ToInt32(this.comboBox1.Text));
+                this.quartoTableAdapter.Insert(this.textBox1.Text),Convert.ToInt32(this.textBox2.Text),this.comboBox1.SelectedValue);
                 MessageBox.Show("Inserido novo Quarto !!");
 
             }

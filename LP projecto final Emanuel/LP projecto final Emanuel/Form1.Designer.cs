@@ -49,7 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.software_1;
-            this.ClientSize = new System.Drawing.Size(312, 284);
+            this.ClientSize = new System.Drawing.Size(308, 274);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form1";

@@ -33,22 +33,22 @@ namespace LP_projecto_final_Emanuel
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* try
+            /*try
             {
-           
 
-               DateTime data = new DateTime(Convert.ToInt16(this.comboBox1.SelectedValue), Convert.ToInt16(this.comboBox2.SelectedValue),
-                    Convert.ToInt16(this.comboBox3.SelectedValue));
-                this.pagamentoTableAdapter.Insert(Convert.ToInt32(this.textBox6.Text, this.textBox5.Text, this.textBox4.Text, this.textBox3.Text), Convert.ToDecimal(this.textBox1.Text),this.textBox2.Text,data);
+
+                DateTime data = new DateTime(Convert.ToInt16(this.comboBox1.SelectedValue), Convert.ToInt16(this.comboBox2.SelectedValue),
+                     Convert.ToInt16(this.comboBox3.SelectedValue));
+                this.pagamentoTableAdapter.Insert(Convert.ToInt32(this.textBox5.Text,this.textBox4.Text,this.textBox3.Text),Convert.ToDecimal(this.textBox1.Text), this.textBox2.Text, data);
                 MessageBox.Show("Inserido com Sucesso");
-            }
-                
+             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());*/
-
-
+                //MessageBox.Show(ex.ToString());
+                MessageBox.Show("erro em ensirrir");
             }
+        */
+        }
         
 
         private void button2_Click(object sender, EventArgs e)
