@@ -46,5 +46,11 @@ namespace LP_projecto_final_Emanuel
             Form12 frm = new Form12();
             frm.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form9 frm = new Form9();
+            frm.ShowDialog();
+        }
     }
 }

@@ -247,7 +247,7 @@
             this.dataGridViewImageColumn1});
             this.clienteDataGridView.DataSource = this.clienteBindingSource;
             this.clienteDataGridView.Location = new System.Drawing.Point(13, 92);
-            this.clienteDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clienteDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.clienteDataGridView.Name = "clienteDataGridView";
             this.clienteDataGridView.Size = new System.Drawing.Size(1057, 176);
             this.clienteDataGridView.TabIndex = 1;
@@ -324,7 +324,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Location = new System.Drawing.Point(899, 292);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 26);
             this.button1.TabIndex = 3;
@@ -336,7 +336,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Location = new System.Drawing.Point(605, 292);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 26);
             this.button2.TabIndex = 4;
@@ -347,7 +347,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(13, 292);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(167, 26);
             this.button3.TabIndex = 5;
@@ -358,12 +358,13 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(288, 292);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(171, 26);
             this.button4.TabIndex = 6;
             this.button4.Text = "Eliminar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form8
             // 
@@ -380,7 +381,7 @@
             this.Controls.Add(this.clienteBindingNavigator);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form8";
             this.Text = "Form8";
             this.Load += new System.EventHandler(this.Form8_Load);

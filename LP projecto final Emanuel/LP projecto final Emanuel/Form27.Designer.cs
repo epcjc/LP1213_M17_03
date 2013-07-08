@@ -1,6 +1,6 @@
 ﻿namespace LP_projecto_final_Emanuel
 {
-    partial class Form9
+    partial class Form27
     {
         /// <summary>
         /// Required designer variable.
@@ -32,24 +32,24 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
-            this.preço_do_quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.preço_do_quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Preço_do_quartoTableAdapter();
+            this.pagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.PagamentoTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
-            this.preçoDoQuartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pagamentoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.preço_do_quartoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.preçoDoQuartoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(62, 187);
+            this.button1.Location = new System.Drawing.Point(54, 218);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 23);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Eliminar";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,65 +57,65 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(313, 187);
+            this.button2.Location = new System.Drawing.Point(193, 217);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 23);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Ir Para Menu";
+            this.button2.Text = "Ajuda";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(193, 187);
+            this.button3.Location = new System.Drawing.Point(360, 216);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(83, 23);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Ajuda";
+            this.button3.Text = "Ir para Menu";
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.pagamentoBindingSource1;
+            this.comboBox1.DisplayMember = "id_pagamento";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(147, 95);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(174, 21);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.ValueMember = "id_pagamento";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(200, 37);
+            this.label1.Location = new System.Drawing.Point(63, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Eliminar Preço dos quartos";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataSource = this.preçoDoQuartoBindingSource;
-            this.comboBox1.DisplayMember = "preco_quarto";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(175, 102);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.ValueMember = "id_preco_quarto";
+            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Pagamentos";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(67, 110);
+            this.label2.Location = new System.Drawing.Point(216, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.Size = new System.Drawing.Size(105, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Prço do Quarto";
+            this.label2.Text = "Eliminar Pagamentos";
             // 
             // database1DataSet
             // 
             this.database1DataSet.DataSetName = "Database1DataSet";
             this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // preço_do_quartoBindingSource
+            // pagamentoBindingSource
             // 
-            this.preço_do_quartoBindingSource.DataMember = "Preço do quarto";
-            this.preço_do_quartoBindingSource.DataSource = this.database1DataSet;
+            this.pagamentoBindingSource.DataMember = "Pagamento";
+            this.pagamentoBindingSource.DataSource = this.database1DataSet;
             // 
-            // preço_do_quartoTableAdapter
+            // pagamentoTableAdapter
             // 
-            this.preço_do_quartoTableAdapter.ClearBeforeFill = true;
+            this.pagamentoTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -124,10 +124,10 @@
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.Pagamento1TableAdapter = null;
-            this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.PagamentoTableAdapter = this.pagamentoTableAdapter;
             this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
             this.tableAdapterManager.Preço_do_quarto2TableAdapter = null;
-            this.tableAdapterManager.Preço_do_quartoTableAdapter = this.preço_do_quartoTableAdapter;
+            this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
@@ -141,28 +141,28 @@
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
-            // preçoDoQuartoBindingSource
+            // pagamentoBindingSource1
             // 
-            this.preçoDoQuartoBindingSource.DataMember = "Preço do quarto";
-            this.preçoDoQuartoBindingSource.DataSource = this.database1DataSet;
+            this.pagamentoBindingSource1.DataMember = "Pagamento";
+            this.pagamentoBindingSource1.DataSource = this.database1DataSet;
             // 
-            // Form9
+            // Form27
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 244);
+            this.ClientSize = new System.Drawing.Size(508, 281);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form9";
-            this.Text = "Form9";
-            this.Load += new System.EventHandler(this.Form9_Load);
+            this.Name = "Form27";
+            this.Text = "Form27";
+            this.Load += new System.EventHandler(this.Form27_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.preço_do_quartoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.preçoDoQuartoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,13 +173,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Database1DataSet database1DataSet;
-        private System.Windows.Forms.BindingSource preço_do_quartoBindingSource;
-        private Database1DataSetTableAdapters.Preço_do_quartoTableAdapter preço_do_quartoTableAdapter;
+        private System.Windows.Forms.BindingSource pagamentoBindingSource;
+        private Database1DataSetTableAdapters.PagamentoTableAdapter pagamentoTableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingSource preçoDoQuartoBindingSource;
+        private System.Windows.Forms.BindingSource pagamentoBindingSource1;
     }
 }

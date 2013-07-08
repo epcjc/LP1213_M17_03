@@ -27,7 +27,7 @@ namespace LP_projecto_final_Emanuel
         private void Form22_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Pagamento1' table. You can move, or remove it, as needed.
-            this.pagamento1TableAdapter.Fill(this.database1DataSet.Pagamento1);
+           // this.pagamento1TableAdapter.Fill(this.database1DataSet.Pagamento1);
             // TODO: This line of code loads data into the 'database1DataSet.Tipos_de_pagamento' table. You can move, or remove it, as needed.
             this.tipos_de_pagamentoTableAdapter.Fill(this.database1DataSet.Tipos_de_pagamento);
             // TODO: This line of code loads data into the 'database1DataSet.Pagamento' table. You can move, or remove it, as needed.
@@ -49,6 +49,12 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form27 frm = new Form27();
+            frm.ShowDialog();
         }
     }
 }

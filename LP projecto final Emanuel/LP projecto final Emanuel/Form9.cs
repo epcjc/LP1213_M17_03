@@ -26,7 +26,7 @@ namespace LP_projecto_final_Emanuel
             /*try
                 
             {
-                this.preço_do_quartoTableAdapter.DeleteOcorrência(Convert.ToInt16(this.comboBox1.SelectedValue));
+                this.preço_do_quartoTableAdapter.Deletepreço_do_quarto(Convert.ToInt16(this.comboBox1.SelectedValue));
                 MessageBox.Show("Eliminado com Sucesso");
                 this.Close();
             }

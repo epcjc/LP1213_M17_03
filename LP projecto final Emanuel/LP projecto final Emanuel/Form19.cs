@@ -44,5 +44,11 @@ namespace LP_projecto_final_Emanuel
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form15 frm = new Form15();
+            frm.ShowDialog();
+        }
     }
 }

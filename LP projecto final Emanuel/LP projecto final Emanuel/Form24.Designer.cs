@@ -51,10 +51,26 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
+            this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
+            this.reservaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaCliente2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -187,7 +203,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(0, 343);
+            this.button1.Location = new System.Drawing.Point(12, 618);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 23);
             this.button1.TabIndex = 4;
@@ -197,17 +213,18 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(247, 343);
+            this.button2.Location = new System.Drawing.Point(234, 618);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(161, 23);
             this.button2.TabIndex = 5;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(494, 343);
+            this.button3.Location = new System.Drawing.Point(492, 618);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 23);
             this.button3.TabIndex = 6;
@@ -217,19 +234,138 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(771, 343);
+            this.button4.Location = new System.Drawing.Point(756, 618);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(169, 23);
             this.button4.TabIndex = 7;
             this.button4.Text = "Ir para Menu";
             this.button4.UseVisualStyleBackColor = false;
             // 
+            // reservaBindingSource
+            // 
+            this.reservaBindingSource.DataMember = "Reserva";
+            this.reservaBindingSource.DataSource = this.database1DataSet;
+            // 
+            // reservaTableAdapter
+            // 
+            this.reservaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Cliente1TableAdapter = null;
+            this.tableAdapterManager.ClienteTableAdapter = this.clienteTableAdapter;
+            this.tableAdapterManager.codigo_postalTableAdapter = null;
+            this.tableAdapterManager.Pagamento1TableAdapter = null;
+            this.tableAdapterManager.PagamentoTableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto2TableAdapter = null;
+            this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
+            this.tableAdapterManager.Quarto1TableAdapter = null;
+            this.tableAdapterManager.Quarto2TableAdapter = null;
+            this.tableAdapterManager.QuartoTableAdapter = null;
+            this.tableAdapterManager.Reserva_quartos1TableAdapter = null;
+            this.tableAdapterManager.Reserva_quartosTableAdapter = null;
+            this.tableAdapterManager.Reserva1TableAdapter = this.reserva1TableAdapter;
+            this.tableAdapterManager.ReservaTableAdapter = this.reservaTableAdapter;
+            this.tableAdapterManager.Tipos_de_pagamento1TableAdapter = null;
+            this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
+            // 
+            // reservaDataGridView
+            // 
+            this.reservaDataGridView.AutoGenerateColumns = false;
+            this.reservaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reservaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.reservaDataGridView.DataSource = this.reservaBindingSource;
+            this.reservaDataGridView.Location = new System.Drawing.Point(12, 372);
+            this.reservaDataGridView.Name = "reservaDataGridView";
+            this.reservaDataGridView.Size = new System.Drawing.Size(940, 178);
+            this.reservaDataGridView.TabIndex = 8;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_reserva";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_reserva";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "id_cliente";
+            this.dataGridViewTextBoxColumn2.HeaderText = "id_cliente";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "data_reserva";
+            this.dataGridViewTextBoxColumn3.HeaderText = "data_reserva";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "hora_reserva";
+            this.dataGridViewTextBoxColumn4.HeaderText = "hora_reserva";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Data_inicio";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Data_inicio";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Data_fim";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Data_fim";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Total";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Total";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "comentarios";
+            this.dataGridViewTextBoxColumn8.HeaderText = "comentarios";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "estado";
+            this.dataGridViewTextBoxColumn9.HeaderText = "estado";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 353);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Todas as Reservas";
+            // 
             // Form24
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(963, 378);
+            this.ClientSize = new System.Drawing.Size(972, 662);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.reservaDataGridView);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -247,6 +383,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaCliente2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,5 +414,19 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.BindingSource reservaBindingSource;
+        private Database1DataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
+        private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView reservaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.Label label3;
     }
 }

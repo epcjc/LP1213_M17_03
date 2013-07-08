@@ -64,11 +64,11 @@
             this.tipos_de_pagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Tipos_de_pagamentoTableAdapter();
             this.tipos_de_pagamentoDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.fKPagamentoTiposDePagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingNavigator)).BeginInit();
@@ -333,6 +333,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -386,6 +387,19 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "id_metodo_pagamento";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "id_tipo_pagamento";
+            this.dataGridViewTextBoxColumn8.HeaderText = "id_tipo_pagamento";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "metodo_pagamento";
+            this.dataGridViewTextBoxColumn10.HeaderText = "metodo_pagamento";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -408,19 +422,6 @@
             // 
             this.fKPagamentoTiposDePagamentoBindingSource.DataMember = "FK_Pagamento_Tipos de pagamento";
             this.fKPagamentoTiposDePagamentoBindingSource.DataSource = this.tipos_de_pagamentoBindingSource;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "metodo_pagamento";
-            this.dataGridViewTextBoxColumn10.HeaderText = "metodo_pagamento";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "id_tipo_pagamento";
-            this.dataGridViewTextBoxColumn8.HeaderText = "id_tipo_pagamento";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // Form22
             // 

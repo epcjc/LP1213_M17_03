@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace LP_projecto_final_Emanuel
 {
-    public partial class Form20 : Form
+    public partial class Form28 : Form
     {
-        public Form20()
+        public Form28()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace LP_projecto_final_Emanuel
 
         }
 
-        private void Form20_Load(object sender, EventArgs e)
+        private void Form28_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Utilizadores' table. You can move, or remove it, as needed.
             this.utilizadoresTableAdapter.Fill(this.database1DataSet.Utilizadores);
@@ -33,24 +33,18 @@ namespace LP_projecto_final_Emanuel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Help.ShowHelp(this, "RelatorioHotel.chm");
-        }
+           /* try
+          {
+              this.utilizadoresTableAdapter.Deleteutilizadores(Convert.ToInt16(this.comboBox1.SelectedValue));
+              MessageBox.Show("Eliminado com Sucesso");
+              this.Close();
+          }
+          catch (Exception ex)
+          {
+              MessageBox.Show(ex.ToString());
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form14 frm = new Form14();
-            frm.ShowDialog();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form28 frm = new Form28();
-            frm.ShowDialog();
+          }*/
         }
     }
 }

@@ -9,11 +9,31 @@ using System.Windows.Forms;
 
 namespace LP_projecto_final_Emanuel
 {
-    public partial class Form23 : Form
+    public partial class Form27 : Form
     {
-        public Form23()
+        public Form27()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            /*try
+          {
+             this.pagamentoTableAdapter.Deletepagamento(Convert.ToInt16(this.comboBox1.SelectedValue));
+              MessageBox.Show("Eliminado com Sucesso");
+              this.Close();
+          }
+          catch (Exception ex)
+          {
+              MessageBox.Show(ex.ToString());
+
+          }*/
         }
 
         private void pagamentoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -24,19 +44,11 @@ namespace LP_projecto_final_Emanuel
 
         }
 
-        private void Form23_Load(object sender, EventArgs e)
+        private void Form27_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Tipos_de_pagamento' table. You can move, or remove it, as needed.
-            this.tipos_de_pagamentoTableAdapter.Fill(this.database1DataSet.Tipos_de_pagamento);
             // TODO: This line of code loads data into the 'database1DataSet.Pagamento' table. You can move, or remove it, as needed.
             this.pagamentoTableAdapter.Fill(this.database1DataSet.Pagamento);
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form26 frm = new Form26();
-            frm.ShowDialog();
         }
     }
 }
