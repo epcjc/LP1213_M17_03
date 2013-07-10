@@ -35,6 +35,7 @@
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.fKPagamentoTiposDePagamento1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tiposDePagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tiposDeQuartosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -55,6 +56,14 @@
             this.clienteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.clienteDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
@@ -66,19 +75,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.fKPagamentoTiposDePagamento1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pagamento1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Pagamento1TableAdapter();
-            this.fKPagamentoTiposDePagamento1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fKPagamentoTiposDePagamento1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tiposDePagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tiposDeQuartosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
@@ -86,7 +89,6 @@
             this.clienteBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,6 +130,11 @@
             this.comboBox2.Size = new System.Drawing.Size(140, 21);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.ValueMember = "id_pagamento";
+            // 
+            // fKPagamentoTiposDePagamento1BindingSource1
+            // 
+            this.fKPagamentoTiposDePagamento1BindingSource1.DataMember = "FK_Pagamento_Tipos de pagamento1";
+            this.fKPagamentoTiposDePagamento1BindingSource1.DataSource = this.tiposDePagamentoBindingSource;
             // 
             // tiposDePagamentoBindingSource
             // 
@@ -199,7 +206,7 @@
             this.clienteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.clienteBindingNavigator.Name = "clienteBindingNavigator";
             this.clienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clienteBindingNavigator.Size = new System.Drawing.Size(1039, 25);
+            this.clienteBindingNavigator.Size = new System.Drawing.Size(907, 25);
             this.clienteBindingNavigator.TabIndex = 2;
             this.clienteBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -325,6 +332,54 @@
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "nome";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "morada";
+            this.dataGridViewTextBoxColumn3.HeaderText = "morada";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "contacto";
+            this.dataGridViewTextBoxColumn4.HeaderText = "contacto";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "data_nasc";
+            this.dataGridViewTextBoxColumn6.HeaderText = "data_nasc";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "BI";
+            this.dataGridViewTextBoxColumn7.HeaderText = "BI";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Codigo_postal";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Codigo_postal";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.DataPropertyName = "Foto";
+            this.dataGridViewImageColumn1.HeaderText = "Foto";
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -376,10 +431,11 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(361, 79);
+            this.button1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Location = new System.Drawing.Point(745, 332);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 23);
+            this.button1.Size = new System.Drawing.Size(153, 23);
             this.button1.TabIndex = 7;
             this.button1.Text = "Ir para Menu";
             this.button1.UseVisualStyleBackColor = false;
@@ -387,10 +443,11 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(361, 119);
+            this.button2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.Location = new System.Drawing.Point(531, 332);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 23);
+            this.button2.Size = new System.Drawing.Size(145, 23);
             this.button2.TabIndex = 8;
             this.button2.Text = "Ajuda";
             this.button2.UseVisualStyleBackColor = false;
@@ -405,70 +462,43 @@
             // 
             this.pagamento1TableAdapter.ClearBeforeFill = true;
             // 
-            // fKPagamentoTiposDePagamento1BindingSource1
-            // 
-            this.fKPagamentoTiposDePagamento1BindingSource1.DataMember = "FK_Pagamento_Tipos de pagamento1";
-            this.fKPagamentoTiposDePagamento1BindingSource1.DataSource = this.tiposDePagamentoBindingSource;
-            // 
             // fKPagamentoTiposDePagamento1BindingSource2
             // 
             this.fKPagamentoTiposDePagamento1BindingSource2.DataMember = "FK_Pagamento_Tipos de pagamento1";
             this.fKPagamentoTiposDePagamento1BindingSource2.DataSource = this.tiposDePagamentoBindingSource;
             // 
-            // dataGridViewImageColumn1
+            // button3
             // 
-            this.dataGridViewImageColumn1.DataPropertyName = "Foto";
-            this.dataGridViewImageColumn1.HeaderText = "Foto";
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.button3.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.Location = new System.Drawing.Point(0, 332);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(121, 23);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Inserir Novo";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // dataGridViewTextBoxColumn8
+            // button4
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Codigo_postal";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Codigo_postal";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "BI";
-            this.dataGridViewTextBoxColumn7.HeaderText = "BI";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "data_nasc";
-            this.dataGridViewTextBoxColumn6.HeaderText = "data_nasc";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "contacto";
-            this.dataGridViewTextBoxColumn4.HeaderText = "contacto";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "morada";
-            this.dataGridViewTextBoxColumn3.HeaderText = "morada";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome";
-            this.dataGridViewTextBoxColumn2.HeaderText = "nome";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.button4.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.Location = new System.Drawing.Point(271, 332);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(143, 23);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(1039, 413);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
+            this.ClientSize = new System.Drawing.Size(907, 382);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -487,6 +517,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tiposDePagamentoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tiposDeQuartosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
@@ -495,7 +526,6 @@
             this.clienteBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPagamentoTiposDePagamento1BindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -550,5 +580,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.BindingSource fKPagamentoTiposDePagamento1BindingSource2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

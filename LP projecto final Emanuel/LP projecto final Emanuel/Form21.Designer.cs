@@ -342,7 +342,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Location = new System.Drawing.Point(220, 276);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 23);
@@ -353,7 +354,8 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.Location = new System.Drawing.Point(96, 276);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 23);
@@ -366,7 +368,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
             this.ClientSize = new System.Drawing.Size(619, 327);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

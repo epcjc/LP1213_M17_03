@@ -141,7 +141,7 @@
             this.pagamentoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pagamentoBindingNavigator.Name = "pagamentoBindingNavigator";
             this.pagamentoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pagamentoBindingNavigator.Size = new System.Drawing.Size(940, 25);
+            this.pagamentoBindingNavigator.Size = new System.Drawing.Size(797, 25);
             this.pagamentoBindingNavigator.TabIndex = 0;
             this.pagamentoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -244,7 +244,7 @@
             this.listBox1.DataSource = this.tiposDePagamentoBindingSource;
             this.listBox1.DisplayMember = "metodo_pagamento";
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(24, 64);
+            this.listBox1.Location = new System.Drawing.Point(24, 51);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(139, 95);
             this.listBox1.TabIndex = 2;
@@ -258,7 +258,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 45);
+            this.label1.Location = new System.Drawing.Point(24, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 13);
             this.label1.TabIndex = 3;
@@ -277,9 +277,9 @@
             this.comentariosDataGridViewTextBoxColumn,
             this.dataDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.fKPagamentoTiposDePagamentoBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 202);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 181);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(748, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(748, 137);
             this.dataGridView1.TabIndex = 4;
             // 
             // idpagamentoDataGridViewTextBoxColumn
@@ -333,7 +333,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 177);
+            this.label2.Location = new System.Drawing.Point(24, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 13);
             this.label2.TabIndex = 5;
@@ -341,38 +341,46 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(14, 372);
+            this.button2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.Location = new System.Drawing.Point(12, 334);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 23);
+            this.button2.Size = new System.Drawing.Size(144, 23);
             this.button2.TabIndex = 7;
             this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(323, 372);
+            this.button3.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.Location = new System.Drawing.Point(326, 334);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 23);
+            this.button3.Size = new System.Drawing.Size(145, 23);
             this.button3.TabIndex = 8;
             this.button3.Text = "Ajuda";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(647, 372);
+            this.button4.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.Location = new System.Drawing.Point(607, 334);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 23);
+            this.button4.Size = new System.Drawing.Size(153, 23);
             this.button4.TabIndex = 9;
             this.button4.Text = "Ir para Menu";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form23
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(940, 407);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
+            this.ClientSize = new System.Drawing.Size(797, 368);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

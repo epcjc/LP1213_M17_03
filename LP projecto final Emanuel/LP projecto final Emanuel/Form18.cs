@@ -60,6 +60,8 @@ namespace LP_projecto_final_Emanuel
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
@@ -78,6 +80,11 @@ namespace LP_projecto_final_Emanuel
         {
             Form24 frm = new Form24();
             frm.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

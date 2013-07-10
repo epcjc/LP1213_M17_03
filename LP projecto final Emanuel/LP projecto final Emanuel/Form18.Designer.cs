@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form18));
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
@@ -97,7 +98,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Location = new System.Drawing.Point(42, 237);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 23);
@@ -169,7 +171,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Location = new System.Drawing.Point(457, 237);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 23);
@@ -220,7 +223,8 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.Location = new System.Drawing.Point(163, 237);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 23);
@@ -231,19 +235,21 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Red;
+            this.button5.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.Location = new System.Drawing.Point(314, 237);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 23);
             this.button5.TabIndex = 22;
             this.button5.Text = "Eliminar";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form18
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
             this.ClientSize = new System.Drawing.Size(700, 311);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

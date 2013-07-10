@@ -23,7 +23,7 @@ namespace LP_projecto_final_Emanuel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*try
+            try
           {
              this.pagamentoTableAdapter.Deletepagamento(Convert.ToInt16(this.comboBox1.SelectedValue));
               MessageBox.Show("Eliminado com Sucesso");
@@ -33,7 +33,7 @@ namespace LP_projecto_final_Emanuel
           {
               MessageBox.Show(ex.ToString());
 
-          }*/
+          }
         }
 
         private void pagamentoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -48,6 +48,19 @@ namespace LP_projecto_final_Emanuel
         {
             // TODO: This line of code loads data into the 'database1DataSet.Pagamento' table. You can move, or remove it, as needed.
             this.pagamentoTableAdapter.Fill(this.database1DataSet.Pagamento);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
 
         }
     }

@@ -160,7 +160,7 @@
             this.utilizadoresBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.utilizadoresBindingNavigator.Name = "utilizadoresBindingNavigator";
             this.utilizadoresBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.utilizadoresBindingNavigator.Size = new System.Drawing.Size(385, 25);
+            this.utilizadoresBindingNavigator.Size = new System.Drawing.Size(386, 25);
             this.utilizadoresBindingNavigator.TabIndex = 0;
             this.utilizadoresBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -300,7 +300,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Location = new System.Drawing.Point(203, 235);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 23);
@@ -315,7 +316,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Location = new System.Drawing.Point(97, 235);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(83, 23);
@@ -328,8 +330,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(385, 341);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
+            this.ClientSize = new System.Drawing.Size(386, 354);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);

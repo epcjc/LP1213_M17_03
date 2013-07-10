@@ -376,6 +376,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Location = new System.Drawing.Point(541, 313);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 23);
@@ -455,6 +456,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.Location = new System.Drawing.Point(541, 284);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(101, 23);
@@ -465,6 +467,7 @@
             // 
             // button4
             // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.Location = new System.Drawing.Point(541, 255);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(101, 23);
@@ -475,6 +478,7 @@
             // 
             // button5
             // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.Location = new System.Drawing.Point(541, 226);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(101, 23);
@@ -487,7 +491,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.outro;
             this.ClientSize = new System.Drawing.Size(737, 370);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

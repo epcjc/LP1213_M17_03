@@ -297,13 +297,14 @@
             this.pagamentoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pagamentoBindingNavigator.Name = "pagamentoBindingNavigator";
             this.pagamentoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pagamentoBindingNavigator.Size = new System.Drawing.Size(955, 25);
+            this.pagamentoBindingNavigator.Size = new System.Drawing.Size(799, 25);
             this.pagamentoBindingNavigator.TabIndex = 0;
             this.pagamentoBindingNavigator.Text = "bindingNavigator1";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Location = new System.Drawing.Point(651, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 23);
@@ -315,6 +316,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Location = new System.Drawing.Point(331, 242);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 23);
@@ -325,6 +327,7 @@
             // 
             // button4
             // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.Location = new System.Drawing.Point(31, 242);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(142, 23);
@@ -337,8 +340,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(955, 328);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
+            this.ClientSize = new System.Drawing.Size(799, 286);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

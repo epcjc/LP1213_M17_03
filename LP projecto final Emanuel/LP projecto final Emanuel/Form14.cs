@@ -56,6 +56,8 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
 
         private void nomeTextBox_Validating(object sender, CancelEventArgs e)

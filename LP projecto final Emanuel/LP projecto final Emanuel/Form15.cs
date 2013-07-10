@@ -18,12 +18,14 @@ namespace LP_projecto_final_Emanuel
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*try
+            try
                 
            {
                this.quarto2TableAdapter.Deletequarto(Convert.ToInt16(this.comboBox1.SelectedValue));
@@ -34,7 +36,7 @@ namespace LP_projecto_final_Emanuel
            {
                MessageBox.Show(ex.ToString());
 
-           }*/
+           }
         }
 
         private void quarto2BindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -50,6 +52,11 @@ namespace LP_projecto_final_Emanuel
             // TODO: This line of code loads data into the 'database1DataSet.Quarto2' table. You can move, or remove it, as needed.
             this.quarto2TableAdapter.FillByAndar(this.database1DataSet.Quarto2);
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
         }
        
     }

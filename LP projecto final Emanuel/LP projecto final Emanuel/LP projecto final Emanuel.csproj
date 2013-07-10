@@ -443,6 +443,22 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\fx quarto.jpg" />
+    <None Include="Resources\nha quarto.jpg" />
+    <None Include="Resources\midjor.jpg" />
+    <None Include="Resources\hotel menu33.jpg" />
+    <None Include="Resources\hotel menu.jpg" />
+    <None Include="Resources\imagesgggg.jpg" />
+    <None Include="Resources\potr.jpg" />
+    <None Include="Resources\imagestiiii.jpg" />
+    <None Include="Resources\arco_iris.gif" />
+    <None Include="Resources\diamante.jpg" />
+    <None Include="Resources\images ya.jpg" />
+    <None Include="Resources\douro.jpg" />
+    <None Include="Resources\yes.jpg" />
+    <None Include="Resources\fundo.jpg" />
+    <None Include="Resources\outro.jpg" />
+    <None Include="Resources\ouro.jpg" />
     <None Include="Resources\catussaba_resort_vista.jpg" />
     <None Include="Resources\tyyyy.jpg" />
     <None Include="Resources\hotelbunito.jpg" />

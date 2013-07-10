@@ -18,6 +18,12 @@ namespace LP_projecto_final_Emanuel
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'database1DataSet.Pagamento1' table. You can move, or remove it, as needed.
+            this.pagamento1TableAdapter.Fill(this.database1DataSet.Pagamento1);
+            // TODO: This line of code loads data into the 'database1DataSet.Reserva1' table. You can move, or remove it, as needed.
+            this.reserva1TableAdapter.Fill(this.database1DataSet.Reserva1);
+            // TODO: This line of code loads data into the 'database1DataSet.Reserva1' table. You can move, or remove it, as needed.
+            this.reserva1TableAdapter.Fill(this.database1DataSet.Reserva1);
             // TODO: This line of code loads data into the 'database1DataSet.Reserva' table. You can move, or remove it, as needed.
             //this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
             // TODO: This line of code loads data into the 'database1DataSet.Pagamento' table. You can move, or remove it, as needed.
@@ -30,6 +36,8 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -40,6 +48,14 @@ namespace LP_projecto_final_Emanuel
         private void button4_Click(object sender, EventArgs e)
         {
 
+            Form25 frm = new Form25();
+            frm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 frm = new Form4();
+            frm.ShowDialog();
         }
     }
 }

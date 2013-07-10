@@ -44,11 +44,25 @@ namespace LP_projecto_final_Emanuel
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "RelatorioHotel.chm");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form16 frm = new Form16();
+            frm.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form13 frm = new Form13();
+            frm.ShowDialog();
         }
     }
 }

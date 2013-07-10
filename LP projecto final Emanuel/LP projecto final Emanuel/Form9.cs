@@ -18,7 +18,9 @@ namespace LP_projecto_final_Emanuel
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,6 +60,11 @@ namespace LP_projecto_final_Emanuel
             // TODO: This line of code loads data into the 'database1DataSet.Preço_do_quarto' table. You can move, or remove it, as needed.
             this.preço_do_quartoTableAdapter.Fill(this.database1DataSet.Preço_do_quarto);
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form24));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idreservaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,23 +55,25 @@
             this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
-            this.reservaDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.reservaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.idreservaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idclienteDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datareservaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horareservaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datainicioDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datafimDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comentariosDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaCliente2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -202,8 +205,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(12, 618);
+            this.button1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Location = new System.Drawing.Point(18, 568);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 23);
             this.button1.TabIndex = 4;
@@ -212,8 +216,9 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(234, 618);
+            this.button2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.Location = new System.Drawing.Point(236, 568);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(161, 23);
             this.button2.TabIndex = 5;
@@ -223,23 +228,27 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(492, 618);
+            this.button3.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.Location = new System.Drawing.Point(493, 568);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 23);
             this.button3.TabIndex = 6;
             this.button3.Text = "Ajuda";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(756, 618);
+            this.button4.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.Location = new System.Drawing.Point(762, 568);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(169, 23);
             this.button4.TabIndex = 7;
             this.button4.Text = "Ir para Menu";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // reservaBindingSource
             // 
@@ -274,81 +283,6 @@
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
-            // reservaDataGridView
-            // 
-            this.reservaDataGridView.AutoGenerateColumns = false;
-            this.reservaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.reservaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.reservaDataGridView.DataSource = this.reservaBindingSource;
-            this.reservaDataGridView.Location = new System.Drawing.Point(12, 372);
-            this.reservaDataGridView.Name = "reservaDataGridView";
-            this.reservaDataGridView.Size = new System.Drawing.Size(940, 178);
-            this.reservaDataGridView.TabIndex = 8;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_reserva";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_reserva";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "id_cliente";
-            this.dataGridViewTextBoxColumn2.HeaderText = "id_cliente";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "data_reserva";
-            this.dataGridViewTextBoxColumn3.HeaderText = "data_reserva";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "hora_reserva";
-            this.dataGridViewTextBoxColumn4.HeaderText = "hora_reserva";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Data_inicio";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Data_inicio";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Data_fim";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Data_fim";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Total";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Total";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "comentarios";
-            this.dataGridViewTextBoxColumn8.HeaderText = "comentarios";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "estado";
-            this.dataGridViewTextBoxColumn9.HeaderText = "estado";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -358,14 +292,94 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Todas as Reservas";
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idreservaDataGridViewTextBoxColumn1,
+            this.idclienteDataGridViewTextBoxColumn1,
+            this.datareservaDataGridViewTextBoxColumn1,
+            this.horareservaDataGridViewTextBoxColumn1,
+            this.datainicioDataGridViewTextBoxColumn1,
+            this.datafimDataGridViewTextBoxColumn1,
+            this.totalDataGridViewTextBoxColumn1,
+            this.comentariosDataGridViewTextBoxColumn1,
+            this.estadoDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.reservaBindingSource1;
+            this.dataGridView2.Location = new System.Drawing.Point(9, 369);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(943, 150);
+            this.dataGridView2.TabIndex = 10;
+            // 
+            // reservaBindingSource1
+            // 
+            this.reservaBindingSource1.DataMember = "Reserva";
+            this.reservaBindingSource1.DataSource = this.database1DataSet;
+            // 
+            // idreservaDataGridViewTextBoxColumn1
+            // 
+            this.idreservaDataGridViewTextBoxColumn1.DataPropertyName = "id_reserva";
+            this.idreservaDataGridViewTextBoxColumn1.HeaderText = "id_reserva";
+            this.idreservaDataGridViewTextBoxColumn1.Name = "idreservaDataGridViewTextBoxColumn1";
+            this.idreservaDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // idclienteDataGridViewTextBoxColumn1
+            // 
+            this.idclienteDataGridViewTextBoxColumn1.DataPropertyName = "id_cliente";
+            this.idclienteDataGridViewTextBoxColumn1.HeaderText = "id_cliente";
+            this.idclienteDataGridViewTextBoxColumn1.Name = "idclienteDataGridViewTextBoxColumn1";
+            // 
+            // datareservaDataGridViewTextBoxColumn1
+            // 
+            this.datareservaDataGridViewTextBoxColumn1.DataPropertyName = "data_reserva";
+            this.datareservaDataGridViewTextBoxColumn1.HeaderText = "data_reserva";
+            this.datareservaDataGridViewTextBoxColumn1.Name = "datareservaDataGridViewTextBoxColumn1";
+            // 
+            // horareservaDataGridViewTextBoxColumn1
+            // 
+            this.horareservaDataGridViewTextBoxColumn1.DataPropertyName = "hora_reserva";
+            this.horareservaDataGridViewTextBoxColumn1.HeaderText = "hora_reserva";
+            this.horareservaDataGridViewTextBoxColumn1.Name = "horareservaDataGridViewTextBoxColumn1";
+            // 
+            // datainicioDataGridViewTextBoxColumn1
+            // 
+            this.datainicioDataGridViewTextBoxColumn1.DataPropertyName = "Data_inicio";
+            this.datainicioDataGridViewTextBoxColumn1.HeaderText = "Data_inicio";
+            this.datainicioDataGridViewTextBoxColumn1.Name = "datainicioDataGridViewTextBoxColumn1";
+            // 
+            // datafimDataGridViewTextBoxColumn1
+            // 
+            this.datafimDataGridViewTextBoxColumn1.DataPropertyName = "Data_fim";
+            this.datafimDataGridViewTextBoxColumn1.HeaderText = "Data_fim";
+            this.datafimDataGridViewTextBoxColumn1.Name = "datafimDataGridViewTextBoxColumn1";
+            // 
+            // totalDataGridViewTextBoxColumn1
+            // 
+            this.totalDataGridViewTextBoxColumn1.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn1.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn1.Name = "totalDataGridViewTextBoxColumn1";
+            // 
+            // comentariosDataGridViewTextBoxColumn1
+            // 
+            this.comentariosDataGridViewTextBoxColumn1.DataPropertyName = "comentarios";
+            this.comentariosDataGridViewTextBoxColumn1.HeaderText = "comentarios";
+            this.comentariosDataGridViewTextBoxColumn1.Name = "comentariosDataGridViewTextBoxColumn1";
+            // 
+            // estadoDataGridViewTextBoxColumn1
+            // 
+            this.estadoDataGridViewTextBoxColumn1.DataPropertyName = "estado";
+            this.estadoDataGridViewTextBoxColumn1.HeaderText = "estado";
+            this.estadoDataGridViewTextBoxColumn1.Name = "estadoDataGridViewTextBoxColumn1";
+            // 
             // Form24
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.hotel1;
-            this.ClientSize = new System.Drawing.Size(972, 662);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
+            this.ClientSize = new System.Drawing.Size(972, 610);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.reservaDataGridView);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -384,7 +398,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,16 +432,17 @@
         private System.Windows.Forms.BindingSource reservaBindingSource;
         private Database1DataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView reservaDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idreservaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idclienteDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datareservaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horareservaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datainicioDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datafimDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource reservaBindingSource1;
     }
 }

@@ -46,8 +46,8 @@ namespace LP_projecto_final_Emanuel
             {
                 //MessageBox.Show(ex.ToString());
                 MessageBox.Show("erro em ensirrir");
-            }
-        */
+            }*/
+        
         }
         
 
@@ -55,6 +55,8 @@ namespace LP_projecto_final_Emanuel
         {
             
             this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
@@ -112,6 +114,12 @@ namespace LP_projecto_final_Emanuel
         private void button4_Click(object sender, EventArgs e)
         {
             Form22 frm = new Form22();
+            frm.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form27 frm = new Form27();
             frm.ShowDialog();
         }
 }

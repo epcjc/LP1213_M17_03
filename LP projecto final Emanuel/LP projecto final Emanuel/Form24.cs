@@ -32,5 +32,17 @@ namespace LP_projecto_final_Emanuel
             Form25 frm = new Form25();
             frm.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "RelatorioHotel.chm");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
+        }
     }
 }

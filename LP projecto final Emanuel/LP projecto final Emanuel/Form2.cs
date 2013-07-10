@@ -369,6 +369,21 @@ namespace LP_projecto_final_Emanuel
             RelatorioUtilizadorescs frm = new RelatorioUtilizadorescs();
             frm.ShowDialog();
         }
+
+        private void ToolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
        
     }
 }
