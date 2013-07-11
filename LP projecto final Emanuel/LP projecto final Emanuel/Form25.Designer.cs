@@ -134,7 +134,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.fx_quarto;
-            this.ClientSize = new System.Drawing.Size(511, 261);
+            this.ClientSize = new System.Drawing.Size(509, 261);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

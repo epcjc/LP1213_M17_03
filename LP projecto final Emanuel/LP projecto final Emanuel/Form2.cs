@@ -384,6 +384,24 @@ namespace LP_projecto_final_Emanuel
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form29 frm = new Form29();
+            frm.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form30 frm = new Form30();
+            frm.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form31 frm = new Form31();
+            frm.ShowDialog();
+        }
        
     }
 }

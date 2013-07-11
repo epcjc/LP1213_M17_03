@@ -68,6 +68,9 @@
             this.ToolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -86,7 +89,7 @@
             this.utilizadoresToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(716, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(697, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "Ajuda";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -341,10 +344,10 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.MediumBlue;
-            this.button2.Location = new System.Drawing.Point(12, 116);
+            this.button2.Location = new System.Drawing.Point(494, 126);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 25);
             this.button2.TabIndex = 2;
@@ -354,10 +357,10 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Yellow;
-            this.button3.Location = new System.Drawing.Point(12, 147);
+            this.button3.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.button3.Location = new System.Drawing.Point(494, 166);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 27);
             this.button3.TabIndex = 3;
@@ -367,10 +370,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.Snow;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(12, 180);
+            this.button1.Location = new System.Drawing.Point(494, 309);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 26);
             this.button1.TabIndex = 4;
@@ -382,9 +385,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 340);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 395);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(716, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(697, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
@@ -412,13 +415,52 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "GESTÃO DE HOTEL";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Snow;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button4.Location = new System.Drawing.Point(494, 199);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(159, 27);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Calcular Reserva";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(494, 242);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(159, 23);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "Cambiar Moeda";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Red;
+            this.button6.Location = new System.Drawing.Point(494, 280);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(159, 23);
+            this.button6.TabIndex = 9;
+            this.button6.Text = "Calculadora";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.midjor;
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources._5_strela;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(716, 362);
+            this.ClientSize = new System.Drawing.Size(697, 417);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button1);
@@ -479,5 +521,8 @@
         private System.Windows.Forms.ToolStripMenuItem relatorioToolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem relatorioToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem relatorioToolStripMenuItem6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

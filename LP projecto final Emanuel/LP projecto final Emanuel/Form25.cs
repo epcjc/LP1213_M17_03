@@ -25,7 +25,7 @@ namespace LP_projecto_final_Emanuel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            /*try
                 
            {
                this.reservaTableAdapter.Deletereserva(Convert.ToInt16(this.comboBox1.SelectedValue));
@@ -36,7 +36,7 @@ namespace LP_projecto_final_Emanuel
            {
                MessageBox.Show(ex.ToString());
 
-           }
+           }*/
         }
 
         private void button2_Click(object sender, EventArgs e)

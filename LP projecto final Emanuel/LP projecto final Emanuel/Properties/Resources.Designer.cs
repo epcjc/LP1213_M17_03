@@ -63,6 +63,16 @@ namespace LP_projecto_final_Emanuel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5_strela {
+            get {
+                object obj = ResourceManager.GetObject("5 strela", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arco_iris {
             get {
                 object obj = ResourceManager.GetObject("arco_iris", resourceCulture);
