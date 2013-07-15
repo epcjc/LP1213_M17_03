@@ -265,7 +265,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.reserva_quartosDataGridView.DataSource = this.fKReservaQuartosQuarto5BindingSource1;
-            this.reserva_quartosDataGridView.Location = new System.Drawing.Point(72, 240);
+            this.reserva_quartosDataGridView.Location = new System.Drawing.Point(72, 236);
             this.reserva_quartosDataGridView.Name = "reserva_quartosDataGridView";
             this.reserva_quartosDataGridView.Size = new System.Drawing.Size(248, 94);
             this.reserva_quartosDataGridView.TabIndex = 2;
@@ -294,7 +294,7 @@
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.MediumBlue;
-            this.button1.Location = new System.Drawing.Point(26, 396);
+            this.button1.Location = new System.Drawing.Point(72, 345);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 23);
             this.button1.TabIndex = 3;
@@ -306,7 +306,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PapayaWhip;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(180, 396);
+            this.button2.Location = new System.Drawing.Point(220, 345);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 23);
             this.button2.TabIndex = 4;
@@ -318,7 +318,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.PapayaWhip;
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.Location = new System.Drawing.Point(376, 396);
+            this.button3.Location = new System.Drawing.Point(381, 345);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 23);
             this.button3.TabIndex = 5;
@@ -330,7 +330,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.PapayaWhip;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.Location = new System.Drawing.Point(510, 394);
+            this.button4.Location = new System.Drawing.Point(518, 345);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 23);
             this.button4.TabIndex = 6;
@@ -436,7 +436,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumBlue;
             this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
-            this.ClientSize = new System.Drawing.Size(696, 454);
+            this.ClientSize = new System.Drawing.Size(696, 374);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);

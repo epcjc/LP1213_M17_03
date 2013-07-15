@@ -25,5 +25,60 @@ namespace LP_projecto_final_Emanuel
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double n1, n2, calculo;
+
+            n1 = double.Parse(textBox1.Text); 
+
+            n2 = double.Parse(textBox2.Text);
+        
+            calculo = n1 + n2; 
+
+            textBox3.Text = calculo.ToString(); 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double n1, n2, calculo;
+
+            n1 = double.Parse(textBox1.Text);
+
+            n2 = double.Parse(textBox2.Text);
+
+            calculo = n1 - n2;
+
+            textBox3.Text = calculo.ToString(); 
+        
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double n1, n2, calculo;
+
+            n1 = double.Parse(textBox1.Text);
+
+            n2 = double.Parse(textBox2.Text);
+
+            calculo = n1 * n2;
+
+            textBox3.Text = calculo.ToString(); 
+        
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double n1, n2, calculo;
+
+            n1 = double.Parse(textBox1.Text);
+
+            n2 = double.Parse(textBox2.Text);
+
+            calculo = n1 / n2;
+
+            textBox3.Text = calculo.ToString(); 
+        
+        }
     }
 }
