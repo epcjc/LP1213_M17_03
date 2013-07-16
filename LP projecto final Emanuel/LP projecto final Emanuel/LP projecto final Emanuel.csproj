@@ -207,6 +207,12 @@
     <Compile Include="Form31.Designer.cs">
       <DependentUpon>Form31.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form32.Designer.cs">
+      <DependentUpon>Form32.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form9.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,6 +347,9 @@
     <EmbeddedResource Include="Form31.resx">
       <DependentUpon>Form31.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form32.resx">
+      <DependentUpon>Form32.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
     </EmbeddedResource>
@@ -470,6 +479,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\rosto.gif" />
+    <None Include="Resources\chete.gif" />
+    <None Include="Resources\nha cusa.gif" />
+    <None Include="Resources\5-estrelas na fino.gif" />
+    <None Include="Resources\5-estrelas.gif" />
     <None Include="Resources\5 strela.jpg" />
     <None Include="Resources\fx quarto.jpg" />
     <None Include="Resources\nha quarto.jpg" />

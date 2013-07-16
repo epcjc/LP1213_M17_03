@@ -121,6 +121,9 @@
   <data name="hotel menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hotel menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5-estrelas na fino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-estrelas na fino.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,17 +133,20 @@
   <data name="midjor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\midjor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tyyyy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tyyyy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hotelbunito" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hotelbunito.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="outro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\outro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagestiiii" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagestiiii.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hot.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hotelaria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hotelaria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -153,9 +159,6 @@
   </data>
   <data name="nha quarto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nha quarto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hotel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hotel1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="software" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\software.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,14 +184,23 @@
   <data name="imagesgggg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagesgggg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chete.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nha cusa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nha cusa.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5 strela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5 strela.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arco_iris" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arco_iris.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nuel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nuel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imagestiiii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagestiiii.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="catussaba_resort_vista" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\catussaba_resort_vista.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,22 +211,25 @@
   <data name="form-login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ouro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ouro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images ya" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images ya.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5-estrelas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-estrelas.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hotel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hotel1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fx quarto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fx quarto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tyyyy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tyyyy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5 strela" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5 strela.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rosto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rosto.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

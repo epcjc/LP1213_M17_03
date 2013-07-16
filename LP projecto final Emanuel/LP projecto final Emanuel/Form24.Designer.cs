@@ -57,7 +57,6 @@
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.reservaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.idreservaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idclienteDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datareservaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +66,7 @@
             this.totalDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaCliente2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
@@ -312,11 +312,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(943, 150);
             this.dataGridView2.TabIndex = 10;
             // 
-            // reservaBindingSource1
-            // 
-            this.reservaBindingSource1.DataMember = "Reserva";
-            this.reservaBindingSource1.DataSource = this.database1DataSet;
-            // 
             // idreservaDataGridViewTextBoxColumn1
             // 
             this.idreservaDataGridViewTextBoxColumn1.DataPropertyName = "id_reserva";
@@ -372,11 +367,15 @@
             this.estadoDataGridViewTextBoxColumn1.HeaderText = "estado";
             this.estadoDataGridViewTextBoxColumn1.Name = "estadoDataGridViewTextBoxColumn1";
             // 
+            // reservaBindingSource1
+            // 
+            this.reservaBindingSource1.DataMember = "Reserva";
+            this.reservaBindingSource1.DataSource = this.database1DataSet;
+            // 
             // Form24
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
             this.ClientSize = new System.Drawing.Size(972, 610);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label3);

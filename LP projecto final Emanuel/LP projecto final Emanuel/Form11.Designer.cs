@@ -61,6 +61,7 @@
             this.helpProvider1.SetHelpString(this.textBox2, "esquceste o password");
             this.textBox2.Location = new System.Drawing.Point(68, 129);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.helpProvider1.SetShowHelp(this.textBox2, true);
             this.textBox2.Size = new System.Drawing.Size(166, 20);
             this.textBox2.TabIndex = 1;
@@ -135,12 +136,16 @@
             this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
             this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
+            this.tableAdapterManager.Preço_do_quarto2TableAdapter = null;
             this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
             this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.Quarto2TableAdapter = null;
             this.tableAdapterManager.QuartoTableAdapter = null;
+            this.tableAdapterManager.Reserva_quartos1TableAdapter = null;
             this.tableAdapterManager.Reserva_quartosTableAdapter = null;
+            this.tableAdapterManager.Reserva1TableAdapter = null;
             this.tableAdapterManager.ReservaTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_pagamento1TableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
             this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;

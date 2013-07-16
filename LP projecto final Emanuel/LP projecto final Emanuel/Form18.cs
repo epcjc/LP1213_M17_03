@@ -86,5 +86,17 @@ namespace LP_projecto_final_Emanuel
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream(openFileDialog1.FileName, FileMode.Open, FileAccess.Read);
+            byte[] photo_aray = new byte[fs.Length];
+            fs.Read(photo_aray, 0, photo_aray.Length);
+            MemoryStream ms = new MemoryStream();
+            pictureBox1.Image.Save(ms, ImageFormat.Jpeg);
+            byte[] photo_aray = new byte[ms.Length];
+            ms.Position = 0;
+            ms.Read(photo_aray, 0, photo_aray.Length);
+        }
     }
 }

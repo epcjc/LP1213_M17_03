@@ -49,7 +49,7 @@
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(63, 218);
+            this.button1.Location = new System.Drawing.Point(34, 216);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 0;
@@ -60,7 +60,7 @@
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(225, 217);
+            this.button2.Location = new System.Drawing.Point(189, 216);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 23);
             this.button2.TabIndex = 1;
@@ -71,7 +71,7 @@
             // button3
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.Location = new System.Drawing.Point(420, 216);
+            this.button3.Location = new System.Drawing.Point(332, 216);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 23);
             this.button3.TabIndex = 2;
@@ -156,8 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.fx_quarto;
-            this.ClientSize = new System.Drawing.Size(593, 281);
+            this.ClientSize = new System.Drawing.Size(438, 257);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);

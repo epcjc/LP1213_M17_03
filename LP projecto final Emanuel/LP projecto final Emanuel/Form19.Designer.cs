@@ -434,8 +434,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumBlue;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(696, 374);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);

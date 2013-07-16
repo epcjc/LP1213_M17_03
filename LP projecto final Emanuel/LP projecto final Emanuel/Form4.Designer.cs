@@ -41,20 +41,12 @@
             this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -70,10 +62,30 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tiposDeQuartosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tipos_de_quartosTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Tipos_de_quartosTableAdapter();
+            this.quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
+            this.quarto1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quarto1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Quarto1TableAdapter();
+            this.quarto2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quarto2TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Quarto2TableAdapter();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiposDeQuartosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -118,7 +130,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(513, 329);
+            this.button1.Location = new System.Drawing.Point(509, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 24);
             this.button1.TabIndex = 19;
@@ -140,9 +152,9 @@
             this.comboBox1.DataSource = this.clienteBindingSource;
             this.comboBox1.DisplayMember = "nome";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(465, 103);
+            this.comboBox1.Location = new System.Drawing.Point(464, 92);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(106, 21);
+            this.comboBox1.Size = new System.Drawing.Size(139, 21);
             this.comboBox1.TabIndex = 22;
             this.comboBox1.ValueMember = "id_cliente";
             // 
@@ -159,7 +171,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(41, 329);
+            this.button2.Location = new System.Drawing.Point(37, 394);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 24);
             this.button2.TabIndex = 23;
@@ -178,42 +190,6 @@
             this.label2.Size = new System.Drawing.Size(126, 16);
             this.label2.TabIndex = 24;
             this.label2.Text = "Inserir  Reservas";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(465, 130);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 72);
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(465, 204);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 23);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Importar Imagem";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "id reserva";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "id cliente";
             // 
             // label5
             // 
@@ -251,15 +227,6 @@
             this.label8.TabIndex = 32;
             this.label8.Text = "data fim";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(35, 250);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 13);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "total";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -272,46 +239,27 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(38, 303);
+            this.label11.Location = new System.Drawing.Point(38, 358);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(45, 13);
             this.label11.TabIndex = 35;
             this.label11.Text = "estado";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(135, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
-            this.textBox1.TabIndex = 36;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(135, 112);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 20);
-            this.textBox2.TabIndex = 37;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(135, 247);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(159, 20);
-            this.textBox7.TabIndex = 42;
-            // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(135, 274);
+            this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(159, 20);
+            this.textBox8.Size = new System.Drawing.Size(159, 78);
             this.textBox8.TabIndex = 43;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(135, 303);
+            this.textBox9.Location = new System.Drawing.Point(135, 358);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(159, 20);
             this.textBox9.TabIndex = 44;
+            this.textBox9.Visible = false;
             // 
             // comboBox3
             // 
@@ -402,15 +350,16 @@
             // 
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
             "10",
             "11",
             "12",
@@ -426,16 +375,11 @@
             "22",
             "23",
             "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
+            "",
+            ""});
             this.comboBox5.Location = new System.Drawing.Point(135, 169);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(159, 21);
+            this.comboBox5.Size = new System.Drawing.Size(50, 21);
             this.comboBox5.TabIndex = 48;
             // 
             // comboBox6
@@ -611,7 +555,7 @@
             // button4
             // 
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.Location = new System.Drawing.Point(162, 330);
+            this.button4.Location = new System.Drawing.Point(158, 395);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(84, 23);
             this.button4.TabIndex = 55;
@@ -622,7 +566,7 @@
             // button5
             // 
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.Location = new System.Drawing.Point(272, 329);
+            this.button5.Location = new System.Drawing.Point(268, 394);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(85, 23);
             this.button5.TabIndex = 56;
@@ -633,7 +577,7 @@
             // button6
             // 
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.Location = new System.Drawing.Point(382, 330);
+            this.button6.Location = new System.Drawing.Point(378, 395);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(90, 23);
             this.button6.TabIndex = 57;
@@ -641,12 +585,252 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "id reserva";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(135, 85);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(159, 20);
+            this.textBox1.TabIndex = 36;
+            this.textBox1.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "id cliente";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(135, 112);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(159, 20);
+            this.textBox2.TabIndex = 37;
+            this.textBox2.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(35, 250);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(32, 13);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "total";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(135, 247);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(159, 20);
+            this.textBox7.TabIndex = 42;
+            this.textBox7.Visible = false;
+            // 
+            // listBox1
+            // 
+            this.listBox1.DataSource = this.quarto2BindingSource;
+            this.listBox1.DisplayMember = "tipo_quarto";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(464, 153);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(139, 108);
+            this.listBox1.TabIndex = 58;
+            this.listBox1.ValueMember = "id_quarto";
+            // 
+            // tiposDeQuartosBindingSource
+            // 
+            this.tiposDeQuartosBindingSource.DataMember = "Tipos de quartos";
+            this.tiposDeQuartosBindingSource.DataSource = this.database1DataSet;
+            // 
+            // tipos_de_quartosTableAdapter
+            // 
+            this.tipos_de_quartosTableAdapter.ClearBeforeFill = true;
+            // 
+            // quartoBindingSource
+            // 
+            this.quartoBindingSource.DataMember = "Quarto";
+            this.quartoBindingSource.DataSource = this.database1DataSet;
+            // 
+            // quartoTableAdapter
+            // 
+            this.quartoTableAdapter.ClearBeforeFill = true;
+            // 
+            // quarto1BindingSource
+            // 
+            this.quarto1BindingSource.DataMember = "Quarto1";
+            this.quarto1BindingSource.DataSource = this.database1DataSet;
+            // 
+            // quarto1TableAdapter
+            // 
+            this.quarto1TableAdapter.ClearBeforeFill = true;
+            // 
+            // quarto2BindingSource
+            // 
+            this.quarto2BindingSource.DataMember = "Quarto2";
+            this.quarto2BindingSource.DataSource = this.database1DataSet;
+            // 
+            // quarto2TableAdapter
+            // 
+            this.quarto2TableAdapter.ClearBeforeFill = true;
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            ""});
+            this.comboBox12.Location = new System.Drawing.Point(194, 169);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(48, 21);
+            this.comboBox12.TabIndex = 59;
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            ""});
+            this.comboBox13.Location = new System.Drawing.Point(248, 169);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(48, 21);
+            this.comboBox13.TabIndex = 60;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
-            this.ClientSize = new System.Drawing.Size(704, 354);
+            this.ClientSize = new System.Drawing.Size(644, 430);
+            this.Controls.Add(this.comboBox13);
+            this.Controls.Add(this.comboBox12);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -674,8 +858,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
@@ -690,7 +872,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiposDeQuartosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -709,20 +894,12 @@
         private Database1DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -738,5 +915,22 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.BindingSource tiposDeQuartosBindingSource;
+        private Database1DataSetTableAdapters.Tipos_de_quartosTableAdapter tipos_de_quartosTableAdapter;
+        private System.Windows.Forms.BindingSource quartoBindingSource;
+        private Database1DataSetTableAdapters.QuartoTableAdapter quartoTableAdapter;
+        private System.Windows.Forms.BindingSource quarto1BindingSource;
+        private Database1DataSetTableAdapters.Quarto1TableAdapter quarto1TableAdapter;
+        private System.Windows.Forms.BindingSource quarto2BindingSource;
+        private Database1DataSetTableAdapters.Quarto2TableAdapter quarto2TableAdapter;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox comboBox13;
     }
 }

@@ -110,7 +110,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(315, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 16);
+            this.label1.Size = new System.Drawing.Size(146, 16);
             this.label1.TabIndex = 15;
             this.label1.Text = "Inserir  Pagamentos";
             // 
@@ -385,8 +385,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
-            this.ClientSize = new System.Drawing.Size(720, 349);
+            this.ClientSize = new System.Drawing.Size(571, 331);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox6);

@@ -328,7 +328,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.nha_quarto;
             this.ClientSize = new System.Drawing.Size(914, 354);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

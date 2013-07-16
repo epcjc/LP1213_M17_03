@@ -49,7 +49,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.PapayaWhip;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(49, 204);
+            this.button1.Location = new System.Drawing.Point(49, 166);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 0;
@@ -61,7 +61,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PapayaWhip;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(196, 203);
+            this.button2.Location = new System.Drawing.Point(195, 166);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 23);
             this.button2.TabIndex = 1;
@@ -73,7 +73,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.PapayaWhip;
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.Location = new System.Drawing.Point(352, 202);
+            this.button3.Location = new System.Drawing.Point(348, 166);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 23);
             this.button3.TabIndex = 2;
@@ -133,8 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.fx_quarto;
-            this.ClientSize = new System.Drawing.Size(509, 261);
+            this.ClientSize = new System.Drawing.Size(454, 219);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
