@@ -78,17 +78,20 @@ namespace LP_projecto_final_Emanuel
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form24 frm = new Form24();
+
+            Form19 frm = new Form19();
             frm.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
 
+            Form18 frm = new Form18();
+            frm.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
+        {/*
             FileStream fs = new FileStream(openFileDialog1.FileName, FileMode.Open, FileAccess.Read);
             byte[] photo_aray = new byte[fs.Length];
             fs.Read(photo_aray, 0, photo_aray.Length);
@@ -96,7 +99,7 @@ namespace LP_projecto_final_Emanuel
             pictureBox1.Image.Save(ms, ImageFormat.Jpeg);
             byte[] photo_aray = new byte[ms.Length];
             ms.Position = 0;
-            ms.Read(photo_aray, 0, photo_aray.Length);
+            ms.Read(photo_aray, 0, photo_aray.Length);*/
         }
     }
 }

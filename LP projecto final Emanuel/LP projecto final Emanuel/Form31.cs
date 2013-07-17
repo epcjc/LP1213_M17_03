@@ -30,9 +30,10 @@ namespace LP_projecto_final_Emanuel
         {
             double n1, n2, calculo;
 
-            n1 = double.Parse(textBox1.Text); 
+     
+             n1 = Convert.ToInt32(textBox1.Text); 
 
-            n2 = double.Parse(textBox2.Text);
+             n2 = Convert.ToInt32(textBox2.Text);
         
             calculo = n1 + n2; 
 
@@ -43,9 +44,10 @@ namespace LP_projecto_final_Emanuel
         {
             double n1, n2, calculo;
 
-            n1 = double.Parse(textBox1.Text);
 
-            n2 = double.Parse(textBox2.Text);
+            n1 = Convert.ToInt32(textBox1.Text);
+
+            n2 = Convert.ToInt32(textBox2.Text);
 
             calculo = n1 - n2;
 
@@ -57,9 +59,10 @@ namespace LP_projecto_final_Emanuel
         {
             double n1, n2, calculo;
 
-            n1 = double.Parse(textBox1.Text);
 
-            n2 = double.Parse(textBox2.Text);
+            n1 = Convert.ToInt32(textBox1.Text);
+
+            n2 = Convert.ToInt32(textBox2.Text);
 
             calculo = n1 * n2;
 
@@ -69,11 +72,12 @@ namespace LP_projecto_final_Emanuel
 
         private void button4_Click(object sender, EventArgs e)
         {
-            double n1, n2, calculo;
+            int n1, n2, calculo;
 
-            n1 = double.Parse(textBox1.Text);
 
-            n2 = double.Parse(textBox2.Text);
+            n1 = Convert.ToInt32(textBox1.Text);
+
+            n2 = Convert.ToInt32(textBox2.Text);
 
             calculo = n1 / n2;
 

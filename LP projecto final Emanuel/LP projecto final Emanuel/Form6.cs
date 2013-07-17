@@ -31,7 +31,7 @@ namespace LP_projecto_final_Emanuel
             MessageBox.Show("Inserido novo Cliente");
         }
 
-
+    
 
 
         private void clienteBindingNavigatorSaveItem_Click(object sender, EventArgs e)

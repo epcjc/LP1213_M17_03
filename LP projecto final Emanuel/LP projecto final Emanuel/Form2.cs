@@ -402,6 +402,11 @@ namespace LP_projecto_final_Emanuel
             Form31 frm = new Form31();
             frm.ShowDialog();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
        
     }
 }

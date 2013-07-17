@@ -273,6 +273,7 @@
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilizadoresBindingSource, "Password", true));
             this.passwordTextBox.Location = new System.Drawing.Point(179, 149);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(116, 20);
             this.passwordTextBox.TabIndex = 4;
             this.toolTip1.SetToolTip(this.passwordTextBox, "Introduza o password");
@@ -330,6 +331,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(386, 291);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
