@@ -20,5 +20,14 @@ namespace LP_projecto_final_Emanuel
         {
             this.Close();
         }
+
+        private void Form29_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database1DataSet.Quarto2' table. You can move, or remove it, as needed.
+            this.quarto2TableAdapter.FillByAndar(this.database1DataSet.Quarto2);
+            // TODO: This line of code loads data into the 'database1DataSet.Preço_do_quarto' table. You can move, or remove it, as needed.
+            this.preço_do_quartoTableAdapter.Fill(this.database1DataSet.Preço_do_quarto);
+
+        }
     }
 }

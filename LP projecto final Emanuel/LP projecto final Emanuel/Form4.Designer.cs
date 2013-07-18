@@ -78,6 +78,11 @@
             this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.quartoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.quarto2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
@@ -85,6 +90,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tiposDeQuartosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -625,7 +632,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(464, 153);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(139, 108);
+            this.listBox1.Size = new System.Drawing.Size(139, 82);
             this.listBox1.TabIndex = 58;
             this.listBox1.ValueMember = "id_quarto";
             // 
@@ -814,12 +821,53 @@
             this.label12.TabIndex = 61;
             this.label12.Text = "Tipos de Quarto";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(135, 113);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 62;
+            this.textBox2.Visible = false;
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.DataSource = this.quarto2BindingSource1;
+            this.comboBox14.DisplayMember = "andar_quarto";
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Location = new System.Drawing.Point(467, 274);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(121, 21);
+            this.comboBox14.TabIndex = 63;
+            this.comboBox14.ValueMember = "id_quarto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(467, 255);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 13);
+            this.label4.TabIndex = 64;
+            this.label4.Text = "Andar do quarto";
+            // 
+            // quartoBindingSource1
+            // 
+            this.quartoBindingSource1.DataMember = "Quarto";
+            this.quartoBindingSource1.DataSource = this.database1DataSet;
+            // 
+            // quarto2BindingSource1
+            // 
+            this.quarto2BindingSource1.DataMember = "Quarto2";
+            this.quarto2BindingSource1.DataSource = this.database1DataSet;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(644, 430);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox14);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.comboBox13);
             this.Controls.Add(this.comboBox12);
@@ -867,6 +915,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tiposDeQuartosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -922,5 +972,10 @@
         private System.Windows.Forms.ComboBox comboBox12;
         private System.Windows.Forms.ComboBox comboBox13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.BindingSource quarto2BindingSource1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.BindingSource quartoBindingSource1;
     }
 }

@@ -172,7 +172,7 @@
             this.comboBox1.DataSource = this.fKPagamentoCliente2BindingSource;
             this.comboBox1.DisplayMember = "valor_pagamento";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(125, 129);
+            this.comboBox1.Location = new System.Drawing.Point(172, 126);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(140, 21);
@@ -207,7 +207,7 @@
             this.comboBox2.Location = new System.Drawing.Point(125, 82);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(140, 21);
+            this.comboBox2.Size = new System.Drawing.Size(187, 21);
             this.comboBox2.TabIndex = 2;
             this.comboBox2.ValueMember = "id_reserva";
             // 
@@ -227,9 +227,9 @@
             this.label1.Location = new System.Drawing.Point(44, 129);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(120, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Pagamento";
+            this.label1.Text = "Valor de pagamento";
             // 
             // label2
             // 
@@ -237,9 +237,9 @@
             this.label2.Location = new System.Drawing.Point(44, 85);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Reserva";
+            this.label2.Text = "Data reserva";
             // 
             // pagamentoTableAdapter
             // 

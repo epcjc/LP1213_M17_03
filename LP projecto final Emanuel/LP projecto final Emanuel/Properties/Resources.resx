@@ -184,6 +184,9 @@
   <data name="imagesgggg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagesgggg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="chete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chete.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -204,6 +207,9 @@
   </data>
   <data name="catussaba_resort_vista" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\catussaba_resort_vista.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rosto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rosto.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hotel menu33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hotel menu33.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,7 +235,7 @@
   <data name="fx quarto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fx quarto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rosto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rosto.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

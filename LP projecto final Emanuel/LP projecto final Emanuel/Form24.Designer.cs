@@ -67,6 +67,7 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKReservaCliente2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
@@ -373,12 +374,22 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "estado";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(292, 123);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(219, 24);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Efectuar pagamento desse cliente";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form24
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(972, 606);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.reservaDataGridView);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
@@ -445,5 +456,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.Button button5;
     }
 }

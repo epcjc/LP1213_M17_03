@@ -470,6 +470,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\lock.jpg" />
     <None Include="Resources\rosto.gif" />
     <None Include="Resources\chete.gif" />
     <None Include="Resources\nha cusa.gif" />

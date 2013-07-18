@@ -49,7 +49,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(68, 72);
+            this.textBox1.Location = new System.Drawing.Point(115, 105);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(166, 20);
             this.textBox1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // textBox2
             // 
             this.helpProvider1.SetHelpString(this.textBox2, "esquceste o password");
-            this.textBox2.Location = new System.Drawing.Point(68, 129);
+            this.textBox2.Location = new System.Drawing.Point(115, 162);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.helpProvider1.SetShowHelp(this.textBox2, true);
@@ -72,9 +72,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Red;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 40);
+            this.label1.Location = new System.Drawing.Point(120, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 20);
             this.label1.TabIndex = 2;
@@ -83,9 +83,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Red;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(106, 106);
+            this.label2.Location = new System.Drawing.Point(153, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 3;
@@ -93,8 +93,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(68, 172);
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(115, 205);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(63, 23);
             this.button1.TabIndex = 4;
@@ -104,8 +104,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(155, 172);
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(202, 205);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(62, 23);
             this.button2.TabIndex = 5;
@@ -159,8 +159,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources.form_login;
-            this.ClientSize = new System.Drawing.Size(283, 289);
+            this.BackgroundImage = global::LP_projecto_final_Emanuel.Properties.Resources._lock;
+            this.ClientSize = new System.Drawing.Size(356, 289);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -173,7 +173,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form11";
-            this.Text = "Form11";
+            this.Text = "Entrada";
             this.Load += new System.EventHandler(this.Form11_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingSource)).EndInit();

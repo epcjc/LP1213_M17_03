@@ -9,22 +9,11 @@ using System.Windows.Forms;
 
 namespace LP_projecto_final_Emanuel
 {
-    public partial class Form1 : Form
+    public partial class Form32 : Form
     {
-        public Form1()
+        public Form32()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            
-             Form11 frm = new Form11();
-             
-                frm.ShowDialog();
-                this.Close();
-        }
-
     }
 }

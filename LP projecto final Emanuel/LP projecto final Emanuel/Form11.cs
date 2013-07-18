@@ -53,6 +53,7 @@ namespace LP_projecto_final_Emanuel
 
                 Form2 frm = new Form2();
                 frm.ShowDialog();
+                this.Close();
             }
         }
 

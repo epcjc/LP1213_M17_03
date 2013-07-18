@@ -29,7 +29,7 @@ namespace LP_projecto_final_Emanuel
             // TODO: This line of code loads data into the 'database1DataSet.Quarto2' table. You can move, or remove it, as needed.
             this.quarto2TableAdapter.FillByAndar(this.database1DataSet.Quarto2);
             // TODO: This line of code loads data into the 'database1DataSet.Quarto1' table. You can move, or remove it, as needed.
-           this.quarto1TableAdapter.Fill(this.database1DataSet.Quarto1);
+           //this.quarto1TableAdapter.Fill(this.database1DataSet.Quarto1);
             // TODO: This line of code loads data into the 'database1DataSet.Tipos_de_quartos' table. You can move, or remove it, as needed.
             this.tipos_de_quartosTableAdapter.Fill(this.database1DataSet.Tipos_de_quartos);
             // TODO: This line of code loads data into the 'database1DataSet.Tipos_de_quartos' table. You can move, or remove it, as needed.
