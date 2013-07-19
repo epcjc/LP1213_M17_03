@@ -35,7 +35,7 @@ namespace LP_projecto_final_Emanuel
         private void Form21_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
-            this.quartoTableAdapter.FillBy(this.database1DataSet.Quarto);
+            this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
 
         }
 
@@ -44,7 +44,7 @@ namespace LP_projecto_final_Emanuel
             try
                
             {
-                this.quartoTableAdapter.FillbyAndarDoQuarto(this.database1DataSet.Quarto, textBox1.Text);
+            //    this.quartoTableAdapter.FillbyAndarDoQuarto(this.database1DataSet.Quarto, textBox1.Text);
             }
             catch (System.Exception ex)
             {
@@ -63,7 +63,7 @@ namespace LP_projecto_final_Emanuel
 
             try
             {
-                this.quartoTableAdapter.FillbyAndarDoQuarto(this.database1DataSet.Quarto, textBox1.Text);
+             //   this.quartoTableAdapter.FillbyAndarDoQuarto(this.database1DataSet.Quarto, textBox1.Text);
             }
             catch (System.Exception ex)
             {

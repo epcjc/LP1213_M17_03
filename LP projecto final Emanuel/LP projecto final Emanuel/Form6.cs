@@ -28,8 +28,8 @@ namespace LP_projecto_final_Emanuel
                 if (this.pictureBox2.Image == null)
                 {
                     this.clienteTableAdapter.Insert(this.textBox1.Text,
-                        this.textBox2.Text, Convert.ToInt32(this.textBox3.Text), this.textBox8.Text, datanascimento,
-                        Convert.ToInt32(this.textBox5.Text), Convert.ToInt32(this.textBox6.Text), null);
+                        this.textBox2.Text, this.textBox3.Text,this.textBox8.Text, datanascimento,
+                        this.textBox5.Text, this.textBox6.Text, "", null);
                 }
                 else
                 {
@@ -38,8 +38,8 @@ namespace LP_projecto_final_Emanuel
                     Byte[] data = ms.GetBuffer();
 
                     this.clienteTableAdapter.Insert(this.textBox1.Text,
-                              this.textBox2.Text, Convert.ToInt32(this.textBox3.Text), this.textBox8.Text, datanascimento,
-                              Convert.ToInt32(this.textBox5.Text), Convert.ToInt32(this.textBox6.Text), data);
+                       this.textBox2.Text, this.textBox3.Text, this.textBox8.Text, datanascimento,
+                       this.textBox5.Text, this.textBox6.Text, "", data);
                 }
 
                 MessageBox.Show("Inserido novo Cliente");
@@ -74,44 +74,67 @@ namespace LP_projecto_final_Emanuel
         {
 
             this.Close();
-            Form2 frm = new Form2();
-            frm.ShowDialog();
+          
         }
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
         {
             if (this.textBox1.Text == "")
                 errorProvider1.SetError(this.textBox1, "nao pode ser vazio");
+            else
+            {
+                errorProvider1.SetError(this.textBox1, "");
+            }
         }
 
         private void textBox2_Validating(object sender, CancelEventArgs e)
         {
             if (this.textBox2.Text == "")
                 errorProvider1.SetError(this.textBox2, "nao pode ser vazio");
+            else
+            {
+                errorProvider1.SetError(this.textBox2, "");
+            }
         }
 
         private void textBox3_Validating(object sender, CancelEventArgs e)
         {
             if (this.textBox3.Text == "")
                 errorProvider1.SetError(this.textBox3, "nao pode ser vazio");
+            else
+            {
+                errorProvider1.SetError(this.textBox3, "");
+            }
         }
 
         private void textBox8_Validating(object sender, CancelEventArgs e)
         {
             if (this.textBox8.Text == "")
                 errorProvider1.SetError(this.textBox8, "nao pode ser vazio");
+            else
+            {
+                errorProvider1.SetError(this.textBox8, "");
+            }
         }
 
         private void textBox5_Validating(object sender, CancelEventArgs e)
         {
             if (this.textBox5.Text == "")
                 errorProvider1.SetError(this.textBox5, "nao pode ser vazio");
+            else
+            {
+                errorProvider1.SetError(this.textBox5, "");
+            }
         }
 
         private void textBox6_Validating(object sender, CancelEventArgs e)
         {
             if (this.textBox6.Text == "")
                 errorProvider1.SetError(this.textBox6, "nao pode ser vazio");
+            else
+            {
+                errorProvider1.SetError(this.textBox6, "");
+            }
         }
 
         private void textBox7_Validating(object sender, CancelEventArgs e)

@@ -30,29 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
-            this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
-            this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
@@ -66,71 +54,18 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.quarto2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tiposDeQuartosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tipos_de_quartosTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Tipos_de_quartosTableAdapter();
-            this.quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
-            this.quarto1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quarto1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Quarto1TableAdapter();
-            this.quarto2TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Quarto2TableAdapter();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.quartoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.quarto2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
+            this.quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiposDeQuartosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // reservaBindingSource
-            // 
-            this.reservaBindingSource.DataMember = "Reserva";
-            this.reservaBindingSource.DataSource = this.database1DataSet;
-            // 
-            // reservaTableAdapter
-            // 
-            this.reservaTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Cliente1TableAdapter = null;
-            this.tableAdapterManager.ClienteTableAdapter = null;
-            this.tableAdapterManager.codigo_postalTableAdapter = null;
-            this.tableAdapterManager.Pagamento1TableAdapter = null;
-            this.tableAdapterManager.PagamentoTableAdapter = null;
-            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
-            this.tableAdapterManager.Preço_do_quarto2TableAdapter = null;
-            this.tableAdapterManager.Preço_do_quartoTableAdapter = null;
-            this.tableAdapterManager.Quarto1TableAdapter = null;
-            this.tableAdapterManager.Quarto2TableAdapter = null;
-            this.tableAdapterManager.QuartoTableAdapter = null;
-            this.tableAdapterManager.Reserva_quartos1TableAdapter = null;
-            this.tableAdapterManager.Reserva_quartosTableAdapter = null;
-            this.tableAdapterManager.Reserva1TableAdapter = null;
-            this.tableAdapterManager.ReservaTableAdapter = this.reservaTableAdapter;
-            this.tableAdapterManager.Tipos_de_pagamento1TableAdapter = null;
-            this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
-            this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
             // button1
             // 
@@ -164,15 +99,6 @@
             this.comboBox1.TabIndex = 22;
             this.comboBox1.ValueMember = "id_cliente";
             // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.database1DataSet;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
@@ -196,24 +122,6 @@
             this.label2.Size = new System.Drawing.Size(126, 16);
             this.label2.TabIndex = 24;
             this.label2.Text = "Inserir  Reservas";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 13);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "data reserva";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(29, 169);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 13);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "hora reserva";
             // 
             // label7
             // 
@@ -266,127 +174,6 @@
             this.textBox9.Size = new System.Drawing.Size(159, 20);
             this.textBox9.TabIndex = 44;
             this.textBox9.Visible = false;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "1980",
-            "1980",
-            "1981",
-            "1982",
-            "1983",
-            "1984",
-            "1985",
-            "1986",
-            "1987",
-            "1988",
-            "1989",
-            "1990",
-            "1991",
-            "1992",
-            "1993"});
-            this.comboBox3.Location = new System.Drawing.Point(241, 139);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(53, 21);
-            this.comboBox3.TabIndex = 47;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboBox2.Location = new System.Drawing.Point(202, 139);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(35, 21);
-            this.comboBox2.TabIndex = 46;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Janeiro",
-            "Fevereiro",
-            "Março",
-            "Abril",
-            "Maio",
-            "Junho",
-            "Julho",
-            "Agosto",
-            "Setembro",
-            "Outubro",
-            "Novembro",
-            "Dezembro"});
-            this.comboBox4.Location = new System.Drawing.Point(135, 139);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(62, 21);
-            this.comboBox4.TabIndex = 45;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "00",
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "",
-            ""});
-            this.comboBox5.Location = new System.Drawing.Point(135, 169);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(50, 21);
-            this.comboBox5.TabIndex = 48;
             // 
             // comboBox6
             // 
@@ -625,30 +412,48 @@
             this.textBox7.TabIndex = 42;
             this.textBox7.Visible = false;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(464, 156);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(51, 13);
+            this.label12.TabIndex = 61;
+            this.label12.Text = "Quartos";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(135, 113);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 62;
+            this.textBox2.Visible = false;
+            // 
             // listBox1
             // 
-            this.listBox1.DataSource = this.quarto2BindingSource;
-            this.listBox1.DisplayMember = "tipo_quarto";
+            this.listBox1.DataSource = this.quartoBindingSource;
+            this.listBox1.DisplayMember = "id_quarto";
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(464, 153);
+            this.listBox1.Location = new System.Drawing.Point(467, 172);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(139, 82);
-            this.listBox1.TabIndex = 58;
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listBox1.Size = new System.Drawing.Size(136, 173);
+            this.listBox1.TabIndex = 63;
             this.listBox1.ValueMember = "id_quarto";
             // 
-            // quarto2BindingSource
+            // database1DataSet
             // 
-            this.quarto2BindingSource.DataMember = "Quarto2";
-            this.quarto2BindingSource.DataSource = this.database1DataSet;
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tiposDeQuartosBindingSource
+            // clienteBindingSource
             // 
-            this.tiposDeQuartosBindingSource.DataMember = "Tipos de quartos";
-            this.tiposDeQuartosBindingSource.DataSource = this.database1DataSet;
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.database1DataSet;
             // 
-            // tipos_de_quartosTableAdapter
+            // clienteTableAdapter
             // 
-            this.tipos_de_quartosTableAdapter.ClearBeforeFill = true;
+            this.clienteTableAdapter.ClearBeforeFill = true;
             // 
             // quartoBindingSource
             // 
@@ -659,219 +464,15 @@
             // 
             this.quartoTableAdapter.ClearBeforeFill = true;
             // 
-            // quarto1BindingSource
-            // 
-            this.quarto1BindingSource.DataMember = "Quarto1";
-            this.quarto1BindingSource.DataSource = this.database1DataSet;
-            // 
-            // quarto1TableAdapter
-            // 
-            this.quarto1TableAdapter.ClearBeforeFill = true;
-            // 
-            // quarto2TableAdapter
-            // 
-            this.quarto2TableAdapter.ClearBeforeFill = true;
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
-            "00",
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            ""});
-            this.comboBox12.Location = new System.Drawing.Point(194, 169);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(48, 21);
-            this.comboBox12.TabIndex = 59;
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
-            "00",
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            ""});
-            this.comboBox13.Location = new System.Drawing.Point(248, 169);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(48, 21);
-            this.comboBox13.TabIndex = 60;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(464, 134);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 13);
-            this.label12.TabIndex = 61;
-            this.label12.Text = "Tipos de Quarto";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(135, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 62;
-            this.textBox2.Visible = false;
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.DataSource = this.quarto2BindingSource1;
-            this.comboBox14.DisplayMember = "andar_quarto";
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(467, 274);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(121, 21);
-            this.comboBox14.TabIndex = 63;
-            this.comboBox14.ValueMember = "id_quarto";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(467, 255);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 13);
-            this.label4.TabIndex = 64;
-            this.label4.Text = "Andar do quarto";
-            // 
-            // quartoBindingSource1
-            // 
-            this.quartoBindingSource1.DataMember = "Quarto";
-            this.quartoBindingSource1.DataSource = this.database1DataSet;
-            // 
-            // quarto2BindingSource1
-            // 
-            this.quarto2BindingSource1.DataMember = "Quarto2";
-            this.quarto2BindingSource1.DataSource = this.database1DataSet;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(644, 430);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox14);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox13);
-            this.Controls.Add(this.comboBox12);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -881,10 +482,6 @@
             this.Controls.Add(this.comboBox6);
             this.Controls.Add(this.comboBox7);
             this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -894,8 +491,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
@@ -909,14 +504,8 @@
             this.Text = "Lista das Reservas";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tiposDeQuartosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quarto1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quarto2BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -924,29 +513,17 @@
 
         #endregion
 
-        private Database1DataSet database1DataSet;
-        private System.Windows.Forms.BindingSource reservaBindingSource;
-        private Database1DataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
-        private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.BindingSource clienteBindingSource;
-        private Database1DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.ComboBox comboBox8;
@@ -960,22 +537,13 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.BindingSource tiposDeQuartosBindingSource;
-        private Database1DataSetTableAdapters.Tipos_de_quartosTableAdapter tipos_de_quartosTableAdapter;
-        private System.Windows.Forms.BindingSource quartoBindingSource;
-        private Database1DataSetTableAdapters.QuartoTableAdapter quartoTableAdapter;
-        private System.Windows.Forms.BindingSource quarto1BindingSource;
-        private Database1DataSetTableAdapters.Quarto1TableAdapter quarto1TableAdapter;
-        private System.Windows.Forms.BindingSource quarto2BindingSource;
-        private Database1DataSetTableAdapters.Quarto2TableAdapter quarto2TableAdapter;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.BindingSource quarto2BindingSource1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.BindingSource quartoBindingSource1;
+        private System.Windows.Forms.ListBox listBox1;
+        private Database1DataSet database1DataSet;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
+        private Database1DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private System.Windows.Forms.BindingSource quartoBindingSource;
+        private Database1DataSetTableAdapters.QuartoTableAdapter quartoTableAdapter;
     }
 }
