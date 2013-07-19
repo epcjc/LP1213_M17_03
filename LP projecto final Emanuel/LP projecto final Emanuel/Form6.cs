@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace LP_projecto_final_Emanuel
 {
@@ -18,17 +19,34 @@ namespace LP_projecto_final_Emanuel
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+     
+            try {
 
+                DateTime datanascimento = new DateTime(Convert.ToInt16(this.comboBox3.SelectedItem), Convert.ToInt16(this.comboBox1.SelectedItem),
+                    Convert.ToInt16(this.comboBox2.SelectedItem));
 
-            DateTime datanascimento = new DateTime(Convert.ToInt16(this.comboBox3.SelectedItem), Convert.ToInt16(this.comboBox1.SelectedItem),
-                Convert.ToInt16(this.comboBox2.SelectedItem));
+                if (this.pictureBox2.Image == null)
+                {
+                    this.clienteTableAdapter.Insert(this.textBox1.Text,
+                        this.textBox2.Text, Convert.ToInt32(this.textBox3.Text), this.textBox8.Text, datanascimento,
+                        Convert.ToInt32(this.textBox5.Text), Convert.ToInt32(this.textBox6.Text), null);
+                }
+                else
+                {
+                    MemoryStream ms = new MemoryStream();
+                    pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
+                    Byte[] data = ms.GetBuffer();
 
-           this.clienteTableAdapter.Insert(this.textBox1.Text,
-               this.textBox2.Text, Convert.ToInt32(this.textBox3.Text),this.textBox8.Text,datanascimento,
-               Convert.ToInt32(this.textBox5.Text),Convert.ToInt32(this.textBox6.Text), null);
+                    this.clienteTableAdapter.Insert(this.textBox1.Text,
+                              this.textBox2.Text, Convert.ToInt32(this.textBox3.Text), this.textBox8.Text, datanascimento,
+                              Convert.ToInt32(this.textBox5.Text), Convert.ToInt32(this.textBox6.Text), data);
+                }
 
-            MessageBox.Show("Inserido novo Cliente");
+                MessageBox.Show("Inserido novo Cliente");
+            }
+            catch (Exception ex) {
+                MessageBox.Show("ERRO" + ex.ToString());
+            }
         }
 
     
@@ -111,6 +129,31 @@ namespace LP_projecto_final_Emanuel
         {
             Form13 frm = new Form13();
             frm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try {
+                this.openFileDialog1.FileName = null;
+                this.openFileDialog1.Filter = "Fotografias | *.gif;*.jpg;*.png";
+                this.openFileDialog1.ShowDialog();
+
+                if (openFileDialog1.FileName != null) {
+                    this.pictureBox2.ImageLocation = openFileDialog1.FileName;
+                    this.pictureBox2.Image = Image.FromFile(openFileDialog1.FileName);
+                }
+            }
+            catch {
+                MessageBox.Show("Erro ao escolher imagem");
+            }
+
+        
+          
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.pictureBox2.Image = null;
         }
     }
 }
