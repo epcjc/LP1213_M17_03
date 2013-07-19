@@ -39,7 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,18 +46,23 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.quartoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.quartoBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -103,7 +107,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.PapayaWhip;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(42, 237);
+            this.button1.Location = new System.Drawing.Point(43, 291);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 9;
@@ -150,17 +154,6 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Andar Quarto";
             // 
-            // textBox1
-            // 
-            this.helpProvider1.SetHelpString(this.textBox1, "não sabes o que é tipo de quarto");
-            this.textBox1.Location = new System.Drawing.Point(136, 99);
-            this.textBox1.Name = "textBox1";
-            this.helpProvider1.SetShowHelp(this.textBox1, true);
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
-            this.textBox1.TabIndex = 14;
-            this.toolTip1.SetToolTip(this.textBox1, "Introduza tipo do quarto");
-            this.textBox1.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
-            // 
             // textBox2
             // 
             this.helpProvider1.SetHelpString(this.textBox2, "Nao sabes o que é preço");
@@ -176,7 +169,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PapayaWhip;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(457, 237);
+            this.button2.Location = new System.Drawing.Point(458, 291);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 23);
             this.button2.TabIndex = 17;
@@ -186,9 +179,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(402, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(403, 73);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(163, 153);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox1, "Introduza Imagem");
@@ -196,11 +190,11 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(402, 177);
+            this.button3.Location = new System.Drawing.Point(403, 232);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(163, 23);
+            this.button3.Size = new System.Drawing.Size(70, 23);
             this.button3.TabIndex = 19;
-            this.button3.Text = "Importar Imagem";
+            this.button3.Text = "Escolher";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -221,6 +215,16 @@
             this.quartoBindingSource1.DataMember = "Quarto";
             this.quartoBindingSource1.DataSource = this.database1DataSet;
             // 
+            // textBox3
+            // 
+            this.helpProvider1.SetHelpString(this.textBox3, "não sabes o que é tipo de quarto");
+            this.textBox3.Location = new System.Drawing.Point(136, 73);
+            this.textBox3.Name = "textBox3";
+            this.helpProvider1.SetShowHelp(this.textBox3, true);
+            this.textBox3.Size = new System.Drawing.Size(116, 20);
+            this.textBox3.TabIndex = 24;
+            this.toolTip1.SetToolTip(this.textBox3, "Introduza tipo do quarto");
+            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -229,7 +233,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.PapayaWhip;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.Location = new System.Drawing.Point(163, 237);
+            this.button4.Location = new System.Drawing.Point(164, 291);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 23);
             this.button4.TabIndex = 21;
@@ -241,7 +245,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.PapayaWhip;
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.Location = new System.Drawing.Point(314, 237);
+            this.button5.Location = new System.Drawing.Point(315, 291);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 23);
             this.button5.TabIndex = 22;
@@ -253,16 +257,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBox3
-            // 
-            this.helpProvider1.SetHelpString(this.textBox3, "não sabes o que é tipo de quarto");
-            this.textBox3.Location = new System.Drawing.Point(136, 73);
-            this.textBox3.Name = "textBox3";
-            this.helpProvider1.SetShowHelp(this.textBox3, true);
-            this.textBox3.Size = new System.Drawing.Size(116, 20);
-            this.textBox3.TabIndex = 24;
-            this.toolTip1.SetToolTip(this.textBox3, "Introduza tipo do quarto");
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -272,12 +266,51 @@
             this.label5.TabIndex = 23;
             this.label5.Text = "Número Quarto";
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Red;
+            this.button6.Location = new System.Drawing.Point(496, 232);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(70, 23);
+            this.button6.TabIndex = 25;
+            this.button6.Text = "Limpar";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(403, 54);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 13);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Imagem";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.quartoBindingSource2;
+            this.comboBox2.DisplayMember = "tipo_quarto";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(136, 100);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(116, 21);
+            this.comboBox2.TabIndex = 27;
+            this.comboBox2.ValueMember = "id_quarto";
+            // 
+            // quartoBindingSource2
+            // 
+            this.quartoBindingSource2.DataMember = "Quarto";
+            this.quartoBindingSource2.DataSource = this.database1DataSet;
+            // 
             // Form18
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(609, 311);
+            this.ClientSize = new System.Drawing.Size(609, 342);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button5);
@@ -287,7 +320,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -306,6 +338,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,7 +355,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -337,6 +369,10 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.BindingSource quartoBindingSource2;
 
     }
 }

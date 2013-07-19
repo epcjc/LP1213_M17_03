@@ -45,7 +45,7 @@ namespace LP_projecto_final_Emanuel
            try
             {
 
-                this.quartoTableAdapter.Insert(Convert.ToInt32(this.textBox3.Text), textBox1.Text, Convert.ToInt16(textBox2.Text), Convert.ToString(comboBox1.SelectedValue), null, "livre");
+                this.quartoTableAdapter.Insert(Convert.ToInt32(this.textBox3.Text),Convert.ToString(comboBox1.SelectedValue), Convert.ToInt16(textBox2.Text), Convert.ToString(comboBox1.SelectedValue), null, "livre");
                 MessageBox.Show("Inserido novo Quarto !!");
 
             }
@@ -66,8 +66,7 @@ namespace LP_projecto_final_Emanuel
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
         {
-            if (this.textBox1.Text == "")
-                errorProvider1.SetError(this.textBox1, "nao pode ser vazio");
+       
         }
 
         private void textBox2_Validating(object sender, CancelEventArgs e)
@@ -91,15 +90,28 @@ namespace LP_projecto_final_Emanuel
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {/*
-            FileStream fs = new FileStream(openFileDialog1.FileName, FileMode.Open, FileAccess.Read);
-            byte[] photo_aray = new byte[fs.Length];
-            fs.Read(photo_aray, 0, photo_aray.Length);
-            MemoryStream ms = new MemoryStream();
-            pictureBox1.Image.Save(ms, ImageFormat.Jpeg);
-            byte[] photo_aray = new byte[ms.Length];
-            ms.Position = 0;
-            ms.Read(photo_aray, 0, photo_aray.Length);*/
+        {
+            try
+            {
+                this.openFileDialog1.FileName = null;
+                this.openFileDialog1.Filter = "Fotografias | *.gif;*.jpg;*.png";
+                this.openFileDialog1.ShowDialog();
+
+                if (openFileDialog1.FileName != null)
+                {
+                    this.pictureBox1.ImageLocation = openFileDialog1.FileName;
+                    this.pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Erro ao escolher imagem");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.pictureBox1.Image = null;
         }
     }
 }

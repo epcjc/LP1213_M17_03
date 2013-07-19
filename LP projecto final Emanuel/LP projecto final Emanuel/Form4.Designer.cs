@@ -33,6 +33,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -57,13 +59,11 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.quartoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.quartoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.QuartoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,6 +98,16 @@
             this.comboBox1.Size = new System.Drawing.Size(139, 21);
             this.comboBox1.TabIndex = 22;
             this.comboBox1.ValueMember = "id_cliente";
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button2
             // 
@@ -441,24 +451,14 @@
             this.listBox1.TabIndex = 63;
             this.listBox1.ValueMember = "id_quarto";
             // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.database1DataSet;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
-            // 
             // quartoBindingSource
             // 
             this.quartoBindingSource.DataMember = "Quarto";
             this.quartoBindingSource.DataSource = this.database1DataSet;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
             // 
             // quartoTableAdapter
             // 
@@ -501,10 +501,10 @@
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form4";
-            this.Text = "Lista das Reservas";
+            this.Text = "inserir Reservas";
             this.Load += new System.EventHandler(this.Form4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

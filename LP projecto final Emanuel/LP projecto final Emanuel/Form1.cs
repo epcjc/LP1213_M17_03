@@ -23,7 +23,7 @@ namespace LP_projecto_final_Emanuel
              Form11 frm = new Form11();
              
                 frm.ShowDialog();
-                this.Close();
+               
         }
 
     }

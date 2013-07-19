@@ -11,6 +11,7 @@ namespace LP_projecto_final_Emanuel
 {
     public partial class Form30 : Form
     {
+        float cambio;
         public Form30()
         {
             InitializeComponent();
@@ -28,7 +29,24 @@ namespace LP_projecto_final_Emanuel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            float moeda = float.Parse(textBox1.Text);
+            float result = moeda * cambio;
+            this.textBox2.Text = result.ToString();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            this.cambio = 0.9796f;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.cambio = 0.6274f;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            this.cambio = 120.22f;
         }
     }
 }

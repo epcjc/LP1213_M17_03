@@ -52,18 +52,16 @@
             this.tiposDePagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idpagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idreservaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idmetodopagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorpagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKPagamentoTiposDePagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.idpagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idreservaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorpagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingNavigator)).BeginInit();
@@ -271,59 +269,14 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idpagamentoDataGridViewTextBoxColumn,
             this.idreservaDataGridViewTextBoxColumn,
-            this.idclienteDataGridViewTextBoxColumn,
-            this.idmetodopagamentoDataGridViewTextBoxColumn,
             this.valorpagamentoDataGridViewTextBoxColumn,
             this.comentariosDataGridViewTextBoxColumn,
             this.dataDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.fKPagamentoTiposDePagamentoBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 181);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(748, 137);
+            this.dataGridView1.Size = new System.Drawing.Size(546, 137);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // idpagamentoDataGridViewTextBoxColumn
-            // 
-            this.idpagamentoDataGridViewTextBoxColumn.DataPropertyName = "id_pagamento";
-            this.idpagamentoDataGridViewTextBoxColumn.HeaderText = "id_pagamento";
-            this.idpagamentoDataGridViewTextBoxColumn.Name = "idpagamentoDataGridViewTextBoxColumn";
-            this.idpagamentoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idreservaDataGridViewTextBoxColumn
-            // 
-            this.idreservaDataGridViewTextBoxColumn.DataPropertyName = "id_reserva";
-            this.idreservaDataGridViewTextBoxColumn.HeaderText = "id_reserva";
-            this.idreservaDataGridViewTextBoxColumn.Name = "idreservaDataGridViewTextBoxColumn";
-            // 
-            // idclienteDataGridViewTextBoxColumn
-            // 
-            this.idclienteDataGridViewTextBoxColumn.DataPropertyName = "id_cliente";
-            this.idclienteDataGridViewTextBoxColumn.HeaderText = "id_cliente";
-            this.idclienteDataGridViewTextBoxColumn.Name = "idclienteDataGridViewTextBoxColumn";
-            // 
-            // idmetodopagamentoDataGridViewTextBoxColumn
-            // 
-            this.idmetodopagamentoDataGridViewTextBoxColumn.DataPropertyName = "id_metodo_pagamento";
-            this.idmetodopagamentoDataGridViewTextBoxColumn.HeaderText = "id_metodo_pagamento";
-            this.idmetodopagamentoDataGridViewTextBoxColumn.Name = "idmetodopagamentoDataGridViewTextBoxColumn";
-            // 
-            // valorpagamentoDataGridViewTextBoxColumn
-            // 
-            this.valorpagamentoDataGridViewTextBoxColumn.DataPropertyName = "valor_pagamento";
-            this.valorpagamentoDataGridViewTextBoxColumn.HeaderText = "valor_pagamento";
-            this.valorpagamentoDataGridViewTextBoxColumn.Name = "valorpagamentoDataGridViewTextBoxColumn";
-            // 
-            // comentariosDataGridViewTextBoxColumn
-            // 
-            this.comentariosDataGridViewTextBoxColumn.DataPropertyName = "comentarios";
-            this.comentariosDataGridViewTextBoxColumn.HeaderText = "comentarios";
-            this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
-            // 
-            // dataDataGridViewTextBoxColumn
-            // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "data";
-            this.dataDataGridViewTextBoxColumn.HeaderText = "data";
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
             // 
             // fKPagamentoTiposDePagamentoBindingSource
             // 
@@ -374,6 +327,37 @@
             this.button4.Text = "Ir para Menu";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // idpagamentoDataGridViewTextBoxColumn
+            // 
+            this.idpagamentoDataGridViewTextBoxColumn.DataPropertyName = "id_pagamento";
+            this.idpagamentoDataGridViewTextBoxColumn.HeaderText = "id_pagamento";
+            this.idpagamentoDataGridViewTextBoxColumn.Name = "idpagamentoDataGridViewTextBoxColumn";
+            this.idpagamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idreservaDataGridViewTextBoxColumn
+            // 
+            this.idreservaDataGridViewTextBoxColumn.DataPropertyName = "id_reserva";
+            this.idreservaDataGridViewTextBoxColumn.HeaderText = "id_reserva";
+            this.idreservaDataGridViewTextBoxColumn.Name = "idreservaDataGridViewTextBoxColumn";
+            // 
+            // valorpagamentoDataGridViewTextBoxColumn
+            // 
+            this.valorpagamentoDataGridViewTextBoxColumn.DataPropertyName = "valor_pagamento";
+            this.valorpagamentoDataGridViewTextBoxColumn.HeaderText = "valor_pagamento";
+            this.valorpagamentoDataGridViewTextBoxColumn.Name = "valorpagamentoDataGridViewTextBoxColumn";
+            // 
+            // comentariosDataGridViewTextBoxColumn
+            // 
+            this.comentariosDataGridViewTextBoxColumn.DataPropertyName = "comentarios";
+            this.comentariosDataGridViewTextBoxColumn.HeaderText = "comentarios";
+            this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
+            // 
+            // dataDataGridViewTextBoxColumn
+            // 
+            this.dataDataGridViewTextBoxColumn.DataPropertyName = "data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "data";
+            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
             // 
             // Form23
             // 
@@ -431,17 +415,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource tiposDePagamentoBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idpagamentoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idreservaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idclienteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idmetodopagamentoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn valorpagamentoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource fKPagamentoTiposDePagamentoBindingSource;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idpagamentoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idreservaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorpagamentoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
     }
 }
