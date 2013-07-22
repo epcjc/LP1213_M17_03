@@ -55,7 +55,6 @@
             this.tipo_quartoTextBox = new System.Windows.Forms.TextBox();
             this.preco_quartoTextBox = new System.Windows.Forms.TextBox();
             this.andar_quartoTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -301,18 +300,6 @@
             this.andar_quartoTextBox.Size = new System.Drawing.Size(116, 20);
             this.andar_quartoTextBox.TabIndex = 8;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(199, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 16);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Pesquizar  Quartos";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
@@ -375,7 +362,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(id_quartoLabel);
             this.Controls.Add(this.id_quartoTextBox);
             this.Controls.Add(tipo_quartoLabel);
@@ -388,7 +374,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form21";
-            this.Text = "Form21";
+            this.Text = "Pesquisar Quartos";
             this.Load += new System.EventHandler(this.Form21_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quartoBindingSource)).EndInit();
@@ -423,7 +409,6 @@
         private System.Windows.Forms.TextBox tipo_quartoTextBox;
         private System.Windows.Forms.TextBox preco_quartoTextBox;
         private System.Windows.Forms.TextBox andar_quartoTextBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;

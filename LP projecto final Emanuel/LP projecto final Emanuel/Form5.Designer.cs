@@ -55,7 +55,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.PagamentoTableAdapter();
             this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
-            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -249,17 +248,6 @@
             // 
             this.reservaTableAdapter.ClearBeforeFill = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(382, 26);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Pesquiza por reserva";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
@@ -334,7 +322,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox2);
@@ -344,7 +331,7 @@
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form5";
-            this.Text = "Pesquisar";
+            this.Text = "Pesquisar Por Reserva";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
@@ -385,7 +372,6 @@
         private Database1DataSetTableAdapters.PagamentoTableAdapter pagamentoTableAdapter;
         private System.Windows.Forms.BindingSource fKReservaClienteBindingSource;
         private Database1DataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource fKPagamentoReservaBindingSource;
         private System.Windows.Forms.BindingSource reservaBindingSource;
         private System.Windows.Forms.Button button1;

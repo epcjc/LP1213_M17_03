@@ -56,7 +56,6 @@
             this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
             this.fKReservaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button3 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
@@ -376,18 +375,6 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(220, 21);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(109, 16);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Inserir clientes";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -458,7 +445,6 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.comboBox3);
@@ -487,7 +473,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form6";
-            this.Text = "Form6";
+            this.Text = "Inserir Clientes";
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
@@ -528,7 +514,6 @@
         private Database1DataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
         private System.Windows.Forms.BindingSource fKReservaClienteBindingSource;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider1;

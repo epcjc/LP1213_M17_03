@@ -29,5 +29,10 @@ namespace LP_projecto_final_Emanuel
             this.preço_do_quartoTableAdapter.Fill(this.database1DataSet.Preço_do_quarto);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

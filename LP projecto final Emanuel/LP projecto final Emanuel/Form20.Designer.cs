@@ -49,7 +49,6 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             this.utilizadoresTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.UtilizadoresTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
             this.button1 = new System.Windows.Forms.Button();
@@ -206,7 +205,7 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.utilizadoresDataGridView.DataSource = this.utilizadoresBindingSource;
-            this.utilizadoresDataGridView.Location = new System.Drawing.Point(95, 82);
+            this.utilizadoresDataGridView.Location = new System.Drawing.Point(92, 52);
             this.utilizadoresDataGridView.Name = "utilizadoresDataGridView";
             this.utilizadoresDataGridView.Size = new System.Drawing.Size(373, 163);
             this.utilizadoresDataGridView.TabIndex = 1;
@@ -229,18 +228,6 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "id";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(204, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Lista dos Utilizadores";
             // 
             // utilizadoresTableAdapter
             // 
@@ -274,7 +261,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.PapayaWhip;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(374, 261);
+            this.button1.Location = new System.Drawing.Point(371, 231);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 23);
             this.button1.TabIndex = 3;
@@ -286,7 +273,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PapayaWhip;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(274, 261);
+            this.button2.Location = new System.Drawing.Point(271, 231);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 23);
             this.button2.TabIndex = 4;
@@ -298,7 +285,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.PapayaWhip;
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.Location = new System.Drawing.Point(181, 261);
+            this.button3.Location = new System.Drawing.Point(178, 231);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 23);
             this.button3.TabIndex = 5;
@@ -310,7 +297,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.PapayaWhip;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.Location = new System.Drawing.Point(95, 261);
+            this.button4.Location = new System.Drawing.Point(92, 231);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(84, 23);
             this.button4.TabIndex = 6;
@@ -328,13 +315,12 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.utilizadoresDataGridView);
             this.Controls.Add(this.utilizadoresBindingNavigator);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form20";
-            this.Text = "Form20";
+            this.Text = "Lista dos Utilizadores";
             this.Load += new System.EventHandler(this.Form20_Load);
             ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingNavigator)).EndInit();
             this.utilizadoresBindingNavigator.ResumeLayout(false);
@@ -370,7 +356,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

@@ -37,7 +37,6 @@
             this.pagamentoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pagamentoTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.PagamentoTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
@@ -110,15 +109,6 @@
             this.label1.Text = "Pagamentos";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(252, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Eliminar Pagamentos";
-            // 
             // pagamentoBindingSource
             // 
             this.pagamentoBindingSource.DataMember = "Pagamento";
@@ -158,7 +148,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(438, 257);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
@@ -167,7 +156,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form27";
-            this.Text = "Form27";
+            this.Text = "Eliminar Pagamentos";
             this.Load += new System.EventHandler(this.Form27_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pagamentoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
@@ -184,7 +173,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private Database1DataSet database1DataSet;
         private System.Windows.Forms.BindingSource pagamentoBindingSource;
         private Database1DataSetTableAdapters.PagamentoTableAdapter pagamentoTableAdapter;

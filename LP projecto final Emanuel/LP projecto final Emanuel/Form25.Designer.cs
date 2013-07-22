@@ -35,7 +35,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.reservaTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ReservaTableAdapter();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -91,15 +90,6 @@
             this.database1DataSet.DataSetName = "Database1DataSet";
             this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(192, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Eliminar Reservas";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -137,14 +127,13 @@
             this.ClientSize = new System.Drawing.Size(454, 219);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.Name = "Form25";
-            this.Text = "Form25";
+            this.Text = "Eliminar Reservas";
             this.Load += new System.EventHandler(this.Form25_Load);
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
@@ -159,7 +148,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Database1DataSet database1DataSet;
         private System.Windows.Forms.BindingSource reservaBindingSource;
