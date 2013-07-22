@@ -53,7 +53,6 @@
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.idTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
@@ -72,7 +71,7 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(107, 126);
+            nomeLabel.Location = new System.Drawing.Point(94, 62);
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(43, 13);
             nomeLabel.TabIndex = 1;
@@ -81,7 +80,7 @@
             // passwordLabel
             // 
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(107, 152);
+            passwordLabel.Location = new System.Drawing.Point(94, 88);
             passwordLabel.Name = "passwordLabel";
             passwordLabel.Size = new System.Drawing.Size(65, 13);
             passwordLabel.TabIndex = 3;
@@ -90,7 +89,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(107, 178);
+            idLabel.Location = new System.Drawing.Point(94, 114);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(21, 13);
             idLabel.TabIndex = 5;
@@ -261,7 +260,7 @@
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilizadoresBindingSource, "Nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(179, 123);
+            this.nomeTextBox.Location = new System.Drawing.Point(166, 59);
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(116, 20);
             this.nomeTextBox.TabIndex = 2;
@@ -271,7 +270,7 @@
             // passwordTextBox
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilizadoresBindingSource, "Password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(179, 149);
+            this.passwordTextBox.Location = new System.Drawing.Point(166, 85);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(116, 20);
@@ -281,29 +280,17 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilizadoresBindingSource, "id", true));
-            this.idTextBox.Location = new System.Drawing.Point(179, 175);
+            this.idTextBox.Location = new System.Drawing.Point(166, 111);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(116, 20);
             this.idTextBox.TabIndex = 6;
             this.toolTip1.SetToolTip(this.idTextBox, "Introduza o ID");
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(132, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 16);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Inserir Utilizadores";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PapayaWhip;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(203, 235);
+            this.button1.Location = new System.Drawing.Point(190, 171);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 23);
             this.button1.TabIndex = 8;
@@ -319,7 +306,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PapayaWhip;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(97, 235);
+            this.button2.Location = new System.Drawing.Point(84, 171);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(83, 23);
             this.button2.TabIndex = 9;
@@ -332,10 +319,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(386, 291);
+            this.ClientSize = new System.Drawing.Size(386, 224);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(nomeLabel);
             this.Controls.Add(this.nomeTextBox);
             this.Controls.Add(passwordLabel);
@@ -384,7 +370,6 @@
         private System.Windows.Forms.TextBox nomeTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox idTextBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.HelpProvider helpProvider1;
