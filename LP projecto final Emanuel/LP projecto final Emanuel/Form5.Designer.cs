@@ -48,7 +48,6 @@
             this.fKPagamentoReservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fKPagamentoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.fKReservaCliente2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fKReservaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -62,6 +61,7 @@
             this.reserva1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Reserva1TableAdapter();
             this.fKPagamentoClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pagamento1TableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Pagamento1TableAdapter();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -197,18 +197,6 @@
             this.fKPagamentoClienteBindingSource.DataMember = "FK_Pagamento_Cliente";
             this.fKPagamentoClienteBindingSource.DataSource = this.clienteBindingSource;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.DataSource = this.fKReservaCliente2BindingSource1;
-            this.comboBox2.DisplayMember = "Data_inicio";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(125, 82);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(187, 21);
-            this.comboBox2.TabIndex = 2;
-            this.comboBox2.ValueMember = "id_reserva";
-            // 
             // fKReservaCliente2BindingSource1
             // 
             this.fKReservaCliente2BindingSource1.DataMember = "FK_Reserva_Cliente2";
@@ -300,6 +288,18 @@
             // 
             this.pagamento1TableAdapter.ClearBeforeFill = true;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.fKReservaCliente2BindingSource1;
+            this.comboBox2.DisplayMember = "Data_inicio";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(125, 82);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(187, 21);
+            this.comboBox2.TabIndex = 2;
+            this.comboBox2.ValueMember = "id_reserva";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -352,7 +352,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn codigopostalDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn fotoDataGridViewImageColumn;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource fKPagamentoClienteBindingSource;
@@ -370,5 +369,6 @@
         private System.Windows.Forms.BindingSource fKPagamentoCliente2BindingSource;
         private Database1DataSetTableAdapters.Pagamento1TableAdapter pagamento1TableAdapter;
         private System.Windows.Forms.BindingSource fKReservaCliente2BindingSource1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

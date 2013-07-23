@@ -69,8 +69,8 @@
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.Pagamento1TableAdapter = null;
             this.tableAdapterManager.PagamentoTableAdapter = null;
-            this.tableAdapterManager.Preço_do_quarto1TableAdapter = null;
-            this.tableAdapterManager.Preço_do_quarto2TableAdapter = null;
+           
+           
             this.tableAdapterManager.Preço_do_quartoTableAdapter = this.preço_do_quartoTableAdapter;
             this.tableAdapterManager.Quarto1TableAdapter = null;
             this.tableAdapterManager.Quarto2TableAdapter = null;

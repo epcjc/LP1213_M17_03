@@ -64,6 +64,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database1DataSet.cs">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -219,6 +223,18 @@
     <Compile Include="Form9.Designer.cs">
       <DependentUpon>Form9.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCalcularTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalcularTotal.Designer.cs">
+      <DependentUpon>frmCalcularTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadiasAbertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadiasAbertas.Designer.cs">
+      <DependentUpon>frmEstadiasAbertas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNovoServico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +246,12 @@
     </Compile>
     <Compile Include="frmQuartosPorTipo.Designer.cs">
       <DependentUpon>frmQuartosPorTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServicosEstadia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicosEstadia.Designer.cs">
+      <DependentUpon>frmServicosEstadia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmServicosPorTipo.cs">
       <SubType>Form</SubType>
@@ -248,6 +270,12 @@
     </Compile>
     <Compile Include="frmTiposServicos.Designer.cs">
       <DependentUpon>frmTiposServicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerReservas.Designer.cs">
+      <DependentUpon>frmVerReservas.cs</DependentUpon>
     </Compile>
     <Compile Include="RelatorioPrecoQuarto.cs">
       <SubType>Form</SubType>
@@ -341,6 +369,7 @@
     <Compile Include="RelatorioUtilizadorescs.Designer.cs">
       <DependentUpon>RelatorioUtilizadorescs.cs</DependentUpon>
     </Compile>
+    <Compile Include="ServicosEstadia.cs" />
     <EmbeddedResource Include="Form13.resx">
       <DependentUpon>Form13.cs</DependentUpon>
     </EmbeddedResource>
@@ -383,11 +412,20 @@
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCalcularTotal.resx">
+      <DependentUpon>frmCalcularTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadiasAbertas.resx">
+      <DependentUpon>frmEstadiasAbertas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNovoServico.resx">
       <DependentUpon>frmNovoServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuartosPorTipo.resx">
       <DependentUpon>frmQuartosPorTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicosEstadia.resx">
+      <DependentUpon>frmServicosEstadia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmServicosPorTipo.resx">
       <DependentUpon>frmServicosPorTipo.cs</DependentUpon>
@@ -397,6 +435,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTiposServicos.resx">
       <DependentUpon>frmTiposServicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerReservas.resx">
+      <DependentUpon>frmVerReservas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reports\clientes.rdlc" />
     <EmbeddedResource Include="Form1.resx">

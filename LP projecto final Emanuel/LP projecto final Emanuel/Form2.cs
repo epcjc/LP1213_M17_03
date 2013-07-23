@@ -46,7 +46,7 @@ namespace LP_projecto_final_Emanuel
 
         private void contentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form24 frm = new Form24();
+            frmEstadiasAbertas frm = new frmEstadiasAbertas();
             frm.ShowDialog();
         }
 
@@ -57,7 +57,7 @@ namespace LP_projecto_final_Emanuel
 
         private void indexToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form5 frm = new Form5();
+            frmVerReservas frm = new frmVerReservas();
             frm.ShowDialog();
         }
 
@@ -437,6 +437,18 @@ namespace LP_projecto_final_Emanuel
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNovoServico frm = new frmNovoServico();
+            frm.ShowDialog();
+        }
+
+        private void listarToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Form23 frm = new Form23();
+            frm.ShowDialog();
+        }
+
+        private void relatórioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatorioTipoPagamento frm = new RelatorioTipoPagamento();
             frm.ShowDialog();
         }
        
