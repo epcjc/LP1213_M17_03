@@ -423,7 +423,21 @@ namespace LP_projecto_final_Emanuel
 
         private void tiposDeServiçosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmTiposServicos frm = new frmTiposServicos();
+            frm.ShowDialog();
 
+        }
+
+        private void porTipoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmServicosPorTipo frm = new frmServicosPorTipo();
+            frm.ShowDialog();
+        }
+
+        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNovoServico frm = new frmNovoServico();
+            frm.ShowDialog();
         }
        
     }

@@ -40,6 +40,10 @@
             this.porTipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatorioToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.tiposDeQuartosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviçosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.porTipoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiposDeServiçosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,10 +69,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.serviçosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porTipoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tiposDeServiçosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -174,6 +174,37 @@
             this.tiposDeQuartosToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.tiposDeQuartosToolStripMenuItem.Text = "Tipos de Quartos";
             this.tiposDeQuartosToolStripMenuItem.Click += new System.EventHandler(this.tiposDeQuartosToolStripMenuItem_Click);
+            // 
+            // serviçosToolStripMenuItem
+            // 
+            this.serviçosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem,
+            this.porTipoToolStripMenuItem1,
+            this.tiposDeServiçosToolStripMenuItem});
+            this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(70, 21);
+            this.serviçosToolStripMenuItem.Text = "&Serviços";
+            // 
+            // novoToolStripMenuItem
+            // 
+            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.novoToolStripMenuItem.Text = "Novo";
+            this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
+            // 
+            // porTipoToolStripMenuItem1
+            // 
+            this.porTipoToolStripMenuItem1.Name = "porTipoToolStripMenuItem1";
+            this.porTipoToolStripMenuItem1.Size = new System.Drawing.Size(183, 22);
+            this.porTipoToolStripMenuItem1.Text = "Por Tipo";
+            this.porTipoToolStripMenuItem1.Click += new System.EventHandler(this.porTipoToolStripMenuItem1_Click);
+            // 
+            // tiposDeServiçosToolStripMenuItem
+            // 
+            this.tiposDeServiçosToolStripMenuItem.Name = "tiposDeServiçosToolStripMenuItem";
+            this.tiposDeServiçosToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.tiposDeServiçosToolStripMenuItem.Text = "Tipos de Serviços";
+            this.tiposDeServiçosToolStripMenuItem.Click += new System.EventHandler(this.tiposDeServiçosToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -396,35 +427,6 @@
             this.button6.Text = "Calculadora";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // serviçosToolStripMenuItem
-            // 
-            this.serviçosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novoToolStripMenuItem,
-            this.porTipoToolStripMenuItem1,
-            this.tiposDeServiçosToolStripMenuItem});
-            this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(70, 21);
-            this.serviçosToolStripMenuItem.Text = "&Serviços";
-            // 
-            // novoToolStripMenuItem
-            // 
-            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.novoToolStripMenuItem.Text = "Novo";
-            // 
-            // porTipoToolStripMenuItem1
-            // 
-            this.porTipoToolStripMenuItem1.Name = "porTipoToolStripMenuItem1";
-            this.porTipoToolStripMenuItem1.Size = new System.Drawing.Size(183, 22);
-            this.porTipoToolStripMenuItem1.Text = "Por Tipo";
-            // 
-            // tiposDeServiçosToolStripMenuItem
-            // 
-            this.tiposDeServiçosToolStripMenuItem.Name = "tiposDeServiçosToolStripMenuItem";
-            this.tiposDeServiçosToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.tiposDeServiçosToolStripMenuItem.Text = "Tipos de Serviços";
-            this.tiposDeServiçosToolStripMenuItem.Click += new System.EventHandler(this.tiposDeServiçosToolStripMenuItem_Click);
             // 
             // Form2
             // 

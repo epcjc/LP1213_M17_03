@@ -219,11 +219,23 @@
     <Compile Include="Form9.Designer.cs">
       <DependentUpon>Form9.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNovoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoServico.Designer.cs">
+      <DependentUpon>frmNovoServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuartosPorTipo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQuartosPorTipo.Designer.cs">
       <DependentUpon>frmQuartosPorTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServicosPorTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicosPorTipo.Designer.cs">
+      <DependentUpon>frmServicosPorTipo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTiposDeQuartos.cs">
       <SubType>Form</SubType>
@@ -371,8 +383,14 @@
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoServico.resx">
+      <DependentUpon>frmNovoServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuartosPorTipo.resx">
       <DependentUpon>frmQuartosPorTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicosPorTipo.resx">
+      <DependentUpon>frmServicosPorTipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTiposDeQuartos.resx">
       <DependentUpon>frmTiposDeQuartos.cs</DependentUpon>
