@@ -16,22 +16,14 @@ namespace LP_projecto_final_Emanuel
             InitializeComponent();
         }
 
-        private void quarto2BindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.quarto2BindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.database1DataSet);
-
-        }
+        
 
         private void Form19_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Reserva_quartos1' table. You can move, or remove it, as needed.
-            this.reserva_quartos1TableAdapter.Fill(this.database1DataSet.Reserva_quartos1);
-            // TODO: This line of code loads data into the 'database1DataSet.Reserva_quartos' table. You can move, or remove it, as needed.
-            this.reserva_quartosTableAdapter.Fill(this.database1DataSet.Reserva_quartos);
-            // TODO: This line of code loads data into the 'database1DataSet.Quarto2' table. You can move, or remove it, as needed.
-            this.quarto2TableAdapter.FillByAndar(this.database1DataSet.Quarto2);
+           
+            // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
+            this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
+           
 
         }
 
@@ -43,8 +35,7 @@ namespace LP_projecto_final_Emanuel
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form2 frm = new Form2();
-            frm.ShowDialog();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,6 +48,22 @@ namespace LP_projecto_final_Emanuel
         {
             Form18 frm = new Form18();
             frm.ShowDialog();
+        }
+
+        private void quartoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.quartoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+
+        }
+
+        private void quartoBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.quartoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+
         }
     }
 }

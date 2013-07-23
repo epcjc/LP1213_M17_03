@@ -29,8 +29,8 @@ namespace LP_projecto_final_Emanuel
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Form8 frm = new Form8();
-            frm.ShowDialog();
+           // Form8 frm = new Form8();
+           // frm.ShowDialog();
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -387,7 +387,7 @@ namespace LP_projecto_final_Emanuel
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form29 frm = new Form29();
+            Form32 frm = new Form32();
             frm.ShowDialog();
         }
 
@@ -404,6 +404,24 @@ namespace LP_projecto_final_Emanuel
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tiposDeQuartosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTiposDeQuartos frm = new frmTiposDeQuartos();
+            frm.ShowDialog();
+
+        }
+
+        private void porTipoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuartosPorTipo frm = new frmQuartosPorTipo();
+            frm.ShowDialog();
+        }
+
+        private void tiposDeServiçosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

@@ -34,6 +34,8 @@ namespace LP_projecto_final_Emanuel
 
         private void Form18_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'database1DataSet.Tipos_de_quartos' table. You can move, or remove it, as needed.
+            this.tipos_de_quartosTableAdapter.Fill(this.database1DataSet.Tipos_de_quartos);
             // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
             this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
 
@@ -45,7 +47,7 @@ namespace LP_projecto_final_Emanuel
            try
             {
 
-                this.quartoTableAdapter.Insert(Convert.ToInt32(this.textBox3.Text),Convert.ToString(comboBox1.SelectedValue), Convert.ToInt16(textBox2.Text), Convert.ToString(comboBox1.SelectedValue), null, "livre");
+                this.quartoTableAdapter.Insert(Convert.ToInt32(this.textBox3.Text), Convert.ToInt32(textBox2.Text), textBox1.Text,null,"livre",Convert.ToInt32(comboBox2.SelectedValue));
                 MessageBox.Show("Inserido novo Quarto !!");
 
             }

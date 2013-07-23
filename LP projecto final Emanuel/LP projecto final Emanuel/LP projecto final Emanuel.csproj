@@ -207,11 +207,35 @@
     <Compile Include="Form31.Designer.cs">
       <DependentUpon>Form31.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form32.Designer.cs">
+      <DependentUpon>Form32.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form9.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form9.Designer.cs">
       <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuartosPorTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuartosPorTipo.Designer.cs">
+      <DependentUpon>frmQuartosPorTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTiposDeQuartos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTiposDeQuartos.Designer.cs">
+      <DependentUpon>frmTiposDeQuartos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTiposServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTiposServicos.Designer.cs">
+      <DependentUpon>frmTiposServicos.cs</DependentUpon>
     </Compile>
     <Compile Include="RelatorioPrecoQuarto.cs">
       <SubType>Form</SubType>
@@ -341,8 +365,20 @@
     <EmbeddedResource Include="Form31.resx">
       <DependentUpon>Form31.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form32.resx">
+      <DependentUpon>Form32.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuartosPorTipo.resx">
+      <DependentUpon>frmQuartosPorTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTiposDeQuartos.resx">
+      <DependentUpon>frmTiposDeQuartos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTiposServicos.resx">
+      <DependentUpon>frmTiposServicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reports\clientes.rdlc" />
     <EmbeddedResource Include="Form1.resx">

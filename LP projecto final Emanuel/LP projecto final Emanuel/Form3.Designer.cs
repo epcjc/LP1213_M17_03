@@ -37,13 +37,12 @@
             System.Windows.Forms.Label data_nascLabel;
             System.Windows.Forms.Label bILabel;
             System.Windows.Forms.Label codigo_postalLabel;
+            System.Windows.Forms.Label fotoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.clienteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -64,13 +63,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.clienteTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.ClienteTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
-            this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.fotoPictureBox = new System.Windows.Forms.PictureBox();
             id_clienteLabel = new System.Windows.Forms.Label();
             nomeLabel = new System.Windows.Forms.Label();
             moradaLabel = new System.Windows.Forms.Label();
@@ -79,56 +75,58 @@
             data_nascLabel = new System.Windows.Forms.Label();
             bILabel = new System.Windows.Forms.Label();
             codigo_postalLabel = new System.Windows.Forms.Label();
+            fotoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).BeginInit();
             this.clienteBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // id_clienteLabel
             // 
             id_clienteLabel.AutoSize = true;
-            id_clienteLabel.Location = new System.Drawing.Point(64, 75);
+            id_clienteLabel.Location = new System.Drawing.Point(49, 102);
             id_clienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_clienteLabel.Name = "id_clienteLabel";
-            id_clienteLabel.Size = new System.Drawing.Size(63, 13);
+            id_clienteLabel.Size = new System.Drawing.Size(67, 13);
             id_clienteLabel.TabIndex = 1;
-            id_clienteLabel.Text = "id cliente:";
+            id_clienteLabel.Text = "ID Cliente:";
             // 
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(64, 101);
+            nomeLabel.Location = new System.Drawing.Point(49, 128);
             nomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(41, 13);
+            nomeLabel.Size = new System.Drawing.Size(43, 13);
             nomeLabel.TabIndex = 3;
-            nomeLabel.Text = "nome:";
+            nomeLabel.Text = "Nome:";
             // 
             // moradaLabel
             // 
             moradaLabel.AutoSize = true;
-            moradaLabel.Location = new System.Drawing.Point(64, 127);
+            moradaLabel.Location = new System.Drawing.Point(49, 154);
             moradaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             moradaLabel.Name = "moradaLabel";
-            moradaLabel.Size = new System.Drawing.Size(52, 13);
+            moradaLabel.Size = new System.Drawing.Size(53, 13);
             moradaLabel.TabIndex = 5;
-            moradaLabel.Text = "morada:";
+            moradaLabel.Text = "Morada:";
             // 
             // contactoLabel
             // 
             contactoLabel.AutoSize = true;
-            contactoLabel.Location = new System.Drawing.Point(64, 153);
+            contactoLabel.Location = new System.Drawing.Point(49, 206);
             contactoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             contactoLabel.Name = "contactoLabel";
-            contactoLabel.Size = new System.Drawing.Size(61, 13);
+            contactoLabel.Size = new System.Drawing.Size(58, 13);
             contactoLabel.TabIndex = 7;
-            contactoLabel.Text = "contacto:";
+            contactoLabel.Text = "Contacto";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(64, 179);
+            emailLabel.Location = new System.Drawing.Point(49, 232);
             emailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(41, 13);
@@ -138,17 +136,17 @@
             // data_nascLabel
             // 
             data_nascLabel.AutoSize = true;
-            data_nascLabel.Location = new System.Drawing.Point(64, 206);
+            data_nascLabel.Location = new System.Drawing.Point(49, 258);
             data_nascLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_nascLabel.Name = "data_nascLabel";
-            data_nascLabel.Size = new System.Drawing.Size(67, 13);
+            data_nascLabel.Size = new System.Drawing.Size(108, 13);
             data_nascLabel.TabIndex = 11;
-            data_nascLabel.Text = "data nasc:";
+            data_nascLabel.Text = "Data Nascimento:";
             // 
             // bILabel
             // 
             bILabel.AutoSize = true;
-            bILabel.Location = new System.Drawing.Point(136, 229);
+            bILabel.Location = new System.Drawing.Point(49, 284);
             bILabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             bILabel.Name = "bILabel";
             bILabel.Size = new System.Drawing.Size(23, 13);
@@ -158,19 +156,28 @@
             // codigo_postalLabel
             // 
             codigo_postalLabel.AutoSize = true;
-            codigo_postalLabel.Location = new System.Drawing.Point(64, 257);
+            codigo_postalLabel.Location = new System.Drawing.Point(49, 180);
             codigo_postalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             codigo_postalLabel.Name = "codigo_postalLabel";
             codigo_postalLabel.Size = new System.Drawing.Size(88, 13);
             codigo_postalLabel.TabIndex = 15;
             codigo_postalLabel.Text = "Codigo postal:";
             // 
+            // fotoLabel
+            // 
+            fotoLabel.AutoSize = true;
+            fotoLabel.Location = new System.Drawing.Point(428, 99);
+            fotoLabel.Name = "fotoLabel";
+            fotoLabel.Size = new System.Drawing.Size(36, 13);
+            fotoLabel.TabIndex = 22;
+            fotoLabel.Text = "Foto:";
+            // 
             // clienteBindingNavigator
             // 
-            this.clienteBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.clienteBindingNavigator.AddNewItem = null;
             this.clienteBindingNavigator.BindingSource = this.clienteBindingSource;
             this.clienteBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.clienteBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.clienteBindingNavigator.DeleteItem = null;
             this.clienteBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -181,8 +188,6 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
             this.clienteBindingNavigatorSaveItem});
             this.clienteBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.clienteBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
@@ -192,18 +197,9 @@
             this.clienteBindingNavigator.Name = "clienteBindingNavigator";
             this.clienteBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.clienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clienteBindingNavigator.Size = new System.Drawing.Size(617, 25);
+            this.clienteBindingNavigator.Size = new System.Drawing.Size(641, 25);
             this.clienteBindingNavigator.TabIndex = 0;
             this.clienteBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // clienteBindingSource
             // 
@@ -221,15 +217,6 @@
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -304,16 +291,17 @@
             // id_clienteTextBox
             // 
             this.id_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "id_cliente", true));
-            this.id_clienteTextBox.Location = new System.Drawing.Point(158, 72);
+            this.id_clienteTextBox.Location = new System.Drawing.Point(157, 99);
             this.id_clienteTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.id_clienteTextBox.Name = "id_clienteTextBox";
+            this.id_clienteTextBox.ReadOnly = true;
             this.id_clienteTextBox.Size = new System.Drawing.Size(232, 20);
             this.id_clienteTextBox.TabIndex = 2;
             // 
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(158, 98);
+            this.nomeTextBox.Location = new System.Drawing.Point(157, 125);
             this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(232, 20);
@@ -322,7 +310,7 @@
             // moradaTextBox
             // 
             this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "morada", true));
-            this.moradaTextBox.Location = new System.Drawing.Point(158, 124);
+            this.moradaTextBox.Location = new System.Drawing.Point(157, 151);
             this.moradaTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.moradaTextBox.Name = "moradaTextBox";
             this.moradaTextBox.Size = new System.Drawing.Size(232, 20);
@@ -331,7 +319,7 @@
             // contactoTextBox
             // 
             this.contactoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "contacto", true));
-            this.contactoTextBox.Location = new System.Drawing.Point(158, 150);
+            this.contactoTextBox.Location = new System.Drawing.Point(157, 203);
             this.contactoTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.contactoTextBox.Name = "contactoTextBox";
             this.contactoTextBox.Size = new System.Drawing.Size(232, 20);
@@ -340,7 +328,7 @@
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(158, 176);
+            this.emailTextBox.Location = new System.Drawing.Point(157, 229);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(232, 20);
@@ -349,7 +337,8 @@
             // data_nascDateTimePicker
             // 
             this.data_nascDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.clienteBindingSource, "data_nasc", true));
-            this.data_nascDateTimePicker.Location = new System.Drawing.Point(158, 202);
+            this.data_nascDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.data_nascDateTimePicker.Location = new System.Drawing.Point(157, 255);
             this.data_nascDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_nascDateTimePicker.Name = "data_nascDateTimePicker";
             this.data_nascDateTimePicker.Size = new System.Drawing.Size(232, 20);
@@ -358,7 +347,7 @@
             // bITextBox
             // 
             this.bITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "BI", true));
-            this.bITextBox.Location = new System.Drawing.Point(158, 228);
+            this.bITextBox.Location = new System.Drawing.Point(157, 281);
             this.bITextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bITextBox.Name = "bITextBox";
             this.bITextBox.Size = new System.Drawing.Size(232, 20);
@@ -367,7 +356,7 @@
             // codigo_postalTextBox
             // 
             this.codigo_postalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Codigo_postal", true));
-            this.codigo_postalTextBox.Location = new System.Drawing.Point(158, 254);
+            this.codigo_postalTextBox.Location = new System.Drawing.Point(157, 177);
             this.codigo_postalTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.codigo_postalTextBox.Name = "codigo_postalTextBox";
             this.codigo_postalTextBox.Size = new System.Drawing.Size(232, 20);
@@ -377,7 +366,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(469, 315);
+            this.button1.Location = new System.Drawing.Point(519, 322);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 23);
             this.button1.TabIndex = 17;
@@ -388,30 +377,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 319);
+            this.label1.Location = new System.Drawing.Point(15, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 13);
+            this.label1.Size = new System.Drawing.Size(122, 13);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Nome do clinte";
+            this.label1.Text = "Pesquisar por nome:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 318);
+            this.textBox1.Location = new System.Drawing.Point(157, 47);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 20);
+            this.textBox1.Size = new System.Drawing.Size(232, 20);
             this.textBox1.TabIndex = 19;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(290, 315);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 23);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Pesquisar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // clienteTableAdapter
             // 
@@ -420,7 +398,6 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Cliente1TableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = this.clienteTableAdapter;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.Pagamento1TableAdapter = null;
@@ -441,23 +418,11 @@
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(247, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 16);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Pesquizar  clientes";
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.Location = new System.Drawing.Point(469, 286);
+            this.button3.Location = new System.Drawing.Point(519, 293);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(101, 23);
             this.button3.TabIndex = 22;
@@ -465,39 +430,26 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // fotoPictureBox
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.Location = new System.Drawing.Point(469, 257);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 23);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Listar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.Location = new System.Drawing.Point(469, 228);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 23);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "Inserir";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.fotoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fotoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.clienteBindingSource, "Foto", true));
+            this.fotoPictureBox.Location = new System.Drawing.Point(470, 99);
+            this.fotoPictureBox.Name = "fotoPictureBox";
+            this.fotoPictureBox.Size = new System.Drawing.Size(150, 160);
+            this.fotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fotoPictureBox.TabIndex = 23;
+            this.fotoPictureBox.TabStop = false;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(617, 349);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(641, 358);
+            this.Controls.Add(fotoLabel);
+            this.Controls.Add(this.fotoPictureBox);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -530,6 +482,7 @@
             this.clienteBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -542,9 +495,7 @@
         private Database1DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator clienteBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -565,10 +516,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox fotoPictureBox;
     }
 }

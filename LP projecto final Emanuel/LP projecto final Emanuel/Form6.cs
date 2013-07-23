@@ -43,6 +43,7 @@ namespace LP_projecto_final_Emanuel
                 }
 
                 MessageBox.Show("Inserido novo Cliente");
+                this.Close();
             }
             catch (Exception ex) {
                 MessageBox.Show("ERRO" + ex.ToString());

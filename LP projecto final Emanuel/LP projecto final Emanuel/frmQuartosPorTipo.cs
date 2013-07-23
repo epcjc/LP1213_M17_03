@@ -9,34 +9,19 @@ using System.Windows.Forms;
 
 namespace LP_projecto_final_Emanuel
 {
-    public partial class Form29 : Form
+    public partial class frmQuartosPorTipo : Form
     {
-        public Form29()
+        public frmQuartosPorTipo()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void frmQuartosPorTipo_Load(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void Form29_Load(object sender, EventArgs e)
-        {
+            // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
+            this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
             // TODO: This line of code loads data into the 'database1DataSet.Tipos_de_quartos' table. You can move, or remove it, as needed.
             this.tipos_de_quartosTableAdapter.Fill(this.database1DataSet.Tipos_de_quartos);
-            
-           
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
     }

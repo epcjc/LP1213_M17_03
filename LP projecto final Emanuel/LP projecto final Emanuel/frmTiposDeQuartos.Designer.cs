@@ -1,6 +1,6 @@
 ﻿namespace LP_projecto_final_Emanuel
 {
-    partial class Form14
+    partial class frmTiposDeQuartos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,15 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label nomeLabel;
-            System.Windows.Forms.Label passwordLabel;
-            System.Windows.Forms.Label idLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form14));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTiposDeQuartos));
             this.database1DataSet = new LP_projecto_final_Emanuel.Database1DataSet();
-            this.utilizadoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.utilizadoresTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.UtilizadoresTableAdapter();
+            this.tipos_de_quartosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tipos_de_quartosTableAdapter = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.Tipos_de_quartosTableAdapter();
             this.tableAdapterManager = new LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager();
-            this.utilizadoresBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.tipos_de_quartosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
@@ -49,70 +46,34 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.utilizadoresBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.nomeTextBox = new System.Windows.Forms.TextBox();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.idTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.button2 = new System.Windows.Forms.Button();
-            nomeLabel = new System.Windows.Forms.Label();
-            passwordLabel = new System.Windows.Forms.Label();
-            idLabel = new System.Windows.Forms.Label();
+            this.tipos_de_quartosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.tipos_de_quartosDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingNavigator)).BeginInit();
-            this.utilizadoresBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_quartosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_quartosBindingNavigator)).BeginInit();
+            this.tipos_de_quartosBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_quartosDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // nomeLabel
-            // 
-            nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(94, 62);
-            nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(43, 13);
-            nomeLabel.TabIndex = 1;
-            nomeLabel.Text = "Nome:";
-            // 
-            // passwordLabel
-            // 
-            passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(94, 88);
-            passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(65, 13);
-            passwordLabel.TabIndex = 3;
-            passwordLabel.Text = "Password:";
-            // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(94, 114);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(21, 13);
-            idLabel.TabIndex = 5;
-            idLabel.Text = "id:";
             // 
             // database1DataSet
             // 
             this.database1DataSet.DataSetName = "Database1DataSet";
             this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // utilizadoresBindingSource
+            // tipos_de_quartosBindingSource
             // 
-            this.utilizadoresBindingSource.DataMember = "Utilizadores";
-            this.utilizadoresBindingSource.DataSource = this.database1DataSet;
+            this.tipos_de_quartosBindingSource.DataMember = "Tipos de quartos";
+            this.tipos_de_quartosBindingSource.DataSource = this.database1DataSet;
             // 
-            // utilizadoresTableAdapter
+            // tipos_de_quartosTableAdapter
             // 
-            this.utilizadoresTableAdapter.ClearBeforeFill = true;
+            this.tipos_de_quartosTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-           
             this.tableAdapterManager.ClienteTableAdapter = null;
             this.tableAdapterManager.codigo_postalTableAdapter = null;
             this.tableAdapterManager.Pagamento1TableAdapter = null;
@@ -129,17 +90,17 @@
             this.tableAdapterManager.ReservaTableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamento1TableAdapter = null;
             this.tableAdapterManager.Tipos_de_pagamentoTableAdapter = null;
-            this.tableAdapterManager.Tipos_de_quartosTableAdapter = null;
+            this.tableAdapterManager.Tipos_de_quartosTableAdapter = this.tipos_de_quartosTableAdapter;
             this.tableAdapterManager.UpdateOrder = LP_projecto_final_Emanuel.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UtilizadoresTableAdapter = this.utilizadoresTableAdapter;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
-            // utilizadoresBindingNavigator
+            // tipos_de_quartosBindingNavigator
             // 
-            this.utilizadoresBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.utilizadoresBindingNavigator.BindingSource = this.utilizadoresBindingSource;
-            this.utilizadoresBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.utilizadoresBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.utilizadoresBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tipos_de_quartosBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.tipos_de_quartosBindingNavigator.BindingSource = this.tipos_de_quartosBindingSource;
+            this.tipos_de_quartosBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.tipos_de_quartosBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.tipos_de_quartosBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -151,17 +112,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.utilizadoresBindingNavigatorSaveItem});
-            this.utilizadoresBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.utilizadoresBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.utilizadoresBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.utilizadoresBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.utilizadoresBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.utilizadoresBindingNavigator.Name = "utilizadoresBindingNavigator";
-            this.utilizadoresBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.utilizadoresBindingNavigator.Size = new System.Drawing.Size(386, 25);
-            this.utilizadoresBindingNavigator.TabIndex = 0;
-            this.utilizadoresBindingNavigator.Text = "bindingNavigator1";
+            this.tipos_de_quartosBindingNavigatorSaveItem});
+            this.tipos_de_quartosBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.tipos_de_quartosBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.tipos_de_quartosBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.tipos_de_quartosBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.tipos_de_quartosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.tipos_de_quartosBindingNavigator.Name = "tipos_de_quartosBindingNavigator";
+            this.tipos_de_quartosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.tipos_de_quartosBindingNavigator.Size = new System.Drawing.Size(466, 25);
+            this.tipos_de_quartosBindingNavigator.TabIndex = 0;
+            this.tipos_de_quartosBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -216,7 +177,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(58, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -248,101 +209,58 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // utilizadoresBindingNavigatorSaveItem
+            // tipos_de_quartosBindingNavigatorSaveItem
             // 
-            this.utilizadoresBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.utilizadoresBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("utilizadoresBindingNavigatorSaveItem.Image")));
-            this.utilizadoresBindingNavigatorSaveItem.Name = "utilizadoresBindingNavigatorSaveItem";
-            this.utilizadoresBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.utilizadoresBindingNavigatorSaveItem.Text = "Save Data";
-            this.utilizadoresBindingNavigatorSaveItem.Click += new System.EventHandler(this.utilizadoresBindingNavigatorSaveItem_Click_1);
+            this.tipos_de_quartosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tipos_de_quartosBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tipos_de_quartosBindingNavigatorSaveItem.Image")));
+            this.tipos_de_quartosBindingNavigatorSaveItem.Name = "tipos_de_quartosBindingNavigatorSaveItem";
+            this.tipos_de_quartosBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.tipos_de_quartosBindingNavigatorSaveItem.Text = "Save Data";
+            this.tipos_de_quartosBindingNavigatorSaveItem.Click += new System.EventHandler(this.tipos_de_quartosBindingNavigatorSaveItem_Click);
             // 
-            // nomeTextBox
+            // tipos_de_quartosDataGridView
             // 
-            this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilizadoresBindingSource, "Nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(166, 59);
-            this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(116, 20);
-            this.nomeTextBox.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.nomeTextBox, "Introduza o nome");
-            this.nomeTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.nomeTextBox_Validating);
+            this.tipos_de_quartosDataGridView.AutoGenerateColumns = false;
+            this.tipos_de_quartosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tipos_de_quartosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.tipos_de_quartosDataGridView.DataSource = this.tipos_de_quartosBindingSource;
+            this.tipos_de_quartosDataGridView.Location = new System.Drawing.Point(47, 50);
+            this.tipos_de_quartosDataGridView.Name = "tipos_de_quartosDataGridView";
+            this.tipos_de_quartosDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.tipos_de_quartosDataGridView.TabIndex = 1;
             // 
-            // passwordTextBox
+            // dataGridViewTextBoxColumn1
             // 
-            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilizadoresBindingSource, "Password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(166, 85);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(116, 20);
-            this.passwordTextBox.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.passwordTextBox, "Introduza o password");
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_tipo_quartos";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_tipo_quartos";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // idTextBox
+            // dataGridViewTextBoxColumn2
             // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilizadoresBindingSource, "id", true));
-            this.idTextBox.Location = new System.Drawing.Point(166, 111);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(116, 20);
-            this.idTextBox.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.idTextBox, "Introduza o ID");
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "tipo_quarto";
+            this.dataGridViewTextBoxColumn2.HeaderText = "tipo_quarto";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // button1
+            // frmTiposDeQuartos
             // 
-            this.button1.BackColor = System.Drawing.Color.PapayaWhip;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(190, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Ir para Menu";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.PapayaWhip;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(84, 171);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Ajuda";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // Form14
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(386, 224);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(nomeLabel);
-            this.Controls.Add(this.nomeTextBox);
-            this.Controls.Add(passwordLabel);
-            this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
-            this.Controls.Add(this.utilizadoresBindingNavigator);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.MediumBlue;
-            this.HelpButton = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Form14";
-            this.Text = "Inserir Utilizadores";
-            this.Load += new System.EventHandler(this.Form14_Load);
+            this.ClientSize = new System.Drawing.Size(466, 295);
+            this.Controls.Add(this.tipos_de_quartosDataGridView);
+            this.Controls.Add(this.tipos_de_quartosBindingNavigator);
+            this.Name = "frmTiposDeQuartos";
+            this.Text = "Tipos de Quartos";
+            this.Load += new System.EventHandler(this.frmTiposDeQuartos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.utilizadoresBindingNavigator)).EndInit();
-            this.utilizadoresBindingNavigator.ResumeLayout(false);
-            this.utilizadoresBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_quartosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_quartosBindingNavigator)).EndInit();
+            this.tipos_de_quartosBindingNavigator.ResumeLayout(false);
+            this.tipos_de_quartosBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tipos_de_quartosDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,10 +269,10 @@
         #endregion
 
         private Database1DataSet database1DataSet;
-        private System.Windows.Forms.BindingSource utilizadoresBindingSource;
-        private Database1DataSetTableAdapters.UtilizadoresTableAdapter utilizadoresTableAdapter;
+        private System.Windows.Forms.BindingSource tipos_de_quartosBindingSource;
+        private Database1DataSetTableAdapters.Tipos_de_quartosTableAdapter tipos_de_quartosTableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator utilizadoresBindingNavigator;
+        private System.Windows.Forms.BindingNavigator tipos_de_quartosBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -366,16 +284,9 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton utilizadoresBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox nomeTextBox;
-        private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.TextBox idTextBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.HelpProvider helpProvider1;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Button button2;
-
-
+        private System.Windows.Forms.ToolStripButton tipos_de_quartosBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView tipos_de_quartosDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }
