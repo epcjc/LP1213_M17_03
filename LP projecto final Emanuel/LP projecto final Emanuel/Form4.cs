@@ -24,10 +24,15 @@ namespace LP_projecto_final_Emanuel
 
         private void Form4_Load(object sender, EventArgs e)
         {
+           
+           
             // TODO: This line of code loads data into the 'database1DataSet.Quarto' table. You can move, or remove it, as needed.
             this.quartoTableAdapter.Fill(this.database1DataSet.Quarto);
+            // TODO: This line of code loads data into the 'database1DataSet.Reserva' table. You can move, or remove it, as needed.
+            this.reservaTableAdapter.Fill(this.database1DataSet.Reserva);
             // TODO: This line of code loads data into the 'database1DataSet.Cliente' table. You can move, or remove it, as needed.
             this.clienteTableAdapter.Fill(this.database1DataSet.Cliente);
+           
            
 
         }
@@ -36,17 +41,25 @@ namespace LP_projecto_final_Emanuel
         {
             try
             {
-               // DateTime datareserva = new DateTime(Convert.ToInt16(this.comboBox4.SelectedValue), Convert.ToInt16(this.comboBox2.SelectedValue),
-               //Convert.ToInt16(this.comboBox3.SelectedValue));
-               // DateTime datainicio = new DateTime(Convert.ToInt16(this.comboBox8.SelectedValue), Convert.ToInt16(this.comboBox7.SelectedValue),
-               //Convert.ToInt16(this.comboBox6.SelectedValue));
-               // DateTime datafim = new DateTime(Convert.ToInt16(this.comboBox11.SelectedValue), Convert.ToInt16(this.comboBox10.SelectedValue),
-               //Convert.ToInt16(this.comboBox9.SelectedValue));
+                this.reservaTableAdapter.Insert(Convert.ToInt16(this.comboBox1.SelectedValue),
+                    null,
+                    this.dateTimePicker1.Value,
+                    null,
+                    null,
+                    this.textBox8.Text,
+                    "aberta");
 
-               // this.reservaTableAdapter.Insert(Convert.ToInt32(this.textBox2.Text), datareserva, Convert.ToDateTime(this.comboBox5.SelectedValue), datainicio, datafim,
-               //Convert.ToInt32(this.textBox7.Text), this.textBox8.Text, this.textBox9.Text);
+                int id_reserva = Convert.ToInt16(this.reservaTableAdapter.UltimoID());
+                
 
-               // MessageBox.Show("Inserido com Sucesso");
+                foreach (DataRowView drv in listBox1.SelectedItems)
+                {
+
+                    this.reserva_quartosTableAdapter.Insert(id_reserva, Convert.ToInt16(drv[0]));
+                }
+
+
+                this.Close();
             }
             catch (Exception ex)
             {

@@ -214,8 +214,8 @@
             this.indexToolStripMenuItem,
             this.relatorioToolStripMenuItem3});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
-            this.helpToolStripMenuItem.Text = "&Reservas";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(70, 21);
+            this.helpToolStripMenuItem.Text = "&Estadias";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // searchToolStripMenuItem
