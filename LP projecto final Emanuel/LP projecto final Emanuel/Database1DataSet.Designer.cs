@@ -50,8 +50,6 @@ namespace LP_projecto_final_Emanuel {
         
         private ClienteDataTable tableCliente;
         
-        private QuartoDataTable tableQuarto;
-        
         private TiposServicosDataTable tableTiposServicos;
         
         private ServicosDataTable tableServicos;
@@ -65,6 +63,8 @@ namespace LP_projecto_final_Emanuel {
         private ServicosEstadiaDataTable tableServicosEstadia;
         
         private PrecoNoiteReservaDataTable tablePrecoNoiteReserva;
+        
+        private QuartoDataTable tableQuarto;
         
         private global::System.Data.DataRelation relationFK_Pagamento_Tipos_de_pagamento;
         
@@ -88,10 +88,6 @@ namespace LP_projecto_final_Emanuel {
         
         private global::System.Data.DataRelation relationFK_Reserva_Cliente2;
         
-        private global::System.Data.DataRelation relationFK_Reserva_quartos_Quarto3;
-        
-        private global::System.Data.DataRelation relationFK_Quarto_Tipos_de_quartos;
-        
         private global::System.Data.DataRelation relationFK_Servicos_TiposServicos;
         
         private global::System.Data.DataRelation relationFK_Pagamento_Reserva;
@@ -105,8 +101,6 @@ namespace LP_projecto_final_Emanuel {
         private global::System.Data.DataRelation relationFK_Reserva_quartos_Quarto;
         
         private global::System.Data.DataRelation relationFK_Reserva_quartos_Quarto1;
-        
-        private global::System.Data.DataRelation relationFK_Reserva_quartos_Quarto2;
         
         private global::System.Data.DataRelation relationFK_Reserva_quartos_Reserva;
         
@@ -135,6 +129,12 @@ namespace LP_projecto_final_Emanuel {
         private global::System.Data.DataRelation relationFK_Reserva_quartos_Reserva4;
         
         private global::System.Data.DataRelation relationFK_ServicosEstadia_Reserva2;
+        
+        private global::System.Data.DataRelation relationFK_Reserva_quartos_Quarto2;
+        
+        private global::System.Data.DataRelation relationFK_Reserva_quartos_Quarto3;
+        
+        private global::System.Data.DataRelation relationFK_Quarto_Tipos_de_quartos;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -203,9 +203,6 @@ namespace LP_projecto_final_Emanuel {
                 if ((ds.Tables["Cliente"] != null)) {
                     base.Tables.Add(new ClienteDataTable(ds.Tables["Cliente"]));
                 }
-                if ((ds.Tables["Quarto"] != null)) {
-                    base.Tables.Add(new QuartoDataTable(ds.Tables["Quarto"]));
-                }
                 if ((ds.Tables["TiposServicos"] != null)) {
                     base.Tables.Add(new TiposServicosDataTable(ds.Tables["TiposServicos"]));
                 }
@@ -226,6 +223,9 @@ namespace LP_projecto_final_Emanuel {
                 }
                 if ((ds.Tables["PrecoNoiteReserva"] != null)) {
                     base.Tables.Add(new PrecoNoiteReservaDataTable(ds.Tables["PrecoNoiteReserva"]));
+                }
+                if ((ds.Tables["Quarto"] != null)) {
+                    base.Tables.Add(new QuartoDataTable(ds.Tables["Quarto"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -379,16 +379,6 @@ namespace LP_projecto_final_Emanuel {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public QuartoDataTable Quarto {
-            get {
-                return this.tableQuarto;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public TiposServicosDataTable TiposServicos {
             get {
                 return this.tableTiposServicos;
@@ -452,6 +442,16 @@ namespace LP_projecto_final_Emanuel {
         public PrecoNoiteReservaDataTable PrecoNoiteReserva {
             get {
                 return this.tablePrecoNoiteReserva;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public QuartoDataTable Quarto {
+            get {
+                return this.tableQuarto;
             }
         }
         
@@ -561,9 +561,6 @@ namespace LP_projecto_final_Emanuel {
                 if ((ds.Tables["Cliente"] != null)) {
                     base.Tables.Add(new ClienteDataTable(ds.Tables["Cliente"]));
                 }
-                if ((ds.Tables["Quarto"] != null)) {
-                    base.Tables.Add(new QuartoDataTable(ds.Tables["Quarto"]));
-                }
                 if ((ds.Tables["TiposServicos"] != null)) {
                     base.Tables.Add(new TiposServicosDataTable(ds.Tables["TiposServicos"]));
                 }
@@ -584,6 +581,9 @@ namespace LP_projecto_final_Emanuel {
                 }
                 if ((ds.Tables["PrecoNoiteReserva"] != null)) {
                     base.Tables.Add(new PrecoNoiteReservaDataTable(ds.Tables["PrecoNoiteReserva"]));
+                }
+                if ((ds.Tables["Quarto"] != null)) {
+                    base.Tables.Add(new QuartoDataTable(ds.Tables["Quarto"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -696,12 +696,6 @@ namespace LP_projecto_final_Emanuel {
                     this.tableCliente.InitVars();
                 }
             }
-            this.tableQuarto = ((QuartoDataTable)(base.Tables["Quarto"]));
-            if ((initTable == true)) {
-                if ((this.tableQuarto != null)) {
-                    this.tableQuarto.InitVars();
-                }
-            }
             this.tableTiposServicos = ((TiposServicosDataTable)(base.Tables["TiposServicos"]));
             if ((initTable == true)) {
                 if ((this.tableTiposServicos != null)) {
@@ -744,6 +738,12 @@ namespace LP_projecto_final_Emanuel {
                     this.tablePrecoNoiteReserva.InitVars();
                 }
             }
+            this.tableQuarto = ((QuartoDataTable)(base.Tables["Quarto"]));
+            if ((initTable == true)) {
+                if ((this.tableQuarto != null)) {
+                    this.tableQuarto.InitVars();
+                }
+            }
             this.relationFK_Pagamento_Tipos_de_pagamento = this.Relations["FK_Pagamento_Tipos de pagamento"];
             this.relationFK_Pagamento_Tipos_de_pagamento1 = this.Relations["FK_Pagamento_Tipos de pagamento1"];
             this.relationFK_Pagamento_Reserva2 = this.Relations["FK_Pagamento_Reserva2"];
@@ -755,8 +755,6 @@ namespace LP_projecto_final_Emanuel {
             this.relationFK_Pagamento_Cliente = this.Relations["FK_Pagamento_Cliente"];
             this.relationFK_Pagamento_Cliente2 = this.Relations["FK_Pagamento_Cliente2"];
             this.relationFK_Reserva_Cliente2 = this.Relations["FK_Reserva_Cliente2"];
-            this.relationFK_Reserva_quartos_Quarto3 = this.Relations["FK_Reserva quartos_Quarto3"];
-            this.relationFK_Quarto_Tipos_de_quartos = this.Relations["FK_Quarto_Tipos de quartos"];
             this.relationFK_Servicos_TiposServicos = this.Relations["FK_Servicos_TiposServicos"];
             this.relationFK_Pagamento_Reserva = this.Relations["FK_Pagamento_Reserva"];
             this.relationFK_Pagamento_Reserva1 = this.Relations["FK_Pagamento_Reserva1"];
@@ -764,7 +762,6 @@ namespace LP_projecto_final_Emanuel {
             this.relationFK_Reserva_Cliente = this.Relations["FK_Reserva_Cliente"];
             this.relationFK_Reserva_quartos_Quarto = this.Relations["FK_Reserva quartos_Quarto"];
             this.relationFK_Reserva_quartos_Quarto1 = this.Relations["FK_Reserva quartos_Quarto1"];
-            this.relationFK_Reserva_quartos_Quarto2 = this.Relations["FK_Reserva quartos_Quarto2"];
             this.relationFK_Reserva_quartos_Reserva = this.Relations["FK_Reserva quartos_Reserva"];
             this.relationFK_Reserva_quartos_Reserva2 = this.Relations["FK_Reserva quartos_Reserva2"];
             this.relationFK_Pagamento_Cliente1 = this.Relations["FK_Pagamento_Cliente1"];
@@ -779,6 +776,9 @@ namespace LP_projecto_final_Emanuel {
             this.relationFK_Reserva_quartos_Reserva3 = this.Relations["FK_Reserva quartos_Reserva3"];
             this.relationFK_Reserva_quartos_Reserva4 = this.Relations["FK_Reserva quartos_Reserva4"];
             this.relationFK_ServicosEstadia_Reserva2 = this.Relations["FK_ServicosEstadia_Reserva2"];
+            this.relationFK_Reserva_quartos_Quarto2 = this.Relations["FK_Reserva quartos_Quarto2"];
+            this.relationFK_Reserva_quartos_Quarto3 = this.Relations["FK_Reserva quartos_Quarto3"];
+            this.relationFK_Quarto_Tipos_de_quartos = this.Relations["FK_Quarto_Tipos de quartos"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -815,8 +815,6 @@ namespace LP_projecto_final_Emanuel {
             base.Tables.Add(this.tableTipos_de_pagamento1);
             this.tableCliente = new ClienteDataTable();
             base.Tables.Add(this.tableCliente);
-            this.tableQuarto = new QuartoDataTable();
-            base.Tables.Add(this.tableQuarto);
             this.tableTiposServicos = new TiposServicosDataTable();
             base.Tables.Add(this.tableTiposServicos);
             this.tableServicos = new ServicosDataTable();
@@ -831,6 +829,8 @@ namespace LP_projecto_final_Emanuel {
             base.Tables.Add(this.tableServicosEstadia);
             this.tablePrecoNoiteReserva = new PrecoNoiteReservaDataTable();
             base.Tables.Add(this.tablePrecoNoiteReserva);
+            this.tableQuarto = new QuartoDataTable();
+            base.Tables.Add(this.tableQuarto);
             this.relationFK_Pagamento_Tipos_de_pagamento = new global::System.Data.DataRelation("FK_Pagamento_Tipos de pagamento", new global::System.Data.DataColumn[] {
                         this.tableTipos_de_pagamento.id_tipo_pagamentoColumn}, new global::System.Data.DataColumn[] {
                         this.tablePagamento.id_metodo_pagamentoColumn}, false);
@@ -875,14 +875,6 @@ namespace LP_projecto_final_Emanuel {
                         this.tableCliente.id_clienteColumn}, new global::System.Data.DataColumn[] {
                         this.tableReserva1.id_clienteColumn}, false);
             this.Relations.Add(this.relationFK_Reserva_Cliente2);
-            this.relationFK_Reserva_quartos_Quarto3 = new global::System.Data.DataRelation("FK_Reserva quartos_Quarto3", new global::System.Data.DataColumn[] {
-                        this.tableQuarto.id_quartoColumn}, new global::System.Data.DataColumn[] {
-                        this.tableReserva_quartos1.id_quartosColumn}, false);
-            this.Relations.Add(this.relationFK_Reserva_quartos_Quarto3);
-            this.relationFK_Quarto_Tipos_de_quartos = new global::System.Data.DataRelation("FK_Quarto_Tipos de quartos", new global::System.Data.DataColumn[] {
-                        this.tableTipos_de_quartos.id_tipo_quartosColumn}, new global::System.Data.DataColumn[] {
-                        this.tableQuarto.id_tipoColumn}, false);
-            this.Relations.Add(this.relationFK_Quarto_Tipos_de_quartos);
             this.relationFK_Servicos_TiposServicos = new global::System.Data.DataRelation("FK_Servicos_TiposServicos", new global::System.Data.DataColumn[] {
                         this.tableTiposServicos.id_tipo_servicoColumn}, new global::System.Data.DataColumn[] {
                         this.tableServicos.id_servicoColumn}, false);
@@ -911,10 +903,6 @@ namespace LP_projecto_final_Emanuel {
                         this.tableQuarto2.id_quartoColumn}, new global::System.Data.DataColumn[] {
                         this.tableReserva_quartos.id_quartosColumn}, false);
             this.Relations.Add(this.relationFK_Reserva_quartos_Quarto1);
-            this.relationFK_Reserva_quartos_Quarto2 = new global::System.Data.DataRelation("FK_Reserva quartos_Quarto2", new global::System.Data.DataColumn[] {
-                        this.tableQuarto.id_quartoColumn}, new global::System.Data.DataColumn[] {
-                        this.tableReserva_quartos.id_quartosColumn}, false);
-            this.Relations.Add(this.relationFK_Reserva_quartos_Quarto2);
             this.relationFK_Reserva_quartos_Reserva = new global::System.Data.DataRelation("FK_Reserva quartos_Reserva", new global::System.Data.DataColumn[] {
                         this.tableReserva1.id_reservaColumn}, new global::System.Data.DataColumn[] {
                         this.tableReserva_quartos.Id_reserva_quartoColumn}, false);
@@ -971,6 +959,18 @@ namespace LP_projecto_final_Emanuel {
                         this.tablePrecoNoiteReserva.id_reservaColumn}, new global::System.Data.DataColumn[] {
                         this.tableServicosEstadia.id_reservaColumn}, false);
             this.Relations.Add(this.relationFK_ServicosEstadia_Reserva2);
+            this.relationFK_Reserva_quartos_Quarto2 = new global::System.Data.DataRelation("FK_Reserva quartos_Quarto2", new global::System.Data.DataColumn[] {
+                        this.tableQuarto.id_quartoColumn}, new global::System.Data.DataColumn[] {
+                        this.tableReserva_quartos1.id_quartosColumn}, false);
+            this.Relations.Add(this.relationFK_Reserva_quartos_Quarto2);
+            this.relationFK_Reserva_quartos_Quarto3 = new global::System.Data.DataRelation("FK_Reserva quartos_Quarto3", new global::System.Data.DataColumn[] {
+                        this.tableQuarto.id_quartoColumn}, new global::System.Data.DataColumn[] {
+                        this.tableReserva_quartos.id_quartosColumn}, false);
+            this.Relations.Add(this.relationFK_Reserva_quartos_Quarto3);
+            this.relationFK_Quarto_Tipos_de_quartos = new global::System.Data.DataRelation("FK_Quarto_Tipos de quartos", new global::System.Data.DataColumn[] {
+                        this.tableTipos_de_quartos.id_tipo_quartosColumn}, new global::System.Data.DataColumn[] {
+                        this.tableQuarto.id_tipoColumn}, false);
+            this.Relations.Add(this.relationFK_Quarto_Tipos_de_quartos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1053,12 +1053,6 @@ namespace LP_projecto_final_Emanuel {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeQuarto() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeTiposServicos() {
             return false;
         }
@@ -1096,6 +1090,12 @@ namespace LP_projecto_final_Emanuel {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializePrecoNoiteReserva() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeQuarto() {
             return false;
         }
         
@@ -1194,9 +1194,6 @@ namespace LP_projecto_final_Emanuel {
         public delegate void ClienteRowChangeEventHandler(object sender, ClienteRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void QuartoRowChangeEventHandler(object sender, QuartoRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void TiposServicosRowChangeEventHandler(object sender, TiposServicosRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1216,6 +1213,9 @@ namespace LP_projecto_final_Emanuel {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void PrecoNoiteReservaRowChangeEventHandler(object sender, PrecoNoiteReservaRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void QuartoRowChangeEventHandler(object sender, QuartoRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -5423,341 +5423,6 @@ namespace LP_projecto_final_Emanuel {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class QuartoDataTable : global::System.Data.TypedTableBase<QuartoRow> {
-            
-            private global::System.Data.DataColumn columnid_quarto;
-            
-            private global::System.Data.DataColumn columnpreco_quarto;
-            
-            private global::System.Data.DataColumn columnandar_quarto;
-            
-            private global::System.Data.DataColumn columnimagem;
-            
-            private global::System.Data.DataColumn columnestado;
-            
-            private global::System.Data.DataColumn columnid_tipo;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoDataTable() {
-                this.TableName = "Quarto";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal QuartoDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected QuartoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn id_quartoColumn {
-                get {
-                    return this.columnid_quarto;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn preco_quartoColumn {
-                get {
-                    return this.columnpreco_quarto;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn andar_quartoColumn {
-                get {
-                    return this.columnandar_quarto;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn imagemColumn {
-                get {
-                    return this.columnimagem;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn estadoColumn {
-                get {
-                    return this.columnestado;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn id_tipoColumn {
-                get {
-                    return this.columnid_tipo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoRow this[int index] {
-                get {
-                    return ((QuartoRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event QuartoRowChangeEventHandler QuartoRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event QuartoRowChangeEventHandler QuartoRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event QuartoRowChangeEventHandler QuartoRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event QuartoRowChangeEventHandler QuartoRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddQuartoRow(QuartoRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoRow AddQuartoRow(int id_quarto, int preco_quarto, string andar_quarto, byte[] imagem, string estado, Tipos_de_quartosRow parentTipos_de_quartosRowByFK_Quarto_Tipos_de_quartos) {
-                QuartoRow rowQuartoRow = ((QuartoRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        id_quarto,
-                        preco_quarto,
-                        andar_quarto,
-                        imagem,
-                        estado,
-                        null};
-                if ((parentTipos_de_quartosRowByFK_Quarto_Tipos_de_quartos != null)) {
-                    columnValuesArray[5] = parentTipos_de_quartosRowByFK_Quarto_Tipos_de_quartos[0];
-                }
-                rowQuartoRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowQuartoRow);
-                return rowQuartoRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoRow FindByid_quarto(int id_quarto) {
-                return ((QuartoRow)(this.Rows.Find(new object[] {
-                            id_quarto})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                QuartoDataTable cln = ((QuartoDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new QuartoDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal void InitVars() {
-                this.columnid_quarto = base.Columns["id_quarto"];
-                this.columnpreco_quarto = base.Columns["preco_quarto"];
-                this.columnandar_quarto = base.Columns["andar_quarto"];
-                this.columnimagem = base.Columns["imagem"];
-                this.columnestado = base.Columns["estado"];
-                this.columnid_tipo = base.Columns["id_tipo"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            private void InitClass() {
-                this.columnid_quarto = new global::System.Data.DataColumn("id_quarto", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_quarto);
-                this.columnpreco_quarto = new global::System.Data.DataColumn("preco_quarto", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpreco_quarto);
-                this.columnandar_quarto = new global::System.Data.DataColumn("andar_quarto", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnandar_quarto);
-                this.columnimagem = new global::System.Data.DataColumn("imagem", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnimagem);
-                this.columnestado = new global::System.Data.DataColumn("estado", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnestado);
-                this.columnid_tipo = new global::System.Data.DataColumn("id_tipo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_tipo);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnid_quarto}, true));
-                this.columnid_quarto.AllowDBNull = false;
-                this.columnid_quarto.Unique = true;
-                this.columnpreco_quarto.AllowDBNull = false;
-                this.columnandar_quarto.MaxLength = 50;
-                this.columnestado.MaxLength = 50;
-                this.columnid_tipo.AllowDBNull = false;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoRow NewQuartoRow() {
-                return ((QuartoRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new QuartoRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(QuartoRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.QuartoRowChanged != null)) {
-                    this.QuartoRowChanged(this, new QuartoRowChangeEvent(((QuartoRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.QuartoRowChanging != null)) {
-                    this.QuartoRowChanging(this, new QuartoRowChangeEvent(((QuartoRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.QuartoRowDeleted != null)) {
-                    this.QuartoRowDeleted(this, new QuartoRowChangeEvent(((QuartoRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.QuartoRowDeleting != null)) {
-                    this.QuartoRowDeleting(this, new QuartoRowChangeEvent(((QuartoRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveQuartoRow(QuartoRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Database1DataSet ds = new Database1DataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "QuartoDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class TiposServicosDataTable : global::System.Data.TypedTableBase<TiposServicosRow> {
             
             private global::System.Data.DataColumn columnid_tipo_servico;
@@ -7028,10 +6693,6 @@ namespace LP_projecto_final_Emanuel {
             
             private global::System.Data.DataColumn columnestado;
             
-            private global::System.Data.DataColumn columnid_quarto;
-            
-            private global::System.Data.DataColumn columnpreco_quarto;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public EstadiasDataTable() {
@@ -7195,22 +6856,6 @@ namespace LP_projecto_final_Emanuel {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn id_quartoColumn {
-                get {
-                    return this.columnid_quarto;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn preco_quartoColumn {
-                get {
-                    return this.columnpreco_quarto;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -7246,23 +6891,7 @@ namespace LP_projecto_final_Emanuel {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public EstadiasRow AddEstadiasRow(
-                        string nome, 
-                        string morada, 
-                        string contacto, 
-                        string Email, 
-                        System.DateTime data_nasc, 
-                        string BI, 
-                        string Codigo_postal, 
-                        string Pais, 
-                        byte[] Foto, 
-                        System.DateTime Data_inicio, 
-                        System.DateTime Data_fim, 
-                        decimal Total, 
-                        string comentarios, 
-                        string estado, 
-                        int id_quarto, 
-                        int preco_quarto) {
+            public EstadiasRow AddEstadiasRow(string nome, string morada, string contacto, string Email, System.DateTime data_nasc, string BI, string Codigo_postal, string Pais, byte[] Foto, System.DateTime Data_inicio, System.DateTime Data_fim, decimal Total, string comentarios, string estado) {
                 EstadiasRow rowEstadiasRow = ((EstadiasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -7280,9 +6909,7 @@ namespace LP_projecto_final_Emanuel {
                         Data_fim,
                         Total,
                         comentarios,
-                        estado,
-                        id_quarto,
-                        preco_quarto};
+                        estado};
                 rowEstadiasRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEstadiasRow);
                 return rowEstadiasRow;
@@ -7328,8 +6955,6 @@ namespace LP_projecto_final_Emanuel {
                 this.columnTotal = base.Columns["Total"];
                 this.columncomentarios = base.Columns["comentarios"];
                 this.columnestado = base.Columns["estado"];
-                this.columnid_quarto = base.Columns["id_quarto"];
-                this.columnpreco_quarto = base.Columns["preco_quarto"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7367,10 +6992,6 @@ namespace LP_projecto_final_Emanuel {
                 base.Columns.Add(this.columncomentarios);
                 this.columnestado = new global::System.Data.DataColumn("estado", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnestado);
-                this.columnid_quarto = new global::System.Data.DataColumn("id_quarto", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_quarto);
-                this.columnpreco_quarto = new global::System.Data.DataColumn("preco_quarto", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpreco_quarto);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_reserva}, true));
                 this.columnid_cliente.AutoIncrement = true;
@@ -7397,8 +7018,6 @@ namespace LP_projecto_final_Emanuel {
                 this.columnData_inicio.AllowDBNull = false;
                 this.columncomentarios.MaxLength = 50;
                 this.columnestado.MaxLength = 50;
-                this.columnid_quarto.AllowDBNull = false;
-                this.columnpreco_quarto.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8104,6 +7723,345 @@ namespace LP_projecto_final_Emanuel {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "PrecoNoiteReservaDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class QuartoDataTable : global::System.Data.TypedTableBase<QuartoRow> {
+            
+            private global::System.Data.DataColumn columnid_quarto;
+            
+            private global::System.Data.DataColumn columnpreco_quarto;
+            
+            private global::System.Data.DataColumn columnandar_quarto;
+            
+            private global::System.Data.DataColumn columnimagem;
+            
+            private global::System.Data.DataColumn columnestado;
+            
+            private global::System.Data.DataColumn columnid_tipo;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoDataTable() {
+                this.TableName = "Quarto";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal QuartoDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected QuartoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_quartoColumn {
+                get {
+                    return this.columnid_quarto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn preco_quartoColumn {
+                get {
+                    return this.columnpreco_quarto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn andar_quartoColumn {
+                get {
+                    return this.columnandar_quarto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn imagemColumn {
+                get {
+                    return this.columnimagem;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn estadoColumn {
+                get {
+                    return this.columnestado;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn id_tipoColumn {
+                get {
+                    return this.columnid_tipo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoRow this[int index] {
+                get {
+                    return ((QuartoRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event QuartoRowChangeEventHandler QuartoRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event QuartoRowChangeEventHandler QuartoRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event QuartoRowChangeEventHandler QuartoRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event QuartoRowChangeEventHandler QuartoRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddQuartoRow(QuartoRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoRow AddQuartoRow(int preco_quarto, string andar_quarto, byte[] imagem, string estado, Tipos_de_quartosRow parentTipos_de_quartosRowByFK_Quarto_Tipos_de_quartos) {
+                QuartoRow rowQuartoRow = ((QuartoRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        preco_quarto,
+                        andar_quarto,
+                        imagem,
+                        estado,
+                        null};
+                if ((parentTipos_de_quartosRowByFK_Quarto_Tipos_de_quartos != null)) {
+                    columnValuesArray[5] = parentTipos_de_quartosRowByFK_Quarto_Tipos_de_quartos[0];
+                }
+                rowQuartoRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowQuartoRow);
+                return rowQuartoRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoRow FindByid_quarto(int id_quarto) {
+                return ((QuartoRow)(this.Rows.Find(new object[] {
+                            id_quarto})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                QuartoDataTable cln = ((QuartoDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new QuartoDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnid_quarto = base.Columns["id_quarto"];
+                this.columnpreco_quarto = base.Columns["preco_quarto"];
+                this.columnandar_quarto = base.Columns["andar_quarto"];
+                this.columnimagem = base.Columns["imagem"];
+                this.columnestado = base.Columns["estado"];
+                this.columnid_tipo = base.Columns["id_tipo"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnid_quarto = new global::System.Data.DataColumn("id_quarto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_quarto);
+                this.columnpreco_quarto = new global::System.Data.DataColumn("preco_quarto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpreco_quarto);
+                this.columnandar_quarto = new global::System.Data.DataColumn("andar_quarto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnandar_quarto);
+                this.columnimagem = new global::System.Data.DataColumn("imagem", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnimagem);
+                this.columnestado = new global::System.Data.DataColumn("estado", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnestado);
+                this.columnid_tipo = new global::System.Data.DataColumn("id_tipo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_tipo);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnid_quarto}, true));
+                this.columnid_quarto.AutoIncrement = true;
+                this.columnid_quarto.AutoIncrementSeed = -1;
+                this.columnid_quarto.AutoIncrementStep = -1;
+                this.columnid_quarto.AllowDBNull = false;
+                this.columnid_quarto.ReadOnly = true;
+                this.columnid_quarto.Unique = true;
+                this.columnpreco_quarto.AllowDBNull = false;
+                this.columnandar_quarto.MaxLength = 50;
+                this.columnestado.MaxLength = 50;
+                this.columnid_tipo.AllowDBNull = false;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoRow NewQuartoRow() {
+                return ((QuartoRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new QuartoRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(QuartoRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.QuartoRowChanged != null)) {
+                    this.QuartoRowChanged(this, new QuartoRowChangeEvent(((QuartoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.QuartoRowChanging != null)) {
+                    this.QuartoRowChanging(this, new QuartoRowChangeEvent(((QuartoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.QuartoRowDeleted != null)) {
+                    this.QuartoRowDeleted(this, new QuartoRowChangeEvent(((QuartoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.QuartoRowDeleting != null)) {
+                    this.QuartoRowDeleting(this, new QuartoRowChangeEvent(((QuartoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveQuartoRow(QuartoRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Database1DataSet ds = new Database1DataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "QuartoDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -9445,17 +9403,6 @@ namespace LP_projecto_final_Emanuel {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoRow QuartoRow {
-                get {
-                    return ((QuartoRow)(this.GetParentRow(this.Table.ParentRelations["FK_Reserva quartos_Quarto3"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Reserva quartos_Quarto3"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public ReservaRow ReservaRow {
                 get {
                     return ((ReservaRow)(this.GetParentRow(this.Table.ParentRelations["FK_Reserva quartos_Reserva1"])));
@@ -9473,6 +9420,17 @@ namespace LP_projecto_final_Emanuel {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_Reserva quartos_Reserva3"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoRow QuartoRow {
+                get {
+                    return ((QuartoRow)(this.GetParentRow(this.Table.ParentRelations["FK_Reserva quartos_Quarto2"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Reserva quartos_Quarto2"]);
                 }
             }
         }
@@ -9814,171 +9772,6 @@ namespace LP_projecto_final_Emanuel {
                 }
                 else {
                     return ((ReservaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Reserva_Cliente"])));
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class QuartoRow : global::System.Data.DataRow {
-            
-            private QuartoDataTable tableQuarto;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal QuartoRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableQuarto = ((QuartoDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int id_quarto {
-                get {
-                    return ((int)(this[this.tableQuarto.id_quartoColumn]));
-                }
-                set {
-                    this[this.tableQuarto.id_quartoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int preco_quarto {
-                get {
-                    return ((int)(this[this.tableQuarto.preco_quartoColumn]));
-                }
-                set {
-                    this[this.tableQuarto.preco_quartoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string andar_quarto {
-                get {
-                    try {
-                        return ((string)(this[this.tableQuarto.andar_quartoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'andar_quarto\' in table \'Quarto\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableQuarto.andar_quartoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public byte[] imagem {
-                get {
-                    try {
-                        return ((byte[])(this[this.tableQuarto.imagemColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'imagem\' in table \'Quarto\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableQuarto.imagemColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string estado {
-                get {
-                    try {
-                        return ((string)(this[this.tableQuarto.estadoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'estado\' in table \'Quarto\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableQuarto.estadoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int id_tipo {
-                get {
-                    return ((int)(this[this.tableQuarto.id_tipoColumn]));
-                }
-                set {
-                    this[this.tableQuarto.id_tipoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Tipos_de_quartosRow Tipos_de_quartosRow {
-                get {
-                    return ((Tipos_de_quartosRow)(this.GetParentRow(this.Table.ParentRelations["FK_Quarto_Tipos de quartos"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Quarto_Tipos de quartos"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isandar_quartoNull() {
-                return this.IsNull(this.tableQuarto.andar_quartoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setandar_quartoNull() {
-                this[this.tableQuarto.andar_quartoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsimagemNull() {
-                return this.IsNull(this.tableQuarto.imagemColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetimagemNull() {
-                this[this.tableQuarto.imagemColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsestadoNull() {
-                return this.IsNull(this.tableQuarto.estadoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetestadoNull() {
-                this[this.tableQuarto.estadoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Reserva_quartos1Row[] GetReserva_quartos1Rows() {
-                if ((this.Table.ChildRelations["FK_Reserva quartos_Quarto3"] == null)) {
-                    return new Reserva_quartos1Row[0];
-                }
-                else {
-                    return ((Reserva_quartos1Row[])(base.GetChildRows(this.Table.ChildRelations["FK_Reserva quartos_Quarto3"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Reserva_quartosRow[] GetReserva_quartosRows() {
-                if ((this.Table.ChildRelations["FK_Reserva quartos_Quarto2"] == null)) {
-                    return new Reserva_quartosRow[0];
-                }
-                else {
-                    return ((Reserva_quartosRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Reserva quartos_Quarto2"])));
                 }
             }
         }
@@ -10437,17 +10230,6 @@ namespace LP_projecto_final_Emanuel {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoRow QuartoRow {
-                get {
-                    return ((QuartoRow)(this.GetParentRow(this.Table.ParentRelations["FK_Reserva quartos_Quarto2"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Reserva quartos_Quarto2"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public Reserva1Row Reserva1Row {
                 get {
                     return ((Reserva1Row)(this.GetParentRow(this.Table.ParentRelations["FK_Reserva quartos_Reserva"])));
@@ -10476,6 +10258,17 @@ namespace LP_projecto_final_Emanuel {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_Reserva quartos_Reserva4"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoRow QuartoRow {
+                get {
+                    return ((QuartoRow)(this.GetParentRow(this.Table.ParentRelations["FK_Reserva quartos_Quarto3"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Reserva quartos_Quarto3"]);
                 }
             }
         }
@@ -10717,28 +10510,6 @@ namespace LP_projecto_final_Emanuel {
                 }
                 set {
                     this[this.tableEstadias.estadoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int id_quarto {
-                get {
-                    return ((int)(this[this.tableEstadias.id_quartoColumn]));
-                }
-                set {
-                    this[this.tableEstadias.id_quartoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int preco_quarto {
-                get {
-                    return ((int)(this[this.tableEstadias.preco_quartoColumn]));
-                }
-                set {
-                    this[this.tableEstadias.preco_quartoColumn] = value;
                 }
             }
             
@@ -11154,6 +10925,171 @@ namespace LP_projecto_final_Emanuel {
                 }
                 else {
                     return ((ServicosEstadiaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_ServicosEstadia_Reserva2"])));
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class QuartoRow : global::System.Data.DataRow {
+            
+            private QuartoDataTable tableQuarto;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal QuartoRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableQuarto = ((QuartoDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id_quarto {
+                get {
+                    return ((int)(this[this.tableQuarto.id_quartoColumn]));
+                }
+                set {
+                    this[this.tableQuarto.id_quartoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int preco_quarto {
+                get {
+                    return ((int)(this[this.tableQuarto.preco_quartoColumn]));
+                }
+                set {
+                    this[this.tableQuarto.preco_quartoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string andar_quarto {
+                get {
+                    try {
+                        return ((string)(this[this.tableQuarto.andar_quartoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'andar_quarto\' in table \'Quarto\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableQuarto.andar_quartoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public byte[] imagem {
+                get {
+                    try {
+                        return ((byte[])(this[this.tableQuarto.imagemColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'imagem\' in table \'Quarto\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableQuarto.imagemColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string estado {
+                get {
+                    try {
+                        return ((string)(this[this.tableQuarto.estadoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'estado\' in table \'Quarto\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableQuarto.estadoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id_tipo {
+                get {
+                    return ((int)(this[this.tableQuarto.id_tipoColumn]));
+                }
+                set {
+                    this[this.tableQuarto.id_tipoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Tipos_de_quartosRow Tipos_de_quartosRow {
+                get {
+                    return ((Tipos_de_quartosRow)(this.GetParentRow(this.Table.ParentRelations["FK_Quarto_Tipos de quartos"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Quarto_Tipos de quartos"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isandar_quartoNull() {
+                return this.IsNull(this.tableQuarto.andar_quartoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setandar_quartoNull() {
+                this[this.tableQuarto.andar_quartoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsimagemNull() {
+                return this.IsNull(this.tableQuarto.imagemColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetimagemNull() {
+                this[this.tableQuarto.imagemColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsestadoNull() {
+                return this.IsNull(this.tableQuarto.estadoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetestadoNull() {
+                this[this.tableQuarto.estadoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Reserva_quartos1Row[] GetReserva_quartos1Rows() {
+                if ((this.Table.ChildRelations["FK_Reserva quartos_Quarto2"] == null)) {
+                    return new Reserva_quartos1Row[0];
+                }
+                else {
+                    return ((Reserva_quartos1Row[])(base.GetChildRows(this.Table.ChildRelations["FK_Reserva quartos_Quarto2"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Reserva_quartosRow[] GetReserva_quartosRows() {
+                if ((this.Table.ChildRelations["FK_Reserva quartos_Quarto3"] == null)) {
+                    return new Reserva_quartosRow[0];
+                }
+                else {
+                    return ((Reserva_quartosRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Reserva quartos_Quarto3"])));
                 }
             }
         }
@@ -11604,40 +11540,6 @@ namespace LP_projecto_final_Emanuel {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class QuartoRowChangeEvent : global::System.EventArgs {
-            
-            private QuartoRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoRowChangeEvent(QuartoRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public QuartoRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class TiposServicosRowChangeEvent : global::System.EventArgs {
             
             private TiposServicosRow eventRow;
@@ -11858,6 +11760,40 @@ namespace LP_projecto_final_Emanuel {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PrecoNoiteReservaRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class QuartoRowChangeEvent : global::System.EventArgs {
+            
+            private QuartoRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoRowChangeEvent(QuartoRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public QuartoRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -16950,399 +16886,6 @@ SELECT id_cliente, nome, morada, contacto, Email, data_nasc, BI, Codigo_postal, 
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class QuartoTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public QuartoTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Quarto";
-            tableMapping.ColumnMappings.Add("id_quarto", "id_quarto");
-            tableMapping.ColumnMappings.Add("preco_quarto", "preco_quarto");
-            tableMapping.ColumnMappings.Add("andar_quarto", "andar_quarto");
-            tableMapping.ColumnMappings.Add("imagem", "imagem");
-            tableMapping.ColumnMappings.Add("estado", "estado");
-            tableMapping.ColumnMappings.Add("id_tipo", "id_tipo");
-            this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Quarto] WHERE (([id_quarto] = @Original_id_quarto) AND ([preco_quarto] = @Original_preco_quarto) AND ((@IsNull_andar_quarto = 1 AND [andar_quarto] IS NULL) OR ([andar_quarto] = @Original_andar_quarto)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ([id_tipo] = @Original_id_tipo))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_preco_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "preco_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_andar_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_andar_quarto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_estado", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_tipo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_tipo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Quarto] ([id_quarto], [preco_quarto], [andar_quarto], [imagem], [estado], [id_tipo]) VALUES (@id_quarto, @preco_quarto, @andar_quarto, @imagem, @estado, @id_tipo);
-SELECT id_quarto, preco_quarto, andar_quarto, imagem, estado, id_tipo FROM Quarto WHERE (id_quarto = @id_quarto)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@preco_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "preco_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@andar_quarto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@imagem", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "imagem", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_tipo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_tipo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Quarto] SET [id_quarto] = @id_quarto, [preco_quarto] = @preco_quarto, [andar_quarto] = @andar_quarto, [imagem] = @imagem, [estado] = @estado, [id_tipo] = @id_tipo WHERE (([id_quarto] = @Original_id_quarto) AND ([preco_quarto] = @Original_preco_quarto) AND ((@IsNull_andar_quarto = 1 AND [andar_quarto] IS NULL) OR ([andar_quarto] = @Original_andar_quarto)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ([id_tipo] = @Original_id_tipo));
-SELECT id_quarto, preco_quarto, andar_quarto, imagem, estado, id_tipo FROM Quarto WHERE (id_quarto = @id_quarto)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@preco_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "preco_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@andar_quarto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@imagem", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "imagem", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_tipo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_tipo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_preco_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "preco_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_andar_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_andar_quarto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_estado", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_tipo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_tipo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LP_projecto_final_Emanuel.Properties.Settings.Default.Database1ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id_quarto, preco_quarto, andar_quarto, imagem, estado, id_tipo FROM Quarto" +
-                "";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Database1DataSet.QuartoDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Database1DataSet.QuartoDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            Database1DataSet.QuartoDataTable dataTable = new Database1DataSet.QuartoDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Database1DataSet.QuartoDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Database1DataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Quarto");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id_quarto, int Original_preco_quarto, string Original_andar_quarto, string Original_estado, int Original_id_tipo) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id_quarto));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_preco_quarto));
-            if ((Original_andar_quarto == null)) {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_andar_quarto));
-            }
-            if ((Original_estado == null)) {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_estado));
-            }
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_id_tipo));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int id_quarto, int preco_quarto, string andar_quarto, byte[] imagem, string estado, int id_tipo) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(id_quarto));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(preco_quarto));
-            if ((andar_quarto == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(andar_quarto));
-            }
-            if ((imagem == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((byte[])(imagem));
-            }
-            if ((estado == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(estado));
-            }
-            this.Adapter.InsertCommand.Parameters[5].Value = ((int)(id_tipo));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int id_quarto, int preco_quarto, string andar_quarto, byte[] imagem, string estado, int id_tipo, int Original_id_quarto, int Original_preco_quarto, string Original_andar_quarto, string Original_estado, int Original_id_tipo) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id_quarto));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(preco_quarto));
-            if ((andar_quarto == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(andar_quarto));
-            }
-            if ((imagem == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((byte[])(imagem));
-            }
-            if ((estado == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(estado));
-            }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(id_tipo));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_id_quarto));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_preco_quarto));
-            if ((Original_andar_quarto == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_andar_quarto));
-            }
-            if ((Original_estado == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_estado));
-            }
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_id_tipo));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int preco_quarto, string andar_quarto, byte[] imagem, string estado, int id_tipo, int Original_id_quarto, int Original_preco_quarto, string Original_andar_quarto, string Original_estado, int Original_id_tipo) {
-            return this.Update(Original_id_quarto, preco_quarto, andar_quarto, imagem, estado, id_tipo, Original_id_quarto, Original_preco_quarto, Original_andar_quarto, Original_estado, Original_id_tipo);
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class TiposServicosTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -19200,8 +18743,6 @@ SELECT Id_reserva_quarto, id_quartos FROM [Reserva quartos] WHERE (Id_reserva_qu
             tableMapping.ColumnMappings.Add("Total", "Total");
             tableMapping.ColumnMappings.Add("comentarios", "comentarios");
             tableMapping.ColumnMappings.Add("estado", "estado");
-            tableMapping.ColumnMappings.Add("id_quarto", "id_quarto");
-            tableMapping.ColumnMappings.Add("preco_quarto", "preco_quarto");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -19218,22 +18759,18 @@ SELECT Id_reserva_quarto, id_quartos FROM [Reserva quartos] WHERE (Id_reserva_qu
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        Cliente.*, Reserva.id_reserva, Reserva.Data_inicio, Reserva.Data_fim, Reserva.Total, Reserva.comentarios, Reserva.estado, Quarto.id_quarto, 
-                         Quarto.preco_quarto
+            this._commandCollection[0].CommandText = @"SELECT        Cliente.id_cliente, Cliente.nome, Cliente.morada, Cliente.contacto, Cliente.Email, Cliente.data_nasc, Cliente.BI, Cliente.Codigo_postal, Cliente.Pais, 
+                         Cliente.Foto, Reserva.id_reserva, Reserva.Data_inicio, Reserva.Data_fim, Reserva.Total, Reserva.comentarios, Reserva.estado
 FROM            Reserva INNER JOIN
-                         [Reserva quartos] ON Reserva.id_reserva = [Reserva quartos].Id_reserva_quarto INNER JOIN
-                         Cliente ON Reserva.id_cliente = Cliente.id_cliente INNER JOIN
-                         Quarto ON [Reserva quartos].id_quartos = Quarto.id_quarto";
+                         Cliente ON Reserva.id_cliente = Cliente.id_cliente";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        Cliente.*, Reserva.id_reserva, Reserva.Data_inicio, Reserva.Data_fim, Reserva.Total, Reserva.comentarios, Reserva.estado, Quarto.id_quarto, 
-                         Quarto.preco_quarto
+            this._commandCollection[1].CommandText = @"SELECT        Cliente.id_cliente, Cliente.nome, Cliente.morada, Cliente.contacto, Cliente.Email, Cliente.data_nasc, Cliente.BI, Cliente.Codigo_postal, Cliente.Pais, 
+                         Cliente.Foto, Reserva.id_reserva, Reserva.Data_inicio, Reserva.Data_fim, Reserva.Total, Reserva.comentarios, Reserva.estado
 FROM            Reserva INNER JOIN
-                         [Reserva quartos] ON Reserva.id_reserva = [Reserva quartos].Id_reserva_quarto INNER JOIN
-                         Cliente ON Reserva.id_cliente = Cliente.id_cliente INNER JOIN
-                         Quarto ON [Reserva quartos].id_quartos = Quarto.id_quarto
-where reserva.estado ='aberta'";
+                         Cliente ON Reserva.id_cliente = Cliente.id_cliente
+where reserva.estado='aberta'";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -19917,6 +19454,396 @@ GROUP BY Reserva.id_reserva
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class QuartoTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public QuartoTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "Quarto";
+            tableMapping.ColumnMappings.Add("id_quarto", "id_quarto");
+            tableMapping.ColumnMappings.Add("preco_quarto", "preco_quarto");
+            tableMapping.ColumnMappings.Add("andar_quarto", "andar_quarto");
+            tableMapping.ColumnMappings.Add("imagem", "imagem");
+            tableMapping.ColumnMappings.Add("estado", "estado");
+            tableMapping.ColumnMappings.Add("id_tipo", "id_tipo");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Quarto] WHERE (([id_quarto] = @Original_id_quarto) AND ([preco_quarto] = @Original_preco_quarto) AND ((@IsNull_andar_quarto = 1 AND [andar_quarto] IS NULL) OR ([andar_quarto] = @Original_andar_quarto)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ([id_tipo] = @Original_id_tipo))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_preco_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "preco_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_andar_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_andar_quarto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_estado", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_tipo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_tipo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Quarto] ([preco_quarto], [andar_quarto], [imagem], [estado], [id_tipo]) VALUES (@preco_quarto, @andar_quarto, @imagem, @estado, @id_tipo);
+SELECT id_quarto, preco_quarto, andar_quarto, imagem, estado, id_tipo FROM Quarto WHERE (id_quarto = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@preco_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "preco_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@andar_quarto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@imagem", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "imagem", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_tipo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_tipo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Quarto] SET [preco_quarto] = @preco_quarto, [andar_quarto] = @andar_quarto, [imagem] = @imagem, [estado] = @estado, [id_tipo] = @id_tipo WHERE (([id_quarto] = @Original_id_quarto) AND ([preco_quarto] = @Original_preco_quarto) AND ((@IsNull_andar_quarto = 1 AND [andar_quarto] IS NULL) OR ([andar_quarto] = @Original_andar_quarto)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ([id_tipo] = @Original_id_tipo));
+SELECT id_quarto, preco_quarto, andar_quarto, imagem, estado, id_tipo FROM Quarto WHERE (id_quarto = @id_quarto)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@preco_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "preco_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@andar_quarto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@imagem", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "imagem", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_tipo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_tipo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_preco_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "preco_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_andar_quarto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_andar_quarto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "andar_quarto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_estado", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_tipo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_tipo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_quarto", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_quarto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::LP_projecto_final_Emanuel.Properties.Settings.Default.Database1ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        Quarto.*\r\nFROM            Quarto";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Database1DataSet.QuartoDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Database1DataSet.QuartoDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            Database1DataSet.QuartoDataTable dataTable = new Database1DataSet.QuartoDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(Database1DataSet.QuartoDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(Database1DataSet dataSet) {
+            return this.Adapter.Update(dataSet, "Quarto");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_id_quarto, int Original_preco_quarto, string Original_andar_quarto, string Original_estado, int Original_id_tipo) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id_quarto));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_preco_quarto));
+            if ((Original_andar_quarto == null)) {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_andar_quarto));
+            }
+            if ((Original_estado == null)) {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_estado));
+            }
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_id_tipo));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int preco_quarto, string andar_quarto, byte[] imagem, string estado, int id_tipo) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(preco_quarto));
+            if ((andar_quarto == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(andar_quarto));
+            }
+            if ((imagem == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((byte[])(imagem));
+            }
+            if ((estado == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(estado));
+            }
+            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(id_tipo));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int preco_quarto, string andar_quarto, byte[] imagem, string estado, int id_tipo, int Original_id_quarto, int Original_preco_quarto, string Original_andar_quarto, string Original_estado, int Original_id_tipo, int id_quarto) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(preco_quarto));
+            if ((andar_quarto == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(andar_quarto));
+            }
+            if ((imagem == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((byte[])(imagem));
+            }
+            if ((estado == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(estado));
+            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(id_tipo));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_id_quarto));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_preco_quarto));
+            if ((Original_andar_quarto == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_andar_quarto));
+            }
+            if ((Original_estado == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_estado));
+            }
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_id_tipo));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(id_quarto));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int preco_quarto, string andar_quarto, byte[] imagem, string estado, int id_tipo, int Original_id_quarto, int Original_preco_quarto, string Original_andar_quarto, string Original_estado, int Original_id_tipo) {
+            return this.Update(preco_quarto, andar_quarto, imagem, estado, id_tipo, Original_id_quarto, Original_preco_quarto, Original_andar_quarto, Original_estado, Original_id_tipo, Original_id_quarto);
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19954,8 +19881,6 @@ GROUP BY Reserva.id_reserva
         
         private ClienteTableAdapter _clienteTableAdapter;
         
-        private QuartoTableAdapter _quartoTableAdapter;
-        
         private TiposServicosTableAdapter _tiposServicosTableAdapter;
         
         private ServicosTableAdapter _servicosTableAdapter;
@@ -19965,6 +19890,8 @@ GROUP BY Reserva.id_reserva
         private Reserva_quartosTableAdapter _reserva_quartosTableAdapter;
         
         private ServicosEstadiaTableAdapter _servicosEstadiaTableAdapter;
+        
+        private QuartoTableAdapter _quartoTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -20168,20 +20095,6 @@ GROUP BY Reserva.id_reserva
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public QuartoTableAdapter QuartoTableAdapter {
-            get {
-                return this._quartoTableAdapter;
-            }
-            set {
-                this._quartoTableAdapter = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
         public TiposServicosTableAdapter TiposServicosTableAdapter {
             get {
                 return this._tiposServicosTableAdapter;
@@ -20244,6 +20157,20 @@ GROUP BY Reserva.id_reserva
             }
             set {
                 this._servicosEstadiaTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public QuartoTableAdapter QuartoTableAdapter {
+            get {
+                return this._quartoTableAdapter;
+            }
+            set {
+                this._quartoTableAdapter = value;
             }
         }
         
@@ -20318,10 +20245,6 @@ GROUP BY Reserva.id_reserva
                             && (this._clienteTableAdapter.Connection != null))) {
                     return this._clienteTableAdapter.Connection;
                 }
-                if (((this._quartoTableAdapter != null) 
-                            && (this._quartoTableAdapter.Connection != null))) {
-                    return this._quartoTableAdapter.Connection;
-                }
                 if (((this._tiposServicosTableAdapter != null) 
                             && (this._tiposServicosTableAdapter.Connection != null))) {
                     return this._tiposServicosTableAdapter.Connection;
@@ -20341,6 +20264,10 @@ GROUP BY Reserva.id_reserva
                 if (((this._servicosEstadiaTableAdapter != null) 
                             && (this._servicosEstadiaTableAdapter.Connection != null))) {
                     return this._servicosEstadiaTableAdapter.Connection;
+                }
+                if (((this._quartoTableAdapter != null) 
+                            && (this._quartoTableAdapter.Connection != null))) {
+                    return this._quartoTableAdapter.Connection;
                 }
                 return null;
             }
@@ -20394,9 +20321,6 @@ GROUP BY Reserva.id_reserva
                 if ((this._clienteTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._quartoTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 if ((this._tiposServicosTableAdapter != null)) {
                     count = (count + 1);
                 }
@@ -20412,6 +20336,9 @@ GROUP BY Reserva.id_reserva
                 if ((this._servicosEstadiaTableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._quartoTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -20423,15 +20350,6 @@ GROUP BY Reserva.id_reserva
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(Database1DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._clienteTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Cliente.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._clienteTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._tipos_de_quartosTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Tipos_de_quartos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -20447,6 +20365,15 @@ GROUP BY Reserva.id_reserva
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._tiposServicosTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._clienteTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Cliente.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._clienteTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -20468,15 +20395,6 @@ GROUP BY Reserva.id_reserva
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._quartoTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Quarto.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._quartoTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._servicosTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Servicos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -20495,21 +20413,30 @@ GROUP BY Reserva.id_reserva
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._quarto1TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Quarto1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._quarto1TableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._tipos_de_pagamentoTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Tipos_de_pagamento.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._tipos_de_pagamentoTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._quartoTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Quarto.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._quartoTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._quarto1TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Quarto1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._quarto1TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -20604,14 +20531,6 @@ GROUP BY Reserva.id_reserva
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(Database1DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._clienteTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Cliente.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._clienteTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._tipos_de_quartosTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Tipos_de_quartos.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -20625,6 +20544,14 @@ GROUP BY Reserva.id_reserva
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._tiposServicosTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._clienteTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Cliente.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._clienteTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -20644,14 +20571,6 @@ GROUP BY Reserva.id_reserva
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._quartoTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Quarto.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._quartoTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._servicosTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Servicos.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -20668,19 +20587,27 @@ GROUP BY Reserva.id_reserva
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._quarto1TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Quarto1.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._quarto1TableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._tipos_de_pagamentoTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Tipos_de_pagamento.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._tipos_de_pagamentoTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._quartoTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Quarto.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._quartoTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._quarto1TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Quarto1.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._quarto1TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -20838,19 +20765,27 @@ GROUP BY Reserva.id_reserva
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._tipos_de_pagamentoTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Tipos_de_pagamento.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._tipos_de_pagamentoTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._quarto1TableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Quarto1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._quarto1TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._quartoTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Quarto.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._quartoTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._tipos_de_pagamentoTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Tipos_de_pagamento.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tipos_de_pagamentoTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -20870,14 +20805,6 @@ GROUP BY Reserva.id_reserva
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._quartoTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Quarto.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._quartoTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._reservaTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Reserva.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -20894,6 +20821,14 @@ GROUP BY Reserva.id_reserva
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+            if ((this._clienteTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Cliente.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._clienteTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._tiposServicosTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.TiposServicos.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -20907,14 +20842,6 @@ GROUP BY Reserva.id_reserva
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._tipos_de_quartosTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._clienteTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Cliente.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._clienteTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -21022,11 +20949,6 @@ GROUP BY Reserva.id_reserva
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._quartoTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._quartoTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
-            }
             if (((this._tiposServicosTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._tiposServicosTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
@@ -21049,6 +20971,11 @@ GROUP BY Reserva.id_reserva
             }
             if (((this._servicosEstadiaTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._servicosEstadiaTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._quartoTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._quartoTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -21201,15 +21128,6 @@ GROUP BY Reserva.id_reserva
                         adaptersWithAcceptChangesDuringUpdate.Add(this._clienteTableAdapter.Adapter);
                     }
                 }
-                if ((this._quartoTableAdapter != null)) {
-                    revertConnections.Add(this._quartoTableAdapter, this._quartoTableAdapter.Connection);
-                    this._quartoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._quartoTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._quartoTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._quartoTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._quartoTableAdapter.Adapter);
-                    }
-                }
                 if ((this._tiposServicosTableAdapter != null)) {
                     revertConnections.Add(this._tiposServicosTableAdapter, this._tiposServicosTableAdapter.Connection);
                     this._tiposServicosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
@@ -21253,6 +21171,15 @@ GROUP BY Reserva.id_reserva
                     if (this._servicosEstadiaTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._servicosEstadiaTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._servicosEstadiaTableAdapter.Adapter);
+                    }
+                }
+                if ((this._quartoTableAdapter != null)) {
+                    revertConnections.Add(this._quartoTableAdapter, this._quartoTableAdapter.Connection);
+                    this._quartoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._quartoTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._quartoTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._quartoTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._quartoTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -21365,10 +21292,6 @@ GROUP BY Reserva.id_reserva
                     this._clienteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._clienteTableAdapter]));
                     this._clienteTableAdapter.Transaction = null;
                 }
-                if ((this._quartoTableAdapter != null)) {
-                    this._quartoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._quartoTableAdapter]));
-                    this._quartoTableAdapter.Transaction = null;
-                }
                 if ((this._tiposServicosTableAdapter != null)) {
                     this._tiposServicosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tiposServicosTableAdapter]));
                     this._tiposServicosTableAdapter.Transaction = null;
@@ -21388,6 +21311,10 @@ GROUP BY Reserva.id_reserva
                 if ((this._servicosEstadiaTableAdapter != null)) {
                     this._servicosEstadiaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._servicosEstadiaTableAdapter]));
                     this._servicosEstadiaTableAdapter.Transaction = null;
+                }
+                if ((this._quartoTableAdapter != null)) {
+                    this._quartoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._quartoTableAdapter]));
+                    this._quartoTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

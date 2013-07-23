@@ -45,9 +45,11 @@ namespace LP_projecto_final_Emanuel
         {
           
            try
-            {
+           {
+               DataRowView drv = (DataRowView)comboBox2.SelectedValue;
 
-                this.quartoTableAdapter.Insert(Convert.ToInt32(this.textBox3.Text), Convert.ToInt32(textBox2.Text), textBox1.Text,null,"livre",Convert.ToInt32(comboBox2.SelectedValue));
+               this.quartoTableAdapter.Insert(Convert.ToInt32(textBox2.Text),
+                textBox1.Text, null, "livre", Convert.ToInt32(drv[0]));
                 MessageBox.Show("Inserido novo Quarto !!");
 
             }
